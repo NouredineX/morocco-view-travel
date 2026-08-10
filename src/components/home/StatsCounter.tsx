@@ -10,10 +10,10 @@ interface StatConfig {
 }
 
 const stats: StatConfig[] = [
-  { target: 500, suffix: '+', labelKey: 'stats.tours' },
-  { target: 1200, suffix: '+', labelKey: 'stats.clients' },
-  { target: 10, suffix: '+', labelKey: 'stats.years' },
-  { target: 15, suffix: '+', labelKey: 'stats.destinations' }
+  { target: 350, suffix: '+', labelKey: 'stats.tours' },
+  { target: 850, suffix: '+', labelKey: 'stats.clients' },
+  { target: 5, suffix: '+', labelKey: 'stats.years' },
+  { target: 12, suffix: '+', labelKey: 'stats.destinations' }
 ];
 
 export default function StatsCounter() {
