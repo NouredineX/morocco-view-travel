@@ -15,7 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/destinations',
     '/tours',
     '/blog',
-    '/testimonials'
+    '/testimonials',
+    '/privacy-policy'
   ];
   
   const entries: MetadataRoute.Sitemap = [];

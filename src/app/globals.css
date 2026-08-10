@@ -1790,3 +1790,51 @@ p {
   color: var(--color-primary);
   font-weight: bold;
 }
+
+/* --- Footer Logo Watermark Background --- */
+.footer {
+  position: relative;
+  background-color: var(--bg-dark-2);
+  border-top: 1px solid var(--border-glass-strong);
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+  width: 480px;
+  height: 480px;
+  background-image: url('/images/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity var(--transition-base);
+}
+
+[data-theme="light"] .footer::before {
+  opacity: 0.08;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cybersecurity Badge Styling */
+.security-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  background: var(--bg-glass);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-primary);
+}
