@@ -124,17 +124,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         <script dangerouslySetInnerHTML={{ __html: `
           (function() {
             try {
-              var theme = localStorage.getItem('theme');
-              if (theme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-              } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-              }
+              var theme = localStorage.getItem('theme') || 'light';
+              document.documentElement.setAttribute('data-theme', theme);
             } catch (e) {}
           })();
         ` }} />
       </head>
-      <body className="min-h-full flex flex-col bg-dark-theme text-theme-primary">
+      <body className="min-h-full flex flex-col">
         <ScrollToTop />
         <Header />
         <main className="flex-grow">{children}</main>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { Locale, getTranslations } from '@/utils/i18n';
 
@@ -62,8 +63,81 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="section" id="about-team-section" style={{ borderTop: '1px solid var(--border-glass)' }}>
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>{t('about.teamSubtitle', 'Local Experts')}</span>
+            <h2>Our Team</h2>
+            <p>The passionate travelers and guides behind Morocco View Travel.</p>
+          </div>
+
+          <div className="grid-3" id="team-grid">
+            {/* Owner */}
+            <div className="glass-card team-card" id="team-member-owner" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
+              <div style={{ position: 'relative', height: '350px', width: '100%' }}>
+                <Image 
+                  src="/images/team/owner mohamed boumeshoul.jpeg" 
+                  alt="Mohamed Boumeshoul" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed Boumeshoul</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Founder & Managing Director</p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
+                  Mohamed grew up in Merzouga and has spent over 15 years guiding international travelers through the Sahara desert.
+                </p>
+              </div>
+            </div>
+
+            {/* Driver */}
+            <div className="glass-card team-card" id="team-member-driver" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
+              <div style={{ position: 'relative', height: '350px', width: '100%' }}>
+                <Image 
+                  src="/images/team/Mohamed ohso driver.jpeg" 
+                  alt="Mohamed Ohso" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed "Ohso"</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Professional Driver & Desert Guide</p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
+                  An expert navigator of the Atlas Mountains and Sahara desert tracks, ensuring your safety and comfort at every turn.
+                </p>
+              </div>
+            </div>
+
+            {/* Designer */}
+            <div className="glass-card team-card" id="team-member-designer" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
+              <div style={{ position: 'relative', height: '350px', width: '100%' }}>
+                <Image 
+                  src="/images/team/Noureddine designer.jpeg" 
+                  alt="Noureddine" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Noureddine</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Customer Relations & Designer</p>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
+                  Noureddine handles customer inquiries and itineraries, crafting tailored experiences for groups and families.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TripAdvisor Badge Section */}
-      <section className="section" id="about-tripadvisor-section" style={{ textAlign: 'center' }}>
+      <section className="section" id="about-tripadvisor-section" style={{ textAlign: 'center', background: 'var(--bg-dark-2)', borderTop: '1px solid var(--border-glass)' }}>
         <div className="container">
           <div className="glass-card" style={{ padding: '3rem', maxWidth: '600px', margin: '0 auto' }}>
             <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Morocco View Travel TripAdvisor Rating</h3>

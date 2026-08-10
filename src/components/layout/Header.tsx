@@ -13,7 +13,7 @@ export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,12 +73,12 @@ export default function Header() {
           id="logo-link"
           style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}
         >
-          <div style={{ position: 'relative', width: '42px', height: '42px' }}>
+          <div style={{ position: 'relative', width: '52px', height: '52px' }}>
             <Image 
               src="/images/logo.png" 
               alt="Morocco View Travel Logo" 
               fill
-              sizes="42px"
+              sizes="52px"
               style={{ objectFit: 'contain' }}
               priority
             />
