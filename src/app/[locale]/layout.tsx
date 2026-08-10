@@ -105,6 +105,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     <html
       lang={locale}
       className={`${cinzel.variable} ${outfit.variable} ${kaushan.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         {/* Google Analytics Script */}
