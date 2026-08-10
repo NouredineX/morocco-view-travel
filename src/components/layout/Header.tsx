@@ -73,12 +73,12 @@ export default function Header() {
           id="logo-link"
           style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
         >
-          <div style={{ position: 'relative', width: '70px', height: '70px' }}>
+          <div style={{ position: 'relative', width: '90px', height: '90px' }}>
             <Image 
               src="/images/logo.png" 
               alt="Morocco View Travel Logo" 
               fill
-              sizes="70px"
+              sizes="90px"
               style={{ objectFit: 'contain' }}
               priority
             />

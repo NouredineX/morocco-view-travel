@@ -19,14 +19,14 @@ export default function Footer() {
               href={`/${locale}`} 
               className="footer-logo" 
               id="footer-logo"
-              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', marginBottom: '1.5rem' }}
+              style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none', marginBottom: '1.5rem' }}
             >
-              <div style={{ position: 'relative', width: '75px', height: '75px' }}>
+              <div style={{ position: 'relative', width: '140px', height: '140px' }}>
                 <Image 
                   src="/images/logo.png" 
                   alt="Morocco View Travel Logo" 
                   fill
-                  sizes="75px"
+                  sizes="140px"
                   style={{ objectFit: 'contain' }}
                 />
               </div>

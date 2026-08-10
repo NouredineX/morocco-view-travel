@@ -1797,33 +1797,58 @@ p {
   background-color: var(--bg-dark-2);
   border-top: 1px solid var(--border-glass-strong);
   overflow: hidden;
+  padding: 5rem 0 2rem 0;
 }
 
 .footer::before {
   content: '';
   position: absolute;
   top: 50%;
-  right: 4%;
+  right: 2%;
   transform: translateY(-50%);
-  width: 480px;
-  height: 480px;
+  width: 750px;
+  height: 750px;
   background-image: url('/images/logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.05;
+  opacity: 0.12;
   pointer-events: none;
   z-index: 0;
   transition: opacity var(--transition-base);
 }
 
 [data-theme="light"] .footer::before {
-  opacity: 0.08;
+  opacity: 0.10;
 }
 
 .footer-container {
   position: relative;
   z-index: 1;
+}
+
+.footer-title {
+  color: var(--color-primary) !important;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-about-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.footer-links-list a, .footer-contact-list a {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.footer-links-list a:hover, .footer-contact-list a:hover {
+  color: var(--color-primary) !important;
 }
 
 /* Cybersecurity Badge Styling */
