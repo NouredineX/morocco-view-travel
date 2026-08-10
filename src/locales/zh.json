@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "首页",
+    "tours": "旅游线路",
+    "destinations": "目的地",
+    "about": "关于我们",
+    "blog": "旅行博客",
+    "contact": "联系我们",
+    "bookNow": "立即预订"
+  },
+  "hero": {
+    "accent": "欢迎来到摩洛哥",
+    "title": "探索摩洛哥的魔力",
+    "subtitle": "您通往真实摩洛哥冒险的门户 — 从撒哈拉的金色沙丘到舍夫沙万的蓝色街道",
+    "exploreTours": "探索旅游线路",
+    "contactUs": "联系我们",
+    "scroll": "向下滚动"
+  },
+  "stats": {
+    "tours": "已完成的旅游",
+    "clients": "满意的客户",
+    "years": "年行业经验",
+    "destinations": "目的地数量"
+  },
+  "sections": {
+    "categoriesTitle": "探索摩洛哥",
+    "categoriesSubtitle": "选择您的冒险",
+    "categoriesDesc": "从沙漠探险到沿海避暑，我们在摩洛哥提供多样化的体验",
+    "popularTitle": "热门推荐",
+    "popularSubtitle": "最受欢迎的探险",
+    "popularDesc": "深受全球旅行者喜爱的最热门摩洛哥旅游线路",
+    "viewAllTours": "查看所有旅游线路",
+    "mapTitle": "定制您的行程",
+    "mapSubtitle": "互动地图",
+    "mapDesc": "在地图上点击城市以创建您在摩洛哥的定制行程",
+    "testimonialsTitle": "旅行者们的评价",
+    "testimonialsSubtitle": "满意的旅行者",
+    "ctaTitle": "准备好您的摩洛哥之旅了吗？",
+    "ctaDesc": "让我们为您量身定制心目中完美的行程。今天就联系我们！",
+    "ctaButton": "规划您的行程"
+  },
+  "tour": {
+    "from": "起",
+    "perPerson": "/人",
+    "days": "天",
+    "day": "天",
+    "departure": "出发地",
+    "viewDetails": "查看详情",
+    "bookNow": "立即预订",
+    "reviews": "条评价",
+    "highlights": "行程亮点",
+    "duration": "时长",
+    "allTours": "所有线路",
+    "filterBy": "筛选条件",
+    "noTours": "未找到符合您条件的旅游线路",
+    "priceUponRequest": "价格面议"
+  },
+  "map": {
+    "title": "定制您的专属行程",
+    "subtitle": "在地图上点击城市以规划您的路线",
+    "selectedCities": "已选城市",
+    "noCities": "点击城市标记开始规划您的行程",
+    "distance": "总距离",
+    "estimatedDays": "预计天数",
+    "estimatedPrice": "预计价格",
+    "requestTour": "申请此定制行程",
+    "clearAll": "清除所有",
+    "remove": "移除"
+  },
+  "destinations": {
+    "title": "探索摩洛哥的最佳目的地",
+    "subtitle": "神奇的地方",
+    "desc": "从帝国古城到沿海小镇，探索摩洛哥的多样之美",
+    "tours": "个可用线路"
+  },
+  "about": {
+    "title": "关于 Travelling Through Morocco",
+    "subtitle": "您值得信赖的伙伴",
+    "storyTitle": "我们的故事",
+    "story1": "Travelling Through Morocco 是一家总部位于梅克内斯的优质旅游公司，专注于提供正宗的摩洛哥旅行体验。凭借 10 多年的专业积累，我们精心打造融合冒险、文化与奢华的难忘旅程。",
+    "story2": "作为一家综合性旅游与运输公司，我们为您安排旅程的每一个细节 — 从舒适的 4x4 越野车到精心挑选的住宿，再到能让摩洛哥丰富遗产栩栩如生的专业当地导游。",
+    "story3": "我们的使命非常明确：向您展示真实的摩洛哥。这不仅包括经典的旅游景点，还有那些隐藏的瑰宝、当地人的故事，以及让这个国家真正与众不同的热情好客。",
+    "valuesTitle": "为什么选择我们",
+    "values": {
+      "agency": { "title": "顶级旅行社", "desc": "TripAdvisor 上拥有数百条五星好评的备受赞誉的服务" },
+      "safety": { "title": "安全第一", "desc": "专业的司机、维护良好的车辆以及 24/7 全天候支持" },
+      "pricing": { "title": "最合理的旅游定价", "desc": "价格极具竞争力且无任何隐藏费用 — 一切全包" },
+      "custom": { "title": "定制化旅行", "desc": "每次旅行都根据您的偏好、步调和兴趣量身定制" },
+      "booking": { "title": "快速预订", "desc": "立即预订，24 小时内获得确认" },
+      "guides": { "title": "当地资深导游", "desc": "土生土长的摩洛哥人 — 我们的导游深知每一处隐藏的宝藏" }
+    }
+  },
+  "blog": {
+    "title": "摩洛哥旅行博客",
+    "subtitle": "专家洞察",
+    "desc": "实用的建议、攻略和故事，帮助您规划完美的摩洛哥之行",
+    "readMore": "阅读全文",
+    "readTime": "分钟阅读",
+    "allCategories": "全部",
+    "recentPosts": "最新文章"
+  },
+  "contact": {
+    "title": "取得联系",
+    "subtitle": "联系我们",
+    "desc": "准备好开启您的摩洛哥冒险了吗？给我们发送消息，我们将在 24 小时内回复您",
+    "formTitle": "给我们留言",
+    "name": "姓名",
+    "email": "邮箱地址",
+    "phone": "电话号码",
+    "travelers": "旅行人数",
+    "date": "旅行日期",
+    "message": "您的留言",
+    "messagePlaceholder": "告诉我们您梦想中的摩洛哥之旅...",
+    "send": "发送留言",
+    "sending": "发送中...",
+    "success": "留言发送成功！我们将在 24 小时内与您联系。",
+    "infoTitle": "联系方式",
+    "address": "摩洛哥 梅克内斯",
+    "addressLabel": "我们的办公室",
+    "phoneLabel": "致电我们",
+    "emailLabel": "给我们发送邮件",
+    "hours": "周一至周六: 早上 8点 - 晚上 8点",
+    "mapTitle": "找到我们"
+  },
+  "footer": {
+    "aboutText": "Travelling Through Morocco 是您进行正宗摩洛哥旅行体验的信赖伙伴。总部位于梅克内斯，我们在全国范围内提供优质旅游线路。",
+    "quickLinks": "快速链接",
+    "topDestinations": "热门目的地",
+    "contactInfo": "联系信息",
+    "rights": "版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生了一些错误",
+    "goHome": "返回首页",
+    "notFound": "页面未找到"
+  }
+}

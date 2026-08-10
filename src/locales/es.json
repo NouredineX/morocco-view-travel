@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "tours": "Tours",
+    "destinations": "Destinos",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "bookNow": "Reservar"
+  },
+  "hero": {
+    "accent": "Bienvenido a Marruecos",
+    "title": "Descubre la Magia de Marruecos",
+    "subtitle": "Tu puerta de entrada a aventuras marroquíes auténticas — desde las dunas doradas del Sahara hasta las calles azules de Chefchaouen",
+    "exploreTours": "Explorar Tours",
+    "contactUs": "Contáctanos",
+    "scroll": "Desplazar"
+  },
+  "stats": {
+    "tours": "Tours Completados",
+    "clients": "Clientes Felices",
+    "years": "Años de Experiencia",
+    "destinations": "Destinos"
+  },
+  "sections": {
+    "categoriesTitle": "Explora Marruecos",
+    "categoriesSubtitle": "Elige Tu Aventura",
+    "categoriesDesc": "Desde expediciones al desierto hasta escapadas costeras, ofrecemos experiencias diversas en Marruecos",
+    "popularTitle": "Tours Populares",
+    "popularSubtitle": "Aventuras Más Reservadas",
+    "popularDesc": "Nuestros tours más queridos elegidos por viajeros de todo el mundo",
+    "viewAllTours": "Ver Todos los Tours",
+    "mapTitle": "Construye Tu Viaje",
+    "mapSubtitle": "Mapa Interactivo",
+    "mapDesc": "Haz clic en las ciudades para crear tu itinerario personalizado por Marruecos",
+    "testimonialsTitle": "Lo que Dicen Nuestros Viajeros",
+    "testimonialsSubtitle": "Viajeros Felices",
+    "ctaTitle": "¿Listo para Tu Aventura Marroquí?",
+    "ctaDesc": "Permítenos crear el itinerario perfecto adaptado a tus sueños. ¡Contacta a nuestro equipo hoy!",
+    "ctaButton": "Planifica Tu Viaje"
+  },
+  "tour": {
+    "from": "Desde",
+    "perPerson": "por persona",
+    "days": "días",
+    "day": "día",
+    "departure": "Salida",
+    "viewDetails": "Ver Detalles",
+    "bookNow": "Reservar",
+    "reviews": "opiniones",
+    "highlights": "Puntos Destacados",
+    "duration": "Duración",
+    "allTours": "Todos los Tours",
+    "filterBy": "Filtrar por",
+    "noTours": "No se encontraron tours para tus criterios",
+    "priceUponRequest": "Precio bajo petición"
+  },
+  "map": {
+    "title": "Construye Tu Itinerario Personalizado",
+    "subtitle": "Haz clic en las ciudades en el mapa para construir tu ruta",
+    "selectedCities": "Ciudades Seleccionadas",
+    "noCities": "Haz clic en un marcador de ciudad para comenzar",
+    "distance": "Distancia",
+    "estimatedDays": "Días Est.",
+    "estimatedPrice": "Precio Est.",
+    "requestTour": "Solicitar Este Tour Personalizado",
+    "clearAll": "Borrar Todo",
+    "remove": "Eliminar"
+  },
+  "destinations": {
+    "title": "Explora los Mejores Destinos de Marruecos",
+    "subtitle": "Lugares Increíbles",
+    "desc": "Desde ciudades imperiales hasta pueblos costeros, descubre la diversa belleza de Marruecos",
+    "tours": "tours disponibles"
+  },
+  "about": {
+    "title": "Sobre Travelling Through Morocco",
+    "subtitle": "Tu Socio de Confianza",
+    "storyTitle": "Nuestra Historia",
+    "story1": "Travelling Through Morocco es una empresa de viajes premium con sede en Meknes, especializada en experiencias marroquíes auténticas. Con más de 10 años de experiencia, creamos viajes inolvidables que combinan aventura, cultura y lujo.",
+    "story2": "Como empresa de turismo y transporte integrada, gestionamos cada detalle de tu viaje — desde cómodos vehículos 4x4 hasta alojamientos seleccionados y guías locales expertos.",
+    "story3": "Nuestra misión es simple: mostrarte el verdadero Marruecos. No solo los sitios turísticos, sino las joyas ocultas, las historias locales y la cálida hospitalidad.",
+    "valuesTitle": "Por Qué Elegirnos",
+    "values": {
+      "agency": { "title": "Mejor Agencia", "desc": "Servicio premiado con cientos de reseñas de 5 estrellas en TripAdvisor" },
+      "safety": { "title": "Seguridad Prioritaria", "desc": "Conductores profesionales, vehículos bien mantenidos y soporte 24/7" },
+      "pricing": { "title": "Mejores Precios", "desc": "Precios competitivos sin cargos ocultos — todo incluido" },
+      "custom": { "title": "Viajes Personalizados", "desc": "Cada tour adaptado a tus preferencias, ritmo e intereses" },
+      "booking": { "title": "Reserva Rápida", "desc": "Reserva al instante y confirma en 24 horas" },
+      "guides": { "title": "Guías Locales Expertos", "desc": "Nacidos y criados en Marruecos — nuestros guías conocen cada joya oculta" }
+    }
+  },
+  "blog": {
+    "title": "Blog de Viajes a Marruecos",
+    "subtitle": "Consejos de Expertos",
+    "desc": "Consejos, guías e historias para ayudarte a planificar el viaje perfecto a Marruecos",
+    "readMore": "Leer Más",
+    "readTime": "min de lectura",
+    "allCategories": "Todo",
+    "recentPosts": "Publicaciones Recientes"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Contacto",
+    "desc": "¿Listo para reservar tu aventura en Marruecos? Envíanos un mensaje y te responderemos en 24 horas",
+    "formTitle": "Envíanos un Mensaje",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "phone": "Número de Teléfono",
+    "travelers": "Número de Viajeros",
+    "date": "Fecha de Viaje",
+    "message": "Tu Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre tu viaje soñado a Marruecos...",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Te responderemos en 24 horas.",
+    "infoTitle": "Información de Contacto",
+    "address": "Meknes, Marruecos",
+    "addressLabel": "Nuestra Oficina",
+    "phoneLabel": "Llámanos",
+    "emailLabel": "Escríbenos",
+    "hours": "Lun - Sáb: 8am - 8pm",
+    "mapTitle": "Encuéntranos"
+  },
+  "footer": {
+    "aboutText": "Travelling Through Morocco es tu socio de confianza para experiencias de viaje auténticas en Marruecos. Con sede en Meknes, ofrecemos tours premium por todo el reino.",
+    "quickLinks": "Enlaces Rápidos",
+    "topDestinations": "Destinos Top",
+    "contactInfo": "Información de Contacto",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "goHome": "Ir al Inicio",
+    "notFound": "Página No Encontrada"
+  }
+}

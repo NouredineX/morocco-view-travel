@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Início",
+    "tours": "Circuitos",
+    "destinations": "Destinos",
+    "about": "Sobre",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "bookNow": "Reservar Já"
+  },
+  "hero": {
+    "accent": "Bem-vindo a Marrocos",
+    "title": "Descubra a Magia de Marrocos",
+    "subtitle": "A sua porta de entrada para aventuras autênticas em Marrocos — das dunas douradas do Saara às ruas azuis de Chefchaouen",
+    "exploreTours": "Explorar Circuitos",
+    "contactUs": "Contacte-nos",
+    "scroll": "Rolar para Baixo"
+  },
+  "stats": {
+    "tours": "Circuitos Concluídos",
+    "clients": "Clientes Felizes",
+    "years": "Anos de Experiência",
+    "destinations": "Destinos"
+  },
+  "sections": {
+    "categoriesTitle": "Explorar Marrocos",
+    "categoriesSubtitle": "Escolha a sua Aventura",
+    "categoriesDesc": "De expedições no deserto a refúgios costeiros, oferecemos experiências diversas por todo Marrocos",
+    "popularTitle": "Circuitos Populares",
+    "popularSubtitle": "Aventuras Mais Reservadas",
+    "popularDesc": "Os nossos circuitos mais amados, escolhidos por viajantes de todo o mundo",
+    "viewAllTours": "Ver Todos os Circuitos",
+    "mapTitle": "Crie a sua Viagem",
+    "mapSubtitle": "Mapa Interativo",
+    "mapDesc": "Clique nas cidades para criar o seu itinerário personalizado em Marrocos",
+    "testimonialsTitle": "O Que Dizem os Nossos Viajantes",
+    "testimonialsSubtitle": "Viajantes Felizes",
+    "ctaTitle": "Pronto para a sua Aventura em Marrocos?",
+    "ctaDesc": "Deixe-nos criar o itinerário perfeito adaptado aos seus sonhos. Contacte a nossa equipa hoje!",
+    "ctaButton": "Planear a sua Viagem"
+  },
+  "tour": {
+    "from": "Desde",
+    "perPerson": "por pessoa",
+    "days": "dias",
+    "day": "dia",
+    "departure": "De",
+    "viewDetails": "Ver Detalhes",
+    "bookNow": "Reservar Já",
+    "reviews": "avaliações",
+    "highlights": "Destaques",
+    "duration": "Duração",
+    "allTours": "Todos os Circuitos",
+    "filterBy": "Filtrar por",
+    "noTours": "Nenhum circuito encontrado com os critérios selecionados",
+    "priceUponRequest": "Preço sob consulta"
+  },
+  "map": {
+    "title": "Crie o seu Itinerário Personalizado",
+    "subtitle": "Clique nas cidades no mapa para construir a sua rota",
+    "selectedCities": "Cidades Selecionadas",
+    "noCities": "Clique no marcador de uma cidade para começar a construir o seu itinerário",
+    "distance": "Distância",
+    "estimatedDays": "Dias Est.",
+    "estimatedPrice": "Preço Est.",
+    "requestTour": "Solicitar Este Circuito Personalizado",
+    "clearAll": "Limpar Tudo",
+    "remove": "Remover"
+  },
+  "destinations": {
+    "title": "Explore os Melhores Destinos de Marrocos",
+    "subtitle": "Lugares Incríveis",
+    "desc": "De cidades imperiais a vilas costeiras, descubra a beleza diversa de Marrocos",
+    "tours": "circuitos disponíveis"
+  },
+  "about": {
+    "title": "Sobre Travelling Through Morocco",
+    "subtitle": "O seu Parceiro de Confiança",
+    "storyTitle": "A Nossa História",
+    "story1": "A Travelling Through Morocco é uma agência de viagens premium com sede em Meknes, especializada em experiências autênticas em Marrocos. Com mais de 10 anos de experiência, criamos viagens inesquecíveis que combinam aventura, cultura e luxo.",
+    "story2": "Como empresa integrada de turismo e transporte, tratamos de todos os detalhes da sua viagem — desde veículos 4x4 confortáveis a alojamentos selecionados e guias locais experientes que dão vida ao rico património de Marrocos.",
+    "story3": "A nossa missão é simples: mostrar-lhe o verdadeiro Marrocos. Não apenas os locais turísticos, mas as joias escondidas, as histórias locais e a hospitalidade calorosa que torna este país verdadeiramente especial.",
+    "valuesTitle": "Porquê Escolher-nos",
+    "values": {
+      "agency": { "title": "Melhor Agência de Viagens", "desc": "Serviço premiado com centenas de avaliações de 5 estrelas no TripAdvisor" },
+      "safety": { "title": "A Segurança é Prioridade", "desc": "Motoristas profissionais, veículos bem mantidos e apoio 24/7" },
+      "pricing": { "title": "Melhores Preços de Circuitos", "desc": "Preços competitivos sem custos ocultos — tudo incluído" },
+      "custom": { "title": "Viagens Personalizadas", "desc": "Cada circuito adaptado às suas preferências, ritmo e interesses" },
+      "booking": { "title": "Reserva Rápida", "desc": "Reserve instantaneamente e obtenha confirmação em 24 horas" },
+      "guides": { "title": "Guias Especializados Locais", "desc": "Nascidos e criados em Marrocos — os nossos guias conhecem cada segredo" }
+    }
+  },
+  "blog": {
+    "title": "Blog de Viagens em Marrocos",
+    "subtitle": "Conselhos de Especialistas",
+    "desc": "Dicas, guias e histórias para o ajudar a planear a viagem perfeita a Marrocos",
+    "readMore": "Ler Mais",
+    "readTime": "min de leitura",
+    "allCategories": "Todos",
+    "recentPosts": "Artigos Recentes"
+  },
+  "contact": {
+    "title": "Fale Connosco",
+    "subtitle": "Contacte-nos",
+    "desc": "Pronto para reservar a sua aventura em Marrocos? Envie-nos uma mensagem e responderemos em 24 horas",
+    "formTitle": "Envie-nos uma Mensagem",
+    "name": "Nome Completo",
+    "email": "Endereço de E-mail",
+    "phone": "Número de Telefone",
+    "travelers": "Número de Viajantes",
+    "date": "Data de Viagem",
+    "message": "Sua Mensagem",
+    "messagePlaceholder": "Fale-nos sobre a sua viagem de sonho em Marrocos...",
+    "send": "Enviar Mensagem",
+    "sending": "A enviar...",
+    "success": "Mensagem enviada com sucesso! Responderemos em 24 horas.",
+    "infoTitle": "Informações de Contacto",
+    "address": "Meknes, Marrocos",
+    "addressLabel": "O Nosso Escritório",
+    "phoneLabel": "Ligue-nos",
+    "emailLabel": "Envie-nos um E-mail",
+    "hours": "Seg - Sáb: 8:00 - 20:00",
+    "mapTitle": "Encontre-nos"
+  },
+  "footer": {
+    "aboutText": "A Travelling Through Morocco é o seu parceiro de confiança para experiências de viagem autênticas em Marrocos. Com sede em Meknes, oferecemos circuitos premium por todo o reino.",
+    "quickLinks": "Links Rápidos",
+    "topDestinations": "Principais Destinos",
+    "contactInfo": "Informações de Contacto",
+    "rights": "Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
+  "common": {
+    "loading": "A carregar...",
+    "error": "Ocorreu um erro",
+    "goHome": "Ir para o Início",
+    "notFound": "Página Não Encontrada"
+  }
+}

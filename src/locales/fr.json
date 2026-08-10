@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "tours": "Circuits",
+    "destinations": "Destinations",
+    "about": "À Propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookNow": "Réserver"
+  },
+  "hero": {
+    "accent": "Bienvenue au Maroc",
+    "title": "Découvrez la Magie du Maroc",
+    "subtitle": "Votre passerelle vers des aventures marocaines authentiques — des dunes dorées du Sahara aux rues bleues de Chefchaouen",
+    "exploreTours": "Explorer les Circuits",
+    "contactUs": "Contactez-nous",
+    "scroll": "Défiler"
+  },
+  "stats": {
+    "tours": "Circuits Réalisés",
+    "clients": "Clients Satisfaits",
+    "years": "Ans d'Expérience",
+    "destinations": "Destinations"
+  },
+  "sections": {
+    "categoriesTitle": "Explorez le Maroc",
+    "categoriesSubtitle": "Choisissez Votre Aventure",
+    "categoriesDesc": "Des expéditions dans le désert aux escapades côtières, nous offrons des expériences diversifiées à travers le Maroc",
+    "popularTitle": "Circuits Populaires",
+    "popularSubtitle": "Aventures les Plus Réservées",
+    "popularDesc": "Nos circuits les plus appréciés choisis par des voyageurs du monde entier",
+    "viewAllTours": "Voir Tous les Circuits",
+    "mapTitle": "Construisez Votre Voyage",
+    "mapSubtitle": "Carte Interactive",
+    "mapDesc": "Cliquez sur les villes pour créer votre itinéraire personnalisé au Maroc",
+    "testimonialsTitle": "Ce que Disent nos Voyageurs",
+    "testimonialsSubtitle": "Voyageurs Heureux",
+    "ctaTitle": "Prêt pour Votre Aventure Marocaine ?",
+    "ctaDesc": "Laissez-nous créer l'itinéraire parfait adapté à vos rêves. Contactez notre équipe aujourd'hui !",
+    "ctaButton": "Planifier Votre Voyage"
+  },
+  "tour": {
+    "from": "À partir de",
+    "perPerson": "par personne",
+    "days": "jours",
+    "day": "jour",
+    "departure": "Départ",
+    "viewDetails": "Voir Détails",
+    "bookNow": "Réserver",
+    "reviews": "avis",
+    "highlights": "Points Forts",
+    "duration": "Durée",
+    "allTours": "Tous les Circuits",
+    "filterBy": "Filtrer par",
+    "noTours": "Aucun circuit trouvé pour vos critères",
+    "priceUponRequest": "Tarif sur demande"
+  },
+  "map": {
+    "title": "Construisez Votre Itinéraire Personnalisé",
+    "subtitle": "Cliquez sur les villes sur la carte pour construire votre route",
+    "selectedCities": "Villes Sélectionnées",
+    "noCities": "Cliquez sur un marqueur de ville pour commencer",
+    "distance": "Distance",
+    "estimatedDays": "Jours Est.",
+    "estimatedPrice": "Prix Est.",
+    "requestTour": "Demander ce Circuit Personnalisé",
+    "clearAll": "Tout Effacer",
+    "remove": "Supprimer"
+  },
+  "destinations": {
+    "title": "Explorez les Meilleures Destinations du Maroc",
+    "subtitle": "Endroits Magnifiques",
+    "desc": "Des villes impériales aux villes côtières, découvrez la beauté diversifiée du Maroc",
+    "tours": "circuits disponibles"
+  },
+  "about": {
+    "title": "À Propos de Travelling Through Morocco",
+    "subtitle": "Votre Partenaire de Confiance",
+    "storyTitle": "Notre Histoire",
+    "story1": "Travelling Through Morocco est une agence de voyage premium basée à Meknès, spécialisée dans les expériences marocaines authentiques. Avec plus de 10 ans d'expertise, nous créons des voyages inoubliables mêlant aventure, culture et luxe.",
+    "story2": "En tant qu'entreprise de tourisme et de transport intégrée, nous gérons chaque détail de votre voyage — des véhicules 4x4 confortables aux hébergements sélectionnés et guides locaux experts.",
+    "story3": "Notre mission est simple : vous montrer le vrai Maroc. Pas seulement les sites touristiques, mais les trésors cachés, les histoires locales et l'hospitalité chaleureuse.",
+    "valuesTitle": "Pourquoi Nous Choisir",
+    "values": {
+      "agency": { "title": "Meilleure Agence", "desc": "Service primé avec des centaines d'avis 5 étoiles sur TripAdvisor" },
+      "safety": { "title": "Sécurité Prioritaire", "desc": "Chauffeurs professionnels, véhicules bien entretenus et support 24/7" },
+      "pricing": { "title": "Meilleurs Prix", "desc": "Prix compétitifs sans frais cachés — tout inclus" },
+      "custom": { "title": "Voyages Sur Mesure", "desc": "Chaque circuit adapté à vos préférences, rythme et intérêts" },
+      "booking": { "title": "Réservation Rapide", "desc": "Réservez instantanément et confirmez sous 24 heures" },
+      "guides": { "title": "Guides Locaux Experts", "desc": "Nés et élevés au Maroc — nos guides connaissent chaque trésor caché" }
+    }
+  },
+  "blog": {
+    "title": "Blog de Voyage au Maroc",
+    "subtitle": "Conseils d'Experts",
+    "desc": "Conseils, guides et histoires pour planifier le voyage parfait au Maroc",
+    "readMore": "Lire la Suite",
+    "readTime": "min de lecture",
+    "allCategories": "Tout",
+    "recentPosts": "Articles Récents"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous Contacter",
+    "desc": "Prêt à réserver votre aventure au Maroc ? Envoyez-nous un message et nous vous répondrons sous 24 heures",
+    "formTitle": "Envoyez-nous un Message",
+    "name": "Nom Complet",
+    "email": "Adresse Email",
+    "phone": "Numéro de Téléphone",
+    "travelers": "Nombre de Voyageurs",
+    "date": "Date de Voyage",
+    "message": "Votre Message",
+    "messagePlaceholder": "Parlez-nous de votre voyage de rêve au Maroc...",
+    "send": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons sous 24 heures.",
+    "infoTitle": "Informations de Contact",
+    "address": "Meknès, Maroc",
+    "addressLabel": "Notre Bureau",
+    "phoneLabel": "Appelez-nous",
+    "emailLabel": "Écrivez-nous",
+    "hours": "Lun - Sam : 8h - 20h",
+    "mapTitle": "Nous Trouver"
+  },
+  "footer": {
+    "aboutText": "Travelling Through Morocco est votre partenaire de confiance pour des expériences de voyage authentiques au Maroc. Basée à Meknès, nous offrons des circuits premium à travers le royaume.",
+    "quickLinks": "Liens Rapides",
+    "topDestinations": "Top Destinations",
+    "contactInfo": "Informations de Contact",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "goHome": "Retour à l'Accueil",
+    "notFound": "Page Non Trouvée"
+  }
+}

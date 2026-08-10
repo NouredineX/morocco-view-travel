@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "tours": "ツアー",
+    "destinations": "目的地",
+    "about": "会社概要",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "bookNow": "今すぐ予約",
+    "fleet": "車両フリート"
+  },
+  "hero": {
+    "accent": "モロッコへようこそ",
+    "title": "モロッコの魔法を発見する",
+    "subtitle": "本物のモロッコ冒険への入り口 — 黄金のサハラ砂漠からシェフシャウエンの青い街並みまで",
+    "exploreTours": "ツアーを見る",
+    "contactUs": "お問い合わせ",
+    "scroll": "スクロールダウン"
+  },
+  "stats": {
+    "tours": "催行済みツアー",
+    "clients": "満足したお客様",
+    "years": "経験年数",
+    "destinations": "目的地数"
+  },
+  "sections": {
+    "categoriesTitle": "モロッコを探索",
+    "categoriesSubtitle": "あなたの冒険を選ぶ",
+    "categoriesDesc": "砂漠遠征から沿岸の隠れ家まで、モロッコ全土で多様な体験を提供します",
+    "popularTitle": "人気のツアー",
+    "popularSubtitle": "最も予約されている冒険",
+    "popularDesc": "世界中の旅行者に選ばれている人気のツアー",
+    "viewAllTours": "すべてのツアーを見る",
+    "mapTitle": "旅行を計画する",
+    "mapSubtitle": "インタラクティブマップ",
+    "mapDesc": "都市をクリックして、モロッコのカスタム旅程を作成します",
+    "testimonialsTitle": "旅行者の声",
+    "testimonialsSubtitle": "満足した旅行者",
+    "ctaTitle": "モロッコの冒険の準備はできましたか？",
+    "ctaDesc": "あなたの夢に合わせた完璧な旅程を作成します。今すぐチームにお問い合わせください！",
+    "ctaButton": "旅行を計画する"
+  },
+  "tour": {
+    "from": "料金：",
+    "perPerson": "/名様",
+    "days": "日間",
+    "day": "日",
+    "departure": "出発地",
+    "viewDetails": "詳細を見る",
+    "bookNow": "今すぐ予約",
+    "reviews": "件のクチコミ",
+    "highlights": "ハイライト",
+    "duration": "期間",
+    "allTours": "すべてのツアー",
+    "filterBy": "フィルター：",
+    "noTours": "条件に一致するツアーが見つかりませんでした",
+    "priceUponRequest": "お問い合わせください"
+  },
+  "map": {
+    "title": "カスタム旅程を作成する",
+    "subtitle": "地図上の都市をクリックしてルートを作成します",
+    "selectedCities": "選択された都市",
+    "noCities": "都市のマーカーをクリックして旅程の作成を開始します",
+    "distance": "距離",
+    "estimatedDays": "想定日数",
+    "estimatedPrice": "想定料金",
+    "requestTour": "このカスタムツアーを依頼する",
+    "clearAll": "すべてクリア",
+    "remove": "削除"
+  },
+  "destinations": {
+    "title": "モロッコの最高の目的地を探索する",
+    "subtitle": "素晴らしい場所",
+    "desc": "帝国の都市から沿岸の町まで、モロッコの多様な美しさを発見してください",
+    "tours": "件のツアーあり"
+  },
+  "about": {
+    "title": "Morocco View Travelについて",
+    "subtitle": "信頼できるパートナー",
+    "storyTitle": "私たちのストーリー",
+    "story1": "Morocco View Travelは、リッサニ・メルズーガを拠点とするプレミアム旅行会社で、本物のモロッコ体験を専門としています。長年の専門知識を活かし、冒険、文化、快適さを融合させた忘れられない旅を演出します。",
+    "story2": "統合された観光・輸送会社として、快適な4x4車両から厳選された宿泊施設、モロッコの豊かな遺産を伝える専門の現地ガイドまで、旅のあらゆる詳細を管理します。",
+    "story3": "私たちの使命はシンプルです。本物のモロッコをお見せすることです。観光地だけでなく、隠れた名所、地元の物語、そしてこの国を特別にする温かいおもてなしを提供します。",
+    "valuesTitle": "選ばれる理由",
+    "values": {
+      "agency": { "title": "最良の旅行代理店", "desc": "TripAdvisorで何百もの5つ星評価を獲得した受賞歴のあるサービス" },
+      "safety": { "title": "安全を最優先", "desc": "プロのドライバー、よく整備された車両、24時間年中無休のサポート" },
+      "pricing": { "title": "最適なツアー料金", "desc": "隠れた手数料なしの競争力のある価格 — すべて含まれています" },
+      "custom": { "title": "カスタマイズされた旅行", "desc": "すべてのツアーはお客様の好み、ペース、興味に合わせて調整されます" },
+      "booking": { "title": "迅速な予約", "desc": "即時予約可能で、24時間以内に確認されます" },
+      "guides": { "title": "現地の専門ガイド", "desc": "モロッコ生まれモロッコ育ち — 私たちのガイドはすべての隠れた魅力を知っています" }
+    }
+  },
+  "blog": {
+    "title": "モロッコ旅行ブログ",
+    "subtitle": "専門的な洞察",
+    "desc": "完璧なモロッコ旅行の計画に役立つヒント、ガイド、物語",
+    "readMore": "続きを読む",
+    "readTime": "分で読めます",
+    "allCategories": "すべて",
+    "recentPosts": "最近の記事"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ご連絡ください",
+    "desc": "モロッコの冒険を予約する準備はできましたか？メッセージをお送りください。24時間以内に返信いたします",
+    "formTitle": "メッセージを送る",
+    "name": "お名前（フルネーム）",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "travelers": "旅行者数",
+    "date": "旅行日",
+    "message": "メッセージ内容",
+    "messagePlaceholder": "あなたの夢のモロッコ旅行について教えてください...",
+    "send": "メッセージ送信",
+    "sending": "送信中...",
+    "success": "メッセージが正常に送信されました！24時間以内にご連絡いたします。",
+    "infoTitle": "連絡先情報",
+    "address": "モロッコ、リッサニ・メルズーガ",
+    "addressLabel": "オフィス",
+    "phoneLabel": "電話番号",
+    "emailLabel": "メールアドレス",
+    "hours": "月 - 土: 8:00 - 20:00",
+    "mapTitle": "アクセス"
+  },
+  "footer": {
+    "aboutText": "Morocco View Travelは、本物のモロッコ旅行体験の信頼できるパートナーです。リッサニ・メルズーガを拠点とし、モロッコ全土でプレミアムツアーを提供しています。",
+    "quickLinks": "クイックリンク",
+    "topDestinations": "人気の目的地",
+    "contactInfo": "連絡先情報",
+    "rights": "All rights reserved.",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "goHome": "ホームに戻る",
+    "notFound": "ページが見つかりません"
+  }
+}

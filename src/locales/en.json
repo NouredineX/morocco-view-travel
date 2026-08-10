@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "destinations": "Destinations",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "accent": "Welcome to Morocco",
+    "title": "Discover the Magic of Morocco",
+    "subtitle": "Your gateway to authentic Moroccan adventures — from the golden Sahara dunes to the blue streets of Chefchaouen",
+    "exploreTours": "Explore Tours",
+    "contactUs": "Contact Us",
+    "scroll": "Scroll Down"
+  },
+  "stats": {
+    "tours": "Tours Completed",
+    "clients": "Happy Clients",
+    "years": "Years Experience",
+    "destinations": "Destinations"
+  },
+  "sections": {
+    "categoriesTitle": "Explore Morocco",
+    "categoriesSubtitle": "Choose Your Adventure",
+    "categoriesDesc": "From desert expeditions to coastal escapes, we offer diverse experiences across Morocco",
+    "popularTitle": "Popular Tours",
+    "popularSubtitle": "Most Booked Adventures",
+    "popularDesc": "Our most loved tours chosen by travelers from around the world",
+    "viewAllTours": "View All Tours",
+    "mapTitle": "Build Your Trip",
+    "mapSubtitle": "Interactive Map",
+    "mapDesc": "Click on cities to create your custom itinerary across Morocco",
+    "testimonialsTitle": "What Our Travelers Say",
+    "testimonialsSubtitle": "Happy Travelers",
+    "ctaTitle": "Ready for Your Moroccan Adventure?",
+    "ctaDesc": "Let us create the perfect itinerary tailored to your dreams. Contact our team today!",
+    "ctaButton": "Plan Your Trip"
+  },
+  "tour": {
+    "from": "From",
+    "perPerson": "per person",
+    "days": "days",
+    "day": "day",
+    "departure": "From",
+    "viewDetails": "View Details",
+    "bookNow": "Book Now",
+    "reviews": "reviews",
+    "highlights": "Highlights",
+    "duration": "Duration",
+    "allTours": "All Tours",
+    "filterBy": "Filter by",
+    "noTours": "No tours found matching your criteria",
+    "priceUponRequest": "Price Upon Request"
+  },
+  "map": {
+    "title": "Build Your Custom Itinerary",
+    "subtitle": "Click on cities on the map to build your route",
+    "selectedCities": "Selected Cities",
+    "noCities": "Click on a city marker to start building your itinerary",
+    "distance": "Distance",
+    "estimatedDays": "Est. Days",
+    "estimatedPrice": "Est. Price",
+    "requestTour": "Request This Custom Tour",
+    "clearAll": "Clear All",
+    "remove": "Remove"
+  },
+  "destinations": {
+    "title": "Explore Morocco's Best Destinations",
+    "subtitle": "Amazing Places",
+    "desc": "From imperial cities to coastal towns, discover the diverse beauty of Morocco",
+    "tours": "tours available"
+  },
+  "about": {
+    "title": "About Travelling Through Morocco",
+    "subtitle": "Your Trusted Partner",
+    "storyTitle": "Our Story",
+    "story1": "Travelling Through Morocco is a premium travel company based in Meknes, specializing in authentic Moroccan experiences. With over 10 years of expertise, we craft unforgettable journeys that blend adventure, culture, and luxury.",
+    "story2": "As a fully integrated tourism and transport company, we handle every detail of your trip — from comfortable 4x4 vehicles to handpicked accommodations and expert local guides who bring Morocco's rich heritage to life.",
+    "story3": "Our mission is simple: to show you the real Morocco. Not just the tourist spots, but the hidden gems, the local stories, and the warm hospitality that makes this country truly special.",
+    "valuesTitle": "Why Choose Us",
+    "values": {
+      "agency": { "title": "Best Travel Agency", "desc": "Award-winning service with hundreds of 5-star reviews on TripAdvisor" },
+      "safety": { "title": "Safety is Priority", "desc": "Professional drivers, well-maintained vehicles, and 24/7 support" },
+      "pricing": { "title": "Best Tour Pricing", "desc": "Competitive prices with no hidden fees — everything included" },
+      "custom": { "title": "Customized Trips", "desc": "Every tour tailored to your preferences, pace, and interests" },
+      "booking": { "title": "Fast Booking", "desc": "Book instantly and get confirmed within 24 hours" },
+      "guides": { "title": "Local Expert Guides", "desc": "Born and raised in Morocco — our guides know every hidden gem" }
+    }
+  },
+  "blog": {
+    "title": "Morocco Travel Blog",
+    "subtitle": "Expert Insights",
+    "desc": "Tips, guides, and stories to help you plan the perfect Morocco trip",
+    "readMore": "Read More",
+    "readTime": "min read",
+    "allCategories": "All",
+    "recentPosts": "Recent Posts"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Contact Us",
+    "desc": "Ready to book your Morocco adventure? Send us a message and we'll get back to you within 24 hours",
+    "formTitle": "Send Us a Message",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "travelers": "Number of Travelers",
+    "date": "Travel Date",
+    "message": "Your Message",
+    "messagePlaceholder": "Tell us about your dream Morocco trip...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you within 24 hours.",
+    "infoTitle": "Contact Information",
+    "address": "Meknes, Morocco",
+    "addressLabel": "Our Office",
+    "phoneLabel": "Call Us",
+    "emailLabel": "Email Us",
+    "hours": "Mon - Sat: 8am - 8pm",
+    "mapTitle": "Find Us"
+  },
+  "footer": {
+    "aboutText": "Travelling Through Morocco is your trusted partner for authentic Moroccan travel experiences. Based in Meknes, we offer premium tours across the kingdom.",
+    "quickLinks": "Quick Links",
+    "topDestinations": "Top Destinations",
+    "contactInfo": "Contact Info",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "goHome": "Go Home",
+    "notFound": "Page Not Found"
+  }
+}
