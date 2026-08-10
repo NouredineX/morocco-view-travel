@@ -19,16 +19,39 @@ export default function Footer() {
               href={`/${locale}`} 
               className="footer-logo" 
               id="footer-logo"
-              style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none', marginBottom: '1.5rem' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', marginBottom: '1.5rem' }}
             >
-              <div style={{ position: 'relative', width: '140px', height: '140px' }}>
+              <div className="footer-logo-wrapper" style={{ position: 'relative', width: '100px', height: '100px', flexShrink: 0 }}>
                 <Image 
                   src="/images/logo.png" 
                   alt="Morocco View Travel Logo" 
                   fill
-                  sizes="140px"
+                  sizes="100px"
                   style={{ objectFit: 'contain' }}
                 />
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', lineHeight: '1.15' }}>
+                <span style={{ 
+                  fontFamily: 'var(--font-heading)', 
+                  fontWeight: 800, 
+                  fontSize: '1.4rem', 
+                  letterSpacing: '0.5px',
+                  background: 'linear-gradient(135deg, #E6B800 0%, #FFF099 50%, #D4A017 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  textTransform: 'uppercase'
+                }}>
+                  Morocco View
+                </span>
+                <span style={{ 
+                  fontSize: '0.85rem', 
+                  fontWeight: 700, 
+                  letterSpacing: '3px', 
+                  color: 'var(--color-primary)',
+                  textTransform: 'uppercase'
+                }}>
+                  Travel
+                </span>
               </div>
             </Link>
             <p className="footer-about-text">

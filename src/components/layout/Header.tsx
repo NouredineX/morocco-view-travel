@@ -71,17 +71,40 @@ export default function Header() {
           className="navbar-logo" 
           onClick={closeMobileMenu}
           id="logo-link"
-          style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}
         >
-          <div style={{ position: 'relative', width: '90px', height: '90px' }}>
+          <div className="logo-img-wrapper" style={{ position: 'relative', width: '65px', height: '65px', flexShrink: 0 }}>
             <Image 
               src="/images/logo.png" 
               alt="Morocco View Travel Logo" 
               fill
-              sizes="90px"
+              sizes="65px"
               style={{ objectFit: 'contain' }}
               priority
             />
+          </div>
+          <div className="logo-text-brand" style={{ display: 'flex', flexDirection: 'column', lineHeight: '1.15' }}>
+            <span style={{ 
+              fontFamily: 'var(--font-heading)', 
+              fontWeight: 800, 
+              fontSize: '1.25rem', 
+              letterSpacing: '0.5px',
+              background: 'linear-gradient(135deg, #E6B800 0%, #FFF099 50%, #D4A017 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              textTransform: 'uppercase'
+            }}>
+              Morocco View
+            </span>
+            <span style={{ 
+              fontSize: '0.75rem', 
+              fontWeight: 700, 
+              letterSpacing: '2.5px', 
+              color: 'var(--color-primary)',
+              textTransform: 'uppercase'
+            }}>
+              Travel
+            </span>
           </div>
         </Link>
 
