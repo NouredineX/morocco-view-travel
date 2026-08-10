@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { locales, Locale } from '@/utils/i18n';
 import { useTranslation } from '@/utils/i18n-client';
@@ -12,6 +13,7 @@ export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +28,19 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Initialize theme from HTML attribute on mount
+  useEffect(() => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    setTheme(currentTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -50,14 +65,24 @@ export default function Header() {
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-header">
-      <div className="container">
+      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
         <Link 
           href={`/${locale}`} 
           className="navbar-logo" 
           onClick={closeMobileMenu}
           id="logo-link"
-          style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}
         >
+          <div style={{ position: 'relative', width: '42px', height: '42px' }}>
+            <Image 
+              src="/images/logo.png" 
+              alt="Morocco View Travel Logo" 
+              fill
+              sizes="42px"
+              style={{ objectFit: 'contain' }}
+              priority
+            />
+          </div>
           <span className="logo-text">
             <span className="logo-part-1">Morocco View</span>
             <span className="logo-part-2">Travel</span>
@@ -78,7 +103,30 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="navbar-actions" id="header-actions">
+        <div className="navbar-actions" id="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          {/* Theme Toggle Button */}
+          <button 
+            onClick={toggleTheme} 
+            className="theme-toggle-btn" 
+            aria-label="Toggle theme"
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--color-primary)',
+              cursor: 'pointer',
+              fontSize: '1.25rem',
+              padding: '0.4rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'transform var(--transition-base)',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.15) rotate(15deg)'}
+            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1) rotate(0deg)'}
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+
           <LanguageSwitcher />
           
           <Link 

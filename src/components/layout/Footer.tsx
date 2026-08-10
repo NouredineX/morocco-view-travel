@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslation } from '@/utils/i18n-client';
 
 export default function Footer() {
@@ -14,10 +15,24 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Column 1: About */}
           <div className="footer-col" id="footer-col-about">
-            <Link href={`/${locale}`} className="footer-logo" id="footer-logo">
-              <span className="logo-text-wrapper">
-                <span className="logo-main">Morocco View</span>
-                <span className="logo-sub">Travel</span>
+            <Link 
+              href={`/${locale}`} 
+              className="footer-logo" 
+              id="footer-logo"
+              style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '1.5rem' }}
+            >
+              <div style={{ position: 'relative', width: '38px', height: '38px' }}>
+                <Image 
+                  src="/images/logo.png" 
+                  alt="Morocco View Travel Logo" 
+                  fill
+                  sizes="38px"
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
+              <span className="logo-text">
+                <span className="logo-part-1">Morocco View</span>
+                <span className="logo-part-2">Travel</span>
               </span>
             </Link>
             <p className="footer-about-text">

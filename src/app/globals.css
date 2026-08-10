@@ -6,49 +6,49 @@
 /* --- CSS Variables (Design Tokens) --- */
 :root {
   /* Colors */
-  --color-primary: #C8A96E;
-  --color-primary-light: #DABE8A;
-  --color-primary-dark: #A8894E;
-  --color-secondary: #1B5E4B;
-  --color-secondary-light: #247A63;
-  --color-secondary-dark: #0E3F32;
+  --color-primary: #C5A86E;
+  --color-primary-light: #DDC597;
+  --color-primary-dark: #A38346;
+  --color-secondary: #0F1E36;
+  --color-secondary-light: #1E3456;
+  --color-secondary-dark: #070F1C;
   --color-accent: #E8734A;
   --color-accent-light: #F09070;
   --color-accent-dark: #C55A33;
 
   /* Backgrounds */
-  --bg-dark: #0A0F1A;
-  --bg-dark-2: #101726;
-  --bg-dark-3: #161E30;
-  --bg-card: rgba(255, 255, 255, 0.04);
-  --bg-card-hover: rgba(255, 255, 255, 0.08);
-  --bg-glass: rgba(255, 255, 255, 0.06);
-  --bg-glass-strong: rgba(255, 255, 255, 0.10);
-  --bg-navbar-scrolled: rgba(10, 15, 26, 0.92);
-  --bg-mobile-nav: rgba(10, 15, 26, 0.97);
+  --bg-dark: #080C14;
+  --bg-dark-2: #0D121F;
+  --bg-dark-3: #12192A;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --bg-glass: rgba(255, 255, 255, 0.05);
+  --bg-glass-strong: rgba(255, 255, 255, 0.09);
+  --bg-navbar-scrolled: rgba(8, 12, 20, 0.92);
+  --bg-mobile-nav: rgba(8, 12, 20, 0.97);
 
   /* Text */
   --text-primary: #F5F0EB;
-  --text-secondary: #A0977D;
-  --text-muted: #6B6455;
-  --text-dark: #1A1A2E;
+  --text-secondary: #C0B7A3;
+  --text-muted: #7E7869;
+  --text-dark: #0F1E36;
 
   /* Borders */
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --border-glass-strong: rgba(255, 255, 255, 0.15);
-  --border-primary: rgba(200, 169, 110, 0.3);
+  --border-glass: rgba(255, 255, 255, 0.07);
+  --border-glass-strong: rgba(255, 255, 255, 0.12);
+  --border-primary: rgba(197, 168, 110, 0.25);
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.35);
-  --shadow-glow: 0 0 30px rgba(200, 169, 110, 0.15);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 30px rgba(197, 168, 110, 0.12);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
 
   /* Typography */
-  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-accent: 'Kaushan Script', cursive;
+  --font-heading: var(--font-cinzel), serif;
+  --font-body: var(--font-outfit), sans-serif;
+  --font-accent: var(--font-kaushan), cursive;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -91,38 +91,38 @@
 /* --- Theme Mode Overrides --- */
 [data-theme="light"] {
   /* Colors */
-  --color-primary: #A2824D;
-  --color-primary-light: #BCA06B;
-  --color-primary-dark: #816534;
-  --color-secondary: #134B3A;
+  --color-primary: #9C7E47;
+  --color-primary-light: #BCA36E;
+  --color-primary-dark: #7A6031;
+  --color-secondary: #0F1E36;
 
   /* Backgrounds */
-  --bg-dark: #F7F5EE;
-  --bg-dark-2: #EFECE0;
-  --bg-dark-3: #E7E3D2;
-  --bg-card: rgba(0, 0, 0, 0.03);
-  --bg-card-hover: rgba(0, 0, 0, 0.06);
-  --bg-glass: rgba(255, 255, 255, 0.7);
-  --bg-glass-strong: rgba(255, 255, 255, 0.85);
-  --bg-navbar-scrolled: rgba(239, 236, 224, 0.92);
-  --bg-mobile-nav: rgba(239, 236, 224, 0.97);
+  --bg-dark: #FAF8F2;
+  --bg-dark-2: #F2EDE2;
+  --bg-dark-3: #EAE3D2;
+  --bg-card: rgba(0, 0, 0, 0.02);
+  --bg-card-hover: rgba(0, 0, 0, 0.05);
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  --bg-glass-strong: rgba(255, 255, 255, 0.90);
+  --bg-navbar-scrolled: rgba(242, 237, 226, 0.92);
+  --bg-mobile-nav: rgba(242, 237, 226, 0.97);
 
   /* Text */
-  --text-primary: #1C1C1A;
-  --text-secondary: #5D5444;
-  --text-muted: #8E8472;
+  --text-primary: #0F1622;
+  --text-secondary: #5C626E;
+  --text-muted: #8E95A2;
 
   /* Borders */
-  --border-glass: rgba(0, 0, 0, 0.08);
-  --border-glass-strong: rgba(0, 0, 0, 0.15);
-  --border-primary: rgba(162, 130, 77, 0.3);
+  --border-glass: rgba(15, 30, 54, 0.06);
+  --border-glass-strong: rgba(15, 30, 54, 0.12);
+  --border-primary: rgba(156, 126, 71, 0.25);
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
-  --shadow-glow: 0 0 30px rgba(162, 130, 77, 0.06);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 8px rgba(15, 30, 54, 0.04);
+  --shadow-md: 0 4px 20px rgba(15, 30, 54, 0.06);
+  --shadow-lg: 0 8px 40px rgba(15, 30, 54, 0.10);
+  --shadow-glow: 0 0 30px rgba(156, 126, 71, 0.05);
+  --shadow-card: 0 8px 32px rgba(15, 30, 54, 0.03);
 }
 
 /* --- Leaflet popup styling alignment for both themes --- */
