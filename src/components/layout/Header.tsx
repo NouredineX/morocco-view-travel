@@ -71,22 +71,18 @@ export default function Header() {
           className="navbar-logo" 
           onClick={closeMobileMenu}
           id="logo-link"
-          style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}
+          style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
         >
-          <div style={{ position: 'relative', width: '52px', height: '52px' }}>
+          <div style={{ position: 'relative', width: '70px', height: '70px' }}>
             <Image 
               src="/images/logo.png" 
               alt="Morocco View Travel Logo" 
               fill
-              sizes="52px"
+              sizes="70px"
               style={{ objectFit: 'contain' }}
               priority
             />
           </div>
-          <span className="logo-text">
-            <span className="logo-part-1">Morocco View</span>
-            <span className="logo-part-2">Travel</span>
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

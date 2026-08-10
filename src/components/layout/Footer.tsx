@@ -19,21 +19,17 @@ export default function Footer() {
               href={`/${locale}`} 
               className="footer-logo" 
               id="footer-logo"
-              style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '1.5rem' }}
+              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', marginBottom: '1.5rem' }}
             >
-              <div style={{ position: 'relative', width: '38px', height: '38px' }}>
+              <div style={{ position: 'relative', width: '75px', height: '75px' }}>
                 <Image 
                   src="/images/logo.png" 
                   alt="Morocco View Travel Logo" 
                   fill
-                  sizes="38px"
+                  sizes="75px"
                   style={{ objectFit: 'contain' }}
                 />
               </div>
-              <span className="logo-text">
-                <span className="logo-part-1">Morocco View</span>
-                <span className="logo-part-2">Travel</span>
-              </span>
             </Link>
             <p className="footer-about-text">
               {t('footer.aboutText', 'Morocco View Travel is your trusted partner for authentic Moroccan travel experiences. Based in Rissani, Merzouga, we offer premium tours and private transportation across the kingdom.')}
