@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className="container container-narrow" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>{t('about.storyTitle', 'Our Story')}</span>
-            <h2>Local Expert Morocco Travel Agency</h2>
+            <h2>{t('about.storySubtitle', 'Local Expert Morocco Travel Agency')}</h2>
           </div>
           <div style={{ fontSize: '1.05rem', lineHeight: '1.9', color: 'var(--text-secondary)' }} id="agency-story-content">
             <p style={{ marginBottom: '1.5rem' }}>{t('about.story1', 'Morocco View Travel is a premium travel company based in Rissani, Merzouga, specializing in authentic Moroccan experiences. With years of expertise, we craft unforgettable journeys that blend adventure, culture, and comfort.')}</p>
@@ -68,8 +68,8 @@ export default function AboutPage() {
         <div className="container">
           <div className="section-header" style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>{t('about.teamSubtitle', 'Local Experts')}</span>
-            <h2>Our Team</h2>
-            <p>The passionate travelers and guides behind Morocco View Travel.</p>
+            <h2>{t('about.teamTitle', 'Our Team')}</h2>
+            <p>{t('about.teamDesc', 'The passionate travelers and guides behind Morocco View Travel.')}</p>
           </div>
 
           <div className="grid-3" id="team-grid">
@@ -86,9 +86,9 @@ export default function AboutPage() {
               </div>
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed Boumeshoul</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Founder & Managing Director</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>{t('about.roles.owner', 'Founder & Managing Director')}</p>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
-                  Mohamed grew up in Merzouga and has spent over 15 years guiding international travelers through the Sahara desert.
+                  {t('about.bios.owner', 'Mohamed grew up in Merzouga and has spent over 15 years guiding international travelers through the Sahara desert.')}
                 </p>
               </div>
             </div>
@@ -106,9 +106,9 @@ export default function AboutPage() {
               </div>
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed Ohso</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Professional Driver & Desert Guide</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>{t('about.roles.driver', 'Professional Driver & Desert Guide')}</p>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
-                  An expert navigator of the Atlas Mountains and Sahara desert tracks, ensuring your safety and comfort at every turn.
+                  {t('about.bios.driver', 'An expert navigator of the Atlas Mountains and Sahara desert tracks, ensuring your safety and comfort at every turn.')}
                 </p>
               </div>
             </div>
@@ -126,9 +126,9 @@ export default function AboutPage() {
               </div>
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Noureddine</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Customer Relations & Designer</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>{t('about.roles.designer', 'Customer Relations & Designer')}</p>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
-                  Noureddine handles customer inquiries and itineraries, crafting tailored experiences for groups and families.
+                  {t('about.bios.designer', 'Noureddine handles customer inquiries and itineraries, crafting tailored experiences for groups and families.')}
                 </p>
               </div>
             </div>
@@ -140,13 +140,13 @@ export default function AboutPage() {
       <section className="section" id="about-tripadvisor-section" style={{ textAlign: 'center', background: 'var(--bg-dark-2)', borderTop: '1px solid var(--border-glass)' }}>
         <div className="container">
           <div className="glass-card" style={{ padding: '3rem', maxWidth: '600px', margin: '0 auto' }}>
-            <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>Morocco View Travel TripAdvisor Rating</h3>
+            <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>{t('about.tripAdvisorTitle', 'Morocco View Travel TripAdvisor Rating')}</h3>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
               <span style={{ fontSize: '2.5rem', color: '#00AF87' }}>⬤⬤⬤⬤⬤</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>5.0</span>
             </div>
             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-              Based on verified traveler reviews from around the globe. Proud to deliver exceptional service and unforgettable desert adventures.
+              {t('about.tripAdvisorDesc', 'Based on verified traveler reviews from around the globe. Proud to deliver exceptional service and unforgettable desert adventures.')}
             </p>
           </div>
         </div>

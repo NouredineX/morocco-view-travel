@@ -35,13 +35,13 @@ export default function TestimonialsPage() {
 
           {/* TripAdvisor Card */}
           <div className="glass-card" style={{ padding: '3.5rem', textAlign: 'center', marginBottom: '3.5rem', border: '1px solid var(--border-glass)' }}>
-            <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>TripAdvisor Rating & Awards</h3>
+            <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>{t('testimonials.awardsTitle', 'TripAdvisor Rating & Awards')}</h3>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
               <span style={{ fontSize: '2.5rem', color: '#00AF87' }}>⬤⬤⬤⬤⬤</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>5.0 / 5.0</span>
             </div>
             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-              We are recognized as a premium travel provider on TripAdvisor, with an overall 5.0 rating based on hundreds of verified reviews from international travelers.
+              {t('testimonials.awardsDesc', 'We are recognized as a premium travel provider on TripAdvisor, with an overall 5.0 rating based on hundreds of verified reviews from international travelers.')}
             </p>
             <div style={{ marginTop: '1.5rem' }}>
               <a 
@@ -50,7 +50,7 @@ export default function TestimonialsPage() {
                 rel="noopener noreferrer" 
                 className="btn btn-secondary btn-sm"
               >
-                View on TripAdvisor
+                {t('testimonials.viewOnTripAdvisor', 'View on TripAdvisor')}
               </a>
             </div>
           </div>

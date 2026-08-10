@@ -82,12 +82,46 @@
     "story3": "Notre mission est simple : vous montrer le vrai Maroc. Pas seulement les sites touristiques, mais les trésors cachés, les histoires locales et l'hospitalité chaleureuse.",
     "valuesTitle": "Pourquoi Nous Choisir",
     "values": {
-      "agency": { "title": "Meilleure Agence", "desc": "Service primé avec des centaines d'avis 5 étoiles sur TripAdvisor" },
-      "safety": { "title": "Sécurité Prioritaire", "desc": "Chauffeurs professionnels, véhicules bien entretenus et support 24/7" },
-      "pricing": { "title": "Meilleurs Prix", "desc": "Prix compétitifs sans frais cachés — tout inclus" },
-      "custom": { "title": "Voyages Sur Mesure", "desc": "Chaque circuit adapté à vos préférences, rythme et intérêts" },
-      "booking": { "title": "Réservation Rapide", "desc": "Réservez instantanément et confirmez sous 24 heures" },
-      "guides": { "title": "Guides Locaux Experts", "desc": "Nés et élevés au Maroc — nos guides connaissent chaque trésor caché" }
+      "agency": {
+        "title": "Meilleure Agence",
+        "desc": "Service primé avec des centaines d'avis 5 étoiles sur TripAdvisor"
+      },
+      "safety": {
+        "title": "Sécurité Prioritaire",
+        "desc": "Chauffeurs professionnels, véhicules bien entretenus et support 24/7"
+      },
+      "pricing": {
+        "title": "Meilleurs Prix",
+        "desc": "Prix compétitifs sans frais cachés — tout inclus"
+      },
+      "custom": {
+        "title": "Voyages Sur Mesure",
+        "desc": "Chaque circuit adapté à vos préférences, rythme et intérêts"
+      },
+      "booking": {
+        "title": "Réservation Rapide",
+        "desc": "Réservez instantanément et confirmez sous 24 heures"
+      },
+      "guides": {
+        "title": "Guides Locaux Experts",
+        "desc": "Nés et élevés au Maroc — nos guides connaissent chaque trésor caché"
+      }
+    },
+    "storySubtitle": "Agence de Voyage Experte Locale au Maroc",
+    "tripAdvisorTitle": "Note TripAdvisor de Morocco View Travel",
+    "tripAdvisorDesc": "Basé sur des avis de voyageurs vérifiés du monde entier. Fiers de fournir un service exceptionnel et des aventures inoubliables dans le désert.",
+    "teamTitle": "Notre Équipe",
+    "teamSubtitle": "Experts Locaux",
+    "teamDesc": "Les passionnés et guides derrière Morocco View Travel.",
+    "roles": {
+      "owner": "Fondateur & Directeur Général",
+      "driver": "Chauffeur Professionnel & Guide du Désert",
+      "designer": "Relations Clients & Concepteur de Voyages"
+    },
+    "bios": {
+      "owner": "Mohamed a grandi à Merzouga et a passé plus de 15 ans à guider les voyageurs internationaux à travers le désert du Sahara.",
+      "driver": "Expert en navigation dans les montagnes de l'Atlas et les pistes du Sahara, garantissant votre sécurité et confort à chaque étape.",
+      "designer": "Noureddine gère les demandes des clients et les itinéraires, créant des expériences sur mesure pour groupes et familles."
     }
   },
   "blog": {
@@ -120,7 +154,10 @@
     "phoneLabel": "Appelez-nous",
     "emailLabel": "Écrivez-nous",
     "hours": "Lun - Sam : 8h - 20h",
-    "mapTitle": "Nous Trouver"
+    "mapTitle": "Nous Trouver",
+    "hoursLabel": "Heures d'Ouverture",
+    "hqTitle": "Notre Siège Social à Merzouga",
+    "hqDesc": "Visitez-nous ou contactez-nous pour coordonner vos aventures sur mesure au Maroc au départ de Marrakech, Casablanca, Fès ou Tanger."
   },
   "footer": {
     "aboutText": "Travelling Through Morocco est votre partenaire de confiance pour des expériences de voyage authentiques au Maroc. Basée à Meknès, nous offrons des circuits premium à travers le royaume.",
@@ -136,5 +173,10 @@
     "error": "Quelque chose s'est mal passé",
     "goHome": "Retour à l'Accueil",
     "notFound": "Page Non Trouvée"
+  },
+  "testimonials": {
+    "awardsTitle": "Note et Récompenses TripAdvisor",
+    "awardsDesc": "Nous sommes reconnus comme un prestataire de voyage haut de gamme sur TripAdvisor, avec une note globale de 5,0 basée sur des centaines d'avis vérifiés.",
+    "viewOnTripAdvisor": "Voir sur TripAdvisor"
   }
 }

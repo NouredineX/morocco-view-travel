@@ -82,12 +82,46 @@
     "story3": "我们的使命非常明确：向您展示真实的摩洛哥。这不仅包括经典的旅游景点，还有那些隐藏的瑰宝、当地人的故事，以及让这个国家真正与众不同的热情好客。",
     "valuesTitle": "为什么选择我们",
     "values": {
-      "agency": { "title": "顶级旅行社", "desc": "TripAdvisor 上拥有数百条五星好评的备受赞誉的服务" },
-      "safety": { "title": "安全第一", "desc": "专业的司机、维护良好的车辆以及 24/7 全天候支持" },
-      "pricing": { "title": "最合理的旅游定价", "desc": "价格极具竞争力且无任何隐藏费用 — 一切全包" },
-      "custom": { "title": "定制化旅行", "desc": "每次旅行都根据您的偏好、步调和兴趣量身定制" },
-      "booking": { "title": "快速预订", "desc": "立即预订，24 小时内获得确认" },
-      "guides": { "title": "当地资深导游", "desc": "土生土长的摩洛哥人 — 我们的导游深知每一处隐藏的宝藏" }
+      "agency": {
+        "title": "顶级旅行社",
+        "desc": "TripAdvisor 上拥有数百条五星好评的备受赞誉的服务"
+      },
+      "safety": {
+        "title": "安全第一",
+        "desc": "专业的司机、维护良好的车辆以及 24/7 全天候支持"
+      },
+      "pricing": {
+        "title": "最合理的旅游定价",
+        "desc": "价格极具竞争力且无任何隐藏费用 — 一切全包"
+      },
+      "custom": {
+        "title": "定制化旅行",
+        "desc": "每次旅行都根据您的偏好、步调和兴趣量身定制"
+      },
+      "booking": {
+        "title": "快速预订",
+        "desc": "立即预订，24 小时内获得确认"
+      },
+      "guides": {
+        "title": "当地资深导游",
+        "desc": "土生土长的摩洛哥人 — 我们的导游深知每一处隐藏的宝藏"
+      }
+    },
+    "storySubtitle": "摩洛哥本地专家旅行社",
+    "tripAdvisorTitle": "Morocco View Travel 猫途鹰 (TripAdvisor) 评分",
+    "tripAdvisorDesc": "基于来自世界各地真实旅行者的验证评价。我们为能够提供卓越的服务和难忘的沙漠冒险而感到自豪。",
+    "teamTitle": "我们的团队",
+    "teamSubtitle": "本地专家",
+    "teamDesc": "Morocco View Travel 背后充满热情的导游与服务团队。",
+    "roles": {
+      "owner": "创始人兼总经理",
+      "driver": "专业司机兼沙漠导游",
+      "designer": "客户关系与线路设计师"
+    },
+    "bios": {
+      "owner": "Mohamed 在梅尔祖卡长大，拥有超过15年带领国际游客游览撒哈拉沙漠的经验。",
+      "driver": "阿特拉斯山脉和撒哈拉沙漠路线的驾驶专家，确保您旅程每一步的安全与舒适。",
+      "designer": "Noureddine 负责客户咨询与行程定制，为团体和家庭打造个性化的摩洛哥体验。"
     }
   },
   "blog": {
@@ -120,7 +154,10 @@
     "phoneLabel": "致电我们",
     "emailLabel": "给我们发送邮件",
     "hours": "周一至周六: 早上 8点 - 晚上 8点",
-    "mapTitle": "找到我们"
+    "mapTitle": "找到我们",
+    "hoursLabel": "营业时间",
+    "hqTitle": "我们位于梅尔祖卡的总部门店",
+    "hqDesc": "欢迎联系我们，从马拉喀什、卡萨布兰卡、非斯或丹吉尔出发，为您量身定制专属的摩洛哥旅程。"
   },
   "footer": {
     "aboutText": "Travelling Through Morocco 是您进行正宗摩洛哥旅行体验的信赖伙伴。总部位于梅克内斯，我们在全国范围内提供优质旅游线路。",
@@ -136,5 +173,10 @@
     "error": "发生了一些错误",
     "goHome": "返回首页",
     "notFound": "页面未找到"
+  },
+  "testimonials": {
+    "awardsTitle": "猫途鹰 (TripAdvisor) 评分与荣誉",
+    "awardsDesc": "我们被认可为 TripAdvisor 上的顶级旅行服务商，拥有基于数以百计全球真实旅行者评价的 5.0 满分好评。",
+    "viewOnTripAdvisor": "在 TripAdvisor 查看评价"
   }
 }

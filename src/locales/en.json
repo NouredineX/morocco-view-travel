@@ -82,12 +82,46 @@
     "story3": "Our mission is simple: to show you the real Morocco. Not just the tourist spots, but the hidden gems, the local stories, and the warm hospitality that makes this country truly special.",
     "valuesTitle": "Why Choose Us",
     "values": {
-      "agency": { "title": "Best Travel Agency", "desc": "Award-winning service with hundreds of 5-star reviews on TripAdvisor" },
-      "safety": { "title": "Safety is Priority", "desc": "Professional drivers, well-maintained vehicles, and 24/7 support" },
-      "pricing": { "title": "Best Tour Pricing", "desc": "Competitive prices with no hidden fees — everything included" },
-      "custom": { "title": "Customized Trips", "desc": "Every tour tailored to your preferences, pace, and interests" },
-      "booking": { "title": "Fast Booking", "desc": "Book instantly and get confirmed within 24 hours" },
-      "guides": { "title": "Local Expert Guides", "desc": "Born and raised in Morocco — our guides know every hidden gem" }
+      "agency": {
+        "title": "Best Travel Agency",
+        "desc": "Award-winning service with hundreds of 5-star reviews on TripAdvisor"
+      },
+      "safety": {
+        "title": "Safety is Priority",
+        "desc": "Professional drivers, well-maintained vehicles, and 24/7 support"
+      },
+      "pricing": {
+        "title": "Best Tour Pricing",
+        "desc": "Competitive prices with no hidden fees — everything included"
+      },
+      "custom": {
+        "title": "Customized Trips",
+        "desc": "Every tour tailored to your preferences, pace, and interests"
+      },
+      "booking": {
+        "title": "Fast Booking",
+        "desc": "Book instantly and get confirmed within 24 hours"
+      },
+      "guides": {
+        "title": "Local Expert Guides",
+        "desc": "Born and raised in Morocco — our guides know every hidden gem"
+      }
+    },
+    "storySubtitle": "Local Expert Morocco Travel Agency",
+    "tripAdvisorTitle": "Morocco View Travel TripAdvisor Rating",
+    "tripAdvisorDesc": "Based on verified traveler reviews from around the globe. Proud to deliver exceptional service and unforgettable desert adventures.",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "Local Experts",
+    "teamDesc": "The passionate travelers and guides behind Morocco View Travel.",
+    "roles": {
+      "owner": "Founder & Managing Director",
+      "driver": "Professional Driver & Desert Guide",
+      "designer": "Customer Relations & Designer"
+    },
+    "bios": {
+      "owner": "Mohamed grew up in Merzouga and has spent over 15 years guiding international travelers through the Sahara desert.",
+      "driver": "An expert navigator of the Atlas Mountains and Sahara desert tracks, ensuring your safety and comfort at every turn.",
+      "designer": "Noureddine handles customer inquiries and itineraries, crafting tailored experiences for groups and families."
     }
   },
   "blog": {
@@ -120,7 +154,10 @@
     "phoneLabel": "Call Us",
     "emailLabel": "Email Us",
     "hours": "Mon - Sat: 8am - 8pm",
-    "mapTitle": "Find Us"
+    "mapTitle": "Find Us",
+    "hoursLabel": "Working Hours",
+    "hqTitle": "Our Headquarters in Merzouga",
+    "hqDesc": "Visit us or reach out to coordinate your custom Morocco adventures starting from Marrakech, Casablanca, Fes, or Tangier."
   },
   "footer": {
     "aboutText": "Travelling Through Morocco is your trusted partner for authentic Moroccan travel experiences. Based in Meknes, we offer premium tours across the kingdom.",
@@ -136,5 +173,10 @@
     "error": "Something went wrong",
     "goHome": "Go Home",
     "notFound": "Page Not Found"
+  },
+  "testimonials": {
+    "awardsTitle": "TripAdvisor Rating & Awards",
+    "awardsDesc": "We are recognized as a premium travel provider on TripAdvisor, with an overall 5.0 rating based on hundreds of verified reviews from international travelers.",
+    "viewOnTripAdvisor": "View on TripAdvisor"
   }
 }

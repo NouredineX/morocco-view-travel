@@ -78,7 +78,7 @@ export default function ContactPage() {
               {/* Hours Card */}
               <div className="glass-card contact-info-card" id="contact-card-hours" style={{ padding: '2rem' }}>
                 <div className="icon" style={{ fontSize: '2rem', marginBottom: '1rem' }}>🕒</div>
-                <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>Working Hours</h4>
+                <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{t('contact.hoursLabel', 'Working Hours')}</h4>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>{t('contact.hours', 'Mon - Sat: 8am - 8pm')}</p>
               </div>
             </div>
@@ -91,21 +91,21 @@ export default function ContactPage() {
         <div className="container">
           <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>{t('contact.mapTitle', 'Find Us')}</span>
-            <h2>Our Headquarters in Merzouga</h2>
-            <p>Visit us or reach out to coordinate your custom Morocco adventures starting from Marrakech, Casablanca, Fes, or Tangier.</p>
+            <h2>{t('contact.hqTitle', 'Our Headquarters in Merzouga')}</h2>
+            <p>{t('contact.hqDesc', 'Visit us or reach out to coordinate your custom Morocco adventures starting from Marrakech, Casablanca, Fes, or Tangier.')}</p>
           </div>
 
           <div className="google-map" id="google-map-iframe-container" style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', border: '1px solid var(--border-glass)' }}>
             <iframe 
               title="Google Maps Headquarters Merzouga"
-              src="https://maps.google.com/maps?q=31.2912,-4.2728&t=k&z=14&ie=UTF8&iwloc=&output=embed" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13700.00!2d-4.2728!3d31.2912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDE3JzI4LjMiTiA0wrAxNicyMi4xIlc!5e0!3m2!1sen!2sma!4v1600000000000!5m2!1sen!2sma" 
               width="100%" 
               height="450" 
-              allowFullScreen={true} 
-              loading="lazy"
-              style={{ border: 0 }}
-              id="merzouga-google-map-iframe"
-            />
+              style={{ border: 0 }} 
+              allowFullScreen={false} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>

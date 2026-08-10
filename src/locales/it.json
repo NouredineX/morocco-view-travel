@@ -83,12 +83,46 @@
     "story3": "La nostra missione è semplice: mostrarti il vero Marocco. Non solo i luoghi turistici, ma le gemme nascoste, le storie locali e la calda ospitalità che rende questo paese davvero speciale.",
     "valuesTitle": "Perché Sceglierci",
     "values": {
-      "agency": { "title": "Migliore Agenzia di Viaggi", "desc": "Servizio pluripremiato con centinaia di recensioni a 5 stelle su TripAdvisor" },
-      "safety": { "title": "La Sicurezza è Priorità", "desc": "Autisti professionisti, veicoli ben tenuti e supporto 24/7" },
-      "pricing": { "title": "Migliori Prezzi dei Tour", "desc": "Prezzi competitivi senza costi nascosti — tutto incluso" },
-      "custom": { "title": "Viaggi Personalizzati", "desc": "Ogni tour è personalizzato in base alle deine preferenze, al tuo ritmo e ai tuoi interessi" },
-      "booking": { "title": "Prenotazione Rapida", "desc": "Prenota istantaneamente e ricevi la conferma entro 24 ore" },
-      "guides": { "title": "Guide Locali Esperte", "desc": "Nati e cresciuti in Marocco — le nostre guide conoscono ogni gemma nascosta" }
+      "agency": {
+        "title": "Migliore Agenzia di Viaggi",
+        "desc": "Servizio pluripremiato con centinaia di recensioni a 5 stelle su TripAdvisor"
+      },
+      "safety": {
+        "title": "La Sicurezza è Priorità",
+        "desc": "Autisti professionisti, veicoli ben tenuti e supporto 24/7"
+      },
+      "pricing": {
+        "title": "Migliori Prezzi dei Tour",
+        "desc": "Prezzi competitivi senza costi nascosti — tutto incluso"
+      },
+      "custom": {
+        "title": "Viaggi Personalizzati",
+        "desc": "Ogni tour è personalizzato in base alle deine preferenze, al tuo ritmo e ai tuoi interessi"
+      },
+      "booking": {
+        "title": "Prenotazione Rapida",
+        "desc": "Prenota istantaneamente e ricevi la conferma entro 24 ore"
+      },
+      "guides": {
+        "title": "Guide Locali Esperte",
+        "desc": "Nati e cresciuti in Marocco — le nostre guide conoscono ogni gemma nascosta"
+      }
+    },
+    "storySubtitle": "Agenzia di Viaggi Esperta Locale in Marocco",
+    "tripAdvisorTitle": "Valutazione TripAdvisor di Morocco View Travel",
+    "tripAdvisorDesc": "Basato su recensioni verificate di viaggiatori da tutto il mondo. Orgogliosi di offrire un servizio eccezionale e avventure indimenticabili nel deserto.",
+    "teamTitle": "Il Nostro Team",
+    "teamSubtitle": "Esperti Locali",
+    "teamDesc": "I viaggiatori e le guide appassionate dietro Morocco View Travel.",
+    "roles": {
+      "owner": "Fondatore e Direttore Generale",
+      "driver": "Autista Professionista e Guida del Deserto",
+      "designer": "Relazioni con i Clienti e Designer"
+    },
+    "bios": {
+      "owner": "Mohamed è cresciuto a Merzouga e ha trascorso oltre 15 anni a guidare viaggiatori internazionali attraverso il deserto del Sahara.",
+      "driver": "Esperto navigatore delle montagne dell'Atlas e delle piste del Sahara, garantendo la tua sicurezza e comfort ad ogni curva.",
+      "designer": "Noureddine gestisce le richieste dei clienti e gli itinerari, creando esperienze su misura per gruppi e famiglie."
     }
   },
   "blog": {
@@ -121,7 +155,10 @@
     "phoneLabel": "Chiamaci",
     "emailLabel": "Scrivici",
     "hours": "Lun - Sab: 8:00 - 20:00",
-    "mapTitle": "Trovaci"
+    "mapTitle": "Trovaci",
+    "hoursLabel": "Orari di Lavoro",
+    "hqTitle": "La Nostra Sede a Merzouga",
+    "hqDesc": "Visitaci o contattaci per coordinare le tue avventure su misura in Marocco con partenza da Marrakech, Casablanca, Fes o Tangeri."
   },
   "footer": {
     "aboutText": "Morocco View Travel è il tuo partner di fiducia per autentiche esperienze di viaggio in Marocco. Con sede a Rissani, Merzouga, offriamo tour premium in tutto il regno.",
@@ -137,5 +174,10 @@
     "error": "Qualcosa è andato storto",
     "goHome": "Torna alla Home",
     "notFound": "Pagina Non Trovata"
+  },
+  "testimonials": {
+    "awardsTitle": "Valutazione e Premi TripAdvisor",
+    "awardsDesc": "Siamo riconosciuti come fornitori di viaggi premium su TripAdvisor, con una valutazione complessiva di 5.0 basata su centinaia di recensioni verificate.",
+    "viewOnTripAdvisor": "Vedi su TripAdvisor"
   }
 }

@@ -82,12 +82,46 @@
     "story3": "Nuestra misión es simple: mostrarte el verdadero Marruecos. No solo los sitios turísticos, sino las joyas ocultas, las historias locales y la cálida hospitalidad.",
     "valuesTitle": "Por Qué Elegirnos",
     "values": {
-      "agency": { "title": "Mejor Agencia", "desc": "Servicio premiado con cientos de reseñas de 5 estrellas en TripAdvisor" },
-      "safety": { "title": "Seguridad Prioritaria", "desc": "Conductores profesionales, vehículos bien mantenidos y soporte 24/7" },
-      "pricing": { "title": "Mejores Precios", "desc": "Precios competitivos sin cargos ocultos — todo incluido" },
-      "custom": { "title": "Viajes Personalizados", "desc": "Cada tour adaptado a tus preferencias, ritmo e intereses" },
-      "booking": { "title": "Reserva Rápida", "desc": "Reserva al instante y confirma en 24 horas" },
-      "guides": { "title": "Guías Locales Expertos", "desc": "Nacidos y criados en Marruecos — nuestros guías conocen cada joya oculta" }
+      "agency": {
+        "title": "Mejor Agencia",
+        "desc": "Servicio premiado con cientos de reseñas de 5 estrellas en TripAdvisor"
+      },
+      "safety": {
+        "title": "Seguridad Prioritaria",
+        "desc": "Conductores profesionales, vehículos bien mantenidos y soporte 24/7"
+      },
+      "pricing": {
+        "title": "Mejores Precios",
+        "desc": "Precios competitivos sin cargos ocultos — todo incluido"
+      },
+      "custom": {
+        "title": "Viajes Personalizados",
+        "desc": "Cada tour adaptado a tus preferencias, ritmo e intereses"
+      },
+      "booking": {
+        "title": "Reserva Rápida",
+        "desc": "Reserva al instante y confirma en 24 horas"
+      },
+      "guides": {
+        "title": "Guías Locales Expertos",
+        "desc": "Nacidos y criados en Marruecos — nuestros guías conocen cada joya oculta"
+      }
+    },
+    "storySubtitle": "Agencia de Viajes Experta Local en Marruecos",
+    "tripAdvisorTitle": "Calificación de TripAdvisor de Morocco View Travel",
+    "tripAdvisorDesc": "Basado en opiniones verificadas de viajeros de todo el mundo. Orgullosos de ofrecer un servicio excepcional y aventuras inolvidables en el desierto.",
+    "teamTitle": "Nuestro Equipo",
+    "teamSubtitle": "Expertos Locales",
+    "teamDesc": "Los apasionados viajeros y guías detrás de Morocco View Travel.",
+    "roles": {
+      "owner": "Fundador y Director Ejecutivo",
+      "driver": "Conductor Profesional y Guía del Desierto",
+      "designer": "Relaciones con Clientes y Diseñador"
+    },
+    "bios": {
+      "owner": "Mohamed creció en Merzouga y ha pasado más de 15 años guiando a viajeros internacionales por el desierto del Sahara.",
+      "driver": "Experto navegador en las montañas del Atlas y pistas del Sahara, garantizando su seguridad y comodidad en todo momento.",
+      "designer": "Noureddine gestiona las consultas de clientes e itinerarios, creando experiencias a medida para familias y grupos."
     }
   },
   "blog": {
@@ -120,7 +154,10 @@
     "phoneLabel": "Llámanos",
     "emailLabel": "Escríbenos",
     "hours": "Lun - Sáb: 8am - 8pm",
-    "mapTitle": "Encuéntranos"
+    "mapTitle": "Encuéntranos",
+    "hoursLabel": "Horario de Atención",
+    "hqTitle": "Nuestra Sede Principal en Merzouga",
+    "hqDesc": "Visítenos o contáctenos para coordinar sus aventuras a medida en Marruecos comenzando desde Marrakech, Casablanca, Fez o Tánger."
   },
   "footer": {
     "aboutText": "Travelling Through Morocco es tu socio de confianza para experiencias de viaje auténticas en Marruecos. Con sede en Meknes, ofrecemos tours premium por todo el reino.",
@@ -136,5 +173,10 @@
     "error": "Algo salió mal",
     "goHome": "Ir al Inicio",
     "notFound": "Página No Encontrada"
+  },
+  "testimonials": {
+    "awardsTitle": "Calificación y Premios en TripAdvisor",
+    "awardsDesc": "Somos reconocidos como un proveedor de viajes de primera calidad en TripAdvisor, con una calificación general de 5.0 basada en cientos de reseñas verificadas.",
+    "viewOnTripAdvisor": "Ver en TripAdvisor"
   }
 }
