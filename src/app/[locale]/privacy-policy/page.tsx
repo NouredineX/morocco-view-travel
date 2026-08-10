@@ -72,18 +72,12 @@ export default function PrivacyPolicyPage() {
 
               <h3 style={{ color: 'var(--text-primary)', marginTop: '1.5rem', marginBottom: '0.75rem' }}>6. Booking Terms & Refund Conditions</h3>
               <p style={{ marginBottom: '0.5rem' }}>The following refund and cancellation policy applies to all bookings made with Morocco View Travel:</p>
-              <ul style={{ paddingLeft: '1.5rem', marginBottom: '1rem' }}>
-                <li><strong>Free Cancellation:</strong> Full refund if cancelled at least <strong>7 days</strong> before the scheduled departure date.</li>
-                <li><strong>Late Cancellation (3–6 days before departure):</strong> 50% refund of the total booking amount.</li>
-                <li><strong>Last-Minute Cancellation (less than 3 days):</strong> No refund applicable. The full deposit is retained.</li>
-                <li><strong>No-Show:</strong> If the traveler does not appear at the agreed pickup point without prior notification, no refund will be issued.</li>
-                <li><strong>Tour Modifications:</strong> Date changes and itinerary adjustments are free of charge if requested at least 48 hours in advance.</li>
-                <li><strong>Force Majeure:</strong> In cases of extreme weather, natural disasters, or government restrictions beyond our control, Morocco View Travel will offer a full reschedule or 100% refund.</li>
+              <ul style={{ paddingLeft: '1.5rem', marginBottom: '1rem', listStyle: 'none' }}>
+                <li style={{ marginBottom: '0.75rem' }}><strong>More than 30 days before departure:</strong> 100% refund of the deposit (minus credit card/transaction fees).</li>
+                <li style={{ marginBottom: '0.75rem' }}><strong>Between 15 and 30 days before departure:</strong> 50% refund of the total booking cost.</li>
+                <li style={{ marginBottom: '0.75rem' }}><strong>Less than 15 days before departure:</strong> No refund is provided.</li>
+                <li style={{ marginBottom: '0.75rem' }}><strong>Custom bookings:</strong> Special activities or custom luxury desert camps are subject to their own cancellation terms. We will notify you of any exceptions during booking.</li>
               </ul>
-              <p style={{ marginBottom: '1rem' }}>
-                All refunds are processed within <strong>5–10 business days</strong> via the original payment method (bank transfer or credit card). 
-                For any disputes or special circumstances, please contact our team directly.
-              </p>
 
               <h3 style={{ color: 'var(--text-primary)', marginTop: '1.5rem', marginBottom: '0.75rem' }}>7. Contacting Our Data Security Officer</h3>
               <p style={{ marginBottom: '1rem' }}>
