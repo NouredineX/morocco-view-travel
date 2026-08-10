@@ -105,7 +105,7 @@ export default function AboutPage() {
                 />
               </div>
               <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed "Ohso"</h3>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed Ohso</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>Professional Driver & Desert Guide</p>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
                   An expert navigator of the Atlas Mountains and Sahara desert tracks, ensuring your safety and comfort at every turn.
