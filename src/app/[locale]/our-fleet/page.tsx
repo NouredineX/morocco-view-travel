@@ -97,60 +97,75 @@ export default function FleetPage() {
   };
 
   return (
-    <div className="section" style={{ paddingTop: '8rem' }}>
-      <div className="container">
-        <div className="section-header">
-          <span className="section-subtitle">{getFleetSubtitle()}</span>
-          <h2>{getFleetTitle()}</h2>
-          <p>{getFleetDesc()}</p>
+    <div id="fleet-page">
+      {/* Banner */}
+      <section className="page-hero" style={{ background: 'linear-gradient(rgba(10, 15, 26, 0.75), rgba(10, 15, 26, 0.9)), url("/images/merzoga.webp") no-repeat center center/cover', paddingTop: '10rem', paddingBottom: '5rem', textAlign: 'center' }}>
+        <div className="page-hero-content">
+          <h1 style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>{getFleetTitle()}</h1>
+          <div className="breadcrumb" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
+            <a href={`/${locale}`} style={{ color: 'inherit' }}>{t('nav.home', 'Home')}</a>
+            <span className="separator">/</span>
+            <span style={{ color: 'var(--color-primary)' }}>{t('nav.fleet', 'Our Fleet')}</span>
+          </div>
         </div>
+      </section>
 
-        <div className="fleet-grid">
-          {vehicles.map((vehicle) => {
-            const { description, features } = getLocalizedData(vehicle);
-            return (
-              <div key={vehicle.id} className="fleet-card" id={`fleet-card-${vehicle.id}`}>
-                <div className="fleet-image-wrapper">
-                  <Image 
-                    src={vehicle.image} 
-                    alt={vehicle.name} 
-                    fill
-                    className="fleet-image"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                    priority
-                  />
-                </div>
-                <div className="fleet-info">
-                  <span className="fleet-type">{vehicle.type}</span>
-                  <h3 className="fleet-name">{vehicle.name}</h3>
-                  <div className="fleet-capacity">
-                    <span>{vehicle.capacity}</span>
-                  </div>
-                  <p className="fleet-description">{description}</p>
-                  
-                  <div className="fleet-features">
-                    {features.map((feature, idx) => (
-                      <span key={idx} className="fleet-feature-item">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
+      {/* Fleet Listing Section */}
+      <section className="section" id="fleet-listing-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>{getFleetSubtitle()}</span>
+            <h2>{getFleetTitle()}</h2>
+            <p>{getFleetDesc()}</p>
+          </div>
 
-                  <button 
-                    onClick={() => handleInquiry(vehicle.name)} 
-                    className="btn btn-primary"
-                    style={{ width: '100%', marginTop: 'auto' }}
-                    id={`btn-inquire-${vehicle.id}`}
-                  >
-                    <span style={{ marginRight: '6px' }}>💬</span>
-                    {getBookVehicleText()}
-                  </button>
+          <div className="fleet-grid">
+            {vehicles.map((vehicle) => {
+              const { description, features } = getLocalizedData(vehicle);
+              return (
+                <div key={vehicle.id} className="fleet-card" id={`fleet-card-${vehicle.id}`}>
+                  <div className="fleet-image-wrapper">
+                    <Image 
+                      src={vehicle.image} 
+                      alt={vehicle.name} 
+                      fill
+                      className="fleet-image"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      priority
+                    />
+                  </div>
+                  <div className="fleet-info">
+                    <span className="fleet-type">{vehicle.type}</span>
+                    <h3 className="fleet-name">{vehicle.name}</h3>
+                    <div className="fleet-capacity">
+                      <span>{vehicle.capacity}</span>
+                    </div>
+                    <p className="fleet-description">{description}</p>
+                    
+                    <div className="fleet-features">
+                      {features.map((feature, idx) => (
+                        <span key={idx} className="fleet-feature-item">
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+
+                    <button 
+                      onClick={() => handleInquiry(vehicle.name)} 
+                      className="btn btn-primary"
+                      style={{ width: '100%', marginTop: 'auto' }}
+                      id={`btn-inquire-${vehicle.id}`}
+                    >
+                      <span style={{ marginRight: '6px' }}>💬</span>
+                      {getBookVehicleText()}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
