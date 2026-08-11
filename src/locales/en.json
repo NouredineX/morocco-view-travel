@@ -6,7 +6,8 @@
     "about": "About",
     "blog": "Blog",
     "contact": "Contact",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "fleet": "Our Fleet"
   },
   "hero": {
     "accent": "Welcome to Morocco",
@@ -71,10 +72,15 @@
     "title": "Explore Morocco's Best Destinations",
     "subtitle": "Amazing Places",
     "desc": "From imperial cities to coastal towns, discover the diverse beauty of Morocco",
-    "tours": "tours available"
+    "tours": "tours available",
+    "marrakech": "Marrakech",
+    "fes": "Fes",
+    "sahara": "Sahara Desert",
+    "chefchaouen": "Chefchaouen",
+    "essaouira": "Essaouira"
   },
   "about": {
-    "title": "About Travelling Through Morocco",
+    "title": "About Morocco View Travel",
     "subtitle": "Your Trusted Partner",
     "storyTitle": "Our Story",
     "story1": "Morocco View Travel is a premium travel company based in Rissani, Merzouga, specializing in authentic Moroccan experiences. With over 5 years of expertise, we craft unforgettable journeys that blend adventure, culture, and comfort.",
@@ -160,7 +166,7 @@
     "hqDesc": "Visit us or reach out to coordinate your custom Morocco adventures starting from Marrakech, Casablanca, Fes, or Tangier."
   },
   "footer": {
-    "aboutText": "Travelling Through Morocco is your trusted partner for authentic Moroccan travel experiences. Based in Meknes, we offer premium tours across the kingdom.",
+    "aboutText": "Morocco View Travel is your trusted partner for authentic Moroccan travel experiences. Based in Rissani, Merzouga, we offer premium tours across the kingdom.",
     "quickLinks": "Quick Links",
     "topDestinations": "Top Destinations",
     "contactInfo": "Contact Info",
@@ -178,5 +184,10 @@
     "awardsTitle": "TripAdvisor Rating & Awards",
     "awardsDesc": "We are recognized as a premium travel provider on TripAdvisor, with an overall 5.0 rating based on hundreds of verified reviews from international travelers.",
     "viewOnTripAdvisor": "View on TripAdvisor"
+  },
+  "tours": {
+    "subtitle": "Morocco Sahara Adventures",
+    "title": "Best Morocco Desert Tours & Excursions",
+    "desc": "Select from our pre-planned curated itineraries or contact us for a customized itinerary designed just for you."
   }
 }

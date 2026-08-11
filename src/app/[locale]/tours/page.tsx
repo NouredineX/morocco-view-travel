@@ -37,9 +37,11 @@ export default function ToursPage() {
       <section className="section" id="tours-grid-section">
         <div className="container">
           <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>Morocco Sahara Adventures</span>
-            <h2>Best Morocco Desert Tours & Excursions</h2>
-            <p>Select from our pre-planned curated itineraries or contact us for a customized itinerary designed just for you.</p>
+            <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>
+              {t('tours.subtitle', 'Morocco Sahara Adventures')}
+            </span>
+            <h2>{t('tours.title', 'Best Morocco Desert Tours & Excursions')}</h2>
+            <p>{t('tours.desc', 'Select from our pre-planned curated itineraries or contact us for a customized itinerary designed just for you.')}</p>
           </div>
 
           {/* Filter Bar */}

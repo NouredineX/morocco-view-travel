@@ -43,12 +43,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const locale = rawLocale as Locale;
   
   const titles = {
-    en: "Morocco View Travel — Premium Desert Tours & Private Travel Agency",
-    fr: "Morocco View Travel — Circuits Premium au Désert & Agence de Voyage Privée",
-    es: "Morocco View Travel — Tours de Desierto Premium y Agencia de Viajes Privada",
-    it: "Morocco View Travel — Tour del Deserto Premium e Agenzia di Viaggi Privata",
-    ja: "Morocco View Travel — プレミアム砂漠ツアー＆プライベート旅行代理店",
-    zh: "Morocco View Travel — 优质沙漠旅游与私人旅行社"
+    en: "Morocco View Travel | Premium Desert Tours & Private Travel Agency",
+    fr: "Morocco View Travel | Circuits Premium au Désert & Agence de Voyage Privée",
+    es: "Morocco View Travel | Tours de Desierto Premium y Agencia de Viajes Privada",
+    it: "Morocco View Travel | Tour del Deserto Premium e Agenzia di Viaggi Privata",
+    ja: "Morocco View Travel | プレミアム砂漠ツアー＆プライベート旅行代理店",
+    zh: "Morocco View Travel | 优质沙漠旅游与私人旅行社"
   };
 
   const descriptions = {

@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = getTranslated(post, 'title', locale);
   const excerpt = getTranslated(post, 'excerpt', locale);
-  const seoTitle = `${title} — Morocco View Travel`;
+  const seoTitle = `${title} | Morocco View Travel`;
 
   return {
     title: seoTitle,

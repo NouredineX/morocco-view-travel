@@ -76,11 +76,11 @@ export default function Footer() {
           <div className="footer-col" id="footer-col-destinations">
             <h4 className="footer-title">{t('footer.topDestinations', 'Top Destinations')}</h4>
             <ul className="footer-links-list">
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-marrakech">Marrakech</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-fes">Fes</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-sahara">Sahara Desert</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-chefchaouen">Chefchaouen</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-essaouira">Essaouira</Link></li>
+              <li><Link href={`/${locale}/destinations`} id="footer-dest-marrakech">{t('destinations.marrakech', 'Marrakech')}</Link></li>
+              <li><Link href={`/${locale}/destinations`} id="footer-dest-fes">{t('destinations.fes', 'Fes')}</Link></li>
+              <li><Link href={`/${locale}/destinations`} id="footer-dest-sahara">{t('destinations.sahara', 'Sahara Desert')}</Link></li>
+              <li><Link href={`/${locale}/destinations`} id="footer-dest-chefchaouen">{t('destinations.chefchaouen', 'Chefchaouen')}</Link></li>
+              <li><Link href={`/${locale}/destinations`} id="footer-dest-essaouira">{t('destinations.essaouira', 'Essaouira')}</Link></li>
             </ul>
           </div>
 

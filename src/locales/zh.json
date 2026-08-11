@@ -6,7 +6,8 @@
     "about": "关于我们",
     "blog": "旅行博客",
     "contact": "联系我们",
-    "bookNow": "立即预订"
+    "bookNow": "立即预订",
+    "fleet": "车队系列"
   },
   "hero": {
     "accent": "欢迎来到摩洛哥",
@@ -71,10 +72,15 @@
     "title": "探索摩洛哥的最佳目的地",
     "subtitle": "神奇的地方",
     "desc": "从帝国古城到沿海小镇，探索摩洛哥的多样之美",
-    "tours": "个可用线路"
+    "tours": "个可用线路",
+    "marrakech": "马拉喀什",
+    "fes": "非斯",
+    "sahara": "撒哈拉沙漠",
+    "chefchaouen": "舍夫沙万",
+    "essaouira": "索维拉"
   },
   "about": {
-    "title": "关于 Travelling Through Morocco",
+    "title": "关于 Morocco View Travel",
     "subtitle": "您值得信赖的伙伴",
     "storyTitle": "我们的故事",
     "story1": "Morocco View Travel 是一家位于梅尔祖卡的优质旅行社。拥有超过5年的从业经验，我们为您打造难忘的摩洛哥旅程。",
@@ -160,7 +166,7 @@
     "hqDesc": "欢迎联系我们，从马拉喀什、卡萨布兰卡、非斯或丹吉尔出发，为您量身定制专属的摩洛哥旅程。"
   },
   "footer": {
-    "aboutText": "Travelling Through Morocco 是您进行正宗摩洛哥旅行体验的信赖伙伴。总部位于梅克内斯，我们在全国范围内提供优质旅游线路。",
+    "aboutText": "Morocco View Travel 是您进行正宗摩洛哥旅行体验的信赖伙伴。总部位于里萨尼·梅尔祖卡，我们在全国范围内提供优质旅游线路。",
     "quickLinks": "快速链接",
     "topDestinations": "热门目的地",
     "contactInfo": "联系信息",
@@ -178,5 +184,10 @@
     "awardsTitle": "猫途鹰 (TripAdvisor) 评分与荣誉",
     "awardsDesc": "我们被认可为 TripAdvisor 上的顶级旅行服务商，拥有基于数以百计全球真实旅行者评价的 5.0 满分好评。",
     "viewOnTripAdvisor": "在 TripAdvisor 查看评价"
+  },
+  "tours": {
+    "subtitle": "摩洛哥撒哈拉沙漠探险",
+    "title": "最佳摩洛哥沙漠旅游与短途旅行",
+    "desc": "从我们精心规划的行程中选择，或联系我们获取专为您设计的定制行程。"
   }
 }

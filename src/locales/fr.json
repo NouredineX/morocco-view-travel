@@ -6,7 +6,8 @@
     "about": "À Propos",
     "blog": "Blog",
     "contact": "Contact",
-    "bookNow": "Réserver"
+    "bookNow": "Réserver",
+    "fleet": "Notre Flotte"
   },
   "hero": {
     "accent": "Bienvenue au Maroc",
@@ -71,10 +72,15 @@
     "title": "Explorez les Meilleures Destinations du Maroc",
     "subtitle": "Endroits Magnifiques",
     "desc": "Des villes impériales aux villes côtières, découvrez la beauté diversifiée du Maroc",
-    "tours": "circuits disponibles"
+    "tours": "circuits disponibles",
+    "marrakech": "Marrakech",
+    "fes": "Fès",
+    "sahara": "Désert du Sahara",
+    "chefchaouen": "Chefchaouen",
+    "essaouira": "Essaouira"
   },
   "about": {
-    "title": "À Propos de Travelling Through Morocco",
+    "title": "À Propos de Morocco View Travel",
     "subtitle": "Votre Partenaire de Confiance",
     "storyTitle": "Notre Histoire",
     "story1": "Morocco View Travel est une agence de voyage haut de gamme basée à Rissani, Merzouga. Avec plus de 5 ans d'expérience, nous créons des voyages inoubliables.",
@@ -160,7 +166,7 @@
     "hqDesc": "Visitez-nous ou contactez-nous pour coordonner vos aventures sur mesure au Maroc au départ de Marrakech, Casablanca, Fès ou Tanger."
   },
   "footer": {
-    "aboutText": "Travelling Through Morocco est votre partenaire de confiance pour des expériences de voyage authentiques au Maroc. Basée à Meknès, nous offrons des circuits premium à travers le royaume.",
+    "aboutText": "Morocco View Travel est votre partenaire de confiance pour des expériences de voyage authentiques au Maroc. Basée à Rissani, Merzouga, nous offrons des circuits premium à travers le royaume.",
     "quickLinks": "Liens Rapides",
     "topDestinations": "Top Destinations",
     "contactInfo": "Informations de Contact",
@@ -178,5 +184,10 @@
     "awardsTitle": "Note et Récompenses TripAdvisor",
     "awardsDesc": "Nous sommes reconnus comme un prestataire de voyage haut de gamme sur TripAdvisor, avec une note globale de 5,0 basée sur des centaines d'avis vérifiés.",
     "viewOnTripAdvisor": "Voir sur TripAdvisor"
+  },
+  "tours": {
+    "subtitle": "Aventures au Sahara Marocain",
+    "title": "Meilleurs Circuits & Excursions au Désert du Maroc",
+    "desc": "Choisissez parmi nos itinéraires organisés ou contactez-nous pour un itinéraire personnalisé conçu juste pour vous."
   }
 }

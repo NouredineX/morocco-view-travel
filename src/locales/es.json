@@ -6,7 +6,8 @@
     "about": "Nosotros",
     "blog": "Blog",
     "contact": "Contacto",
-    "bookNow": "Reservar"
+    "bookNow": "Reservar",
+    "fleet": "Nuestra Flota"
   },
   "hero": {
     "accent": "Bienvenido a Marruecos",
@@ -71,10 +72,15 @@
     "title": "Explora los Mejores Destinos de Marruecos",
     "subtitle": "Lugares Increíbles",
     "desc": "Desde ciudades imperiales hasta pueblos costeros, descubre la diversa belleza de Marruecos",
-    "tours": "tours disponibles"
+    "tours": "tours disponibles",
+    "marrakech": "Marrakech",
+    "fes": "Fez",
+    "sahara": "Desierto del Sahara",
+    "chefchaouen": "Chefchaouen",
+    "essaouira": "Essaouira"
   },
   "about": {
-    "title": "Sobre Travelling Through Morocco",
+    "title": "Sobre Morocco View Travel",
     "subtitle": "Tu Socio de Confianza",
     "storyTitle": "Nuestra Historia",
     "story1": "Morocco View Travel es una empresa de viajes premium con sede en Rissani, Merzouga. Con más de 5 años de experiencia, diseñamos viajes inolvidables.",
@@ -160,7 +166,7 @@
     "hqDesc": "Visítenos o contáctenos para coordinar sus aventuras a medida en Marruecos comenzando desde Marrakech, Casablanca, Fez o Tánger."
   },
   "footer": {
-    "aboutText": "Travelling Through Morocco es tu socio de confianza para experiencias de viaje auténticas en Marruecos. Con sede en Meknes, ofrecemos tours premium por todo el reino.",
+    "aboutText": "Morocco View Travel es tu socio de confianza para experiencias de viaje auténticas en Marruecos. Con sede en Rissani, Merzouga, ofrecemos tours premium por todo el reino.",
     "quickLinks": "Enlaces Rápidos",
     "topDestinations": "Destinos Top",
     "contactInfo": "Información de Contacto",
@@ -178,5 +184,10 @@
     "awardsTitle": "Calificación y Premios en TripAdvisor",
     "awardsDesc": "Somos reconocidos como un proveedor de viajes de primera calidad en TripAdvisor, con una calificación general de 5.0 basada en cientos de reseñas verificadas.",
     "viewOnTripAdvisor": "Ver en TripAdvisor"
+  },
+  "tours": {
+    "subtitle": "Aventuras en el Sahara Marroquí",
+    "title": "Mejores Rutas y Excursiones al Desierto de Marruecos",
+    "desc": "Seleccione entre nuestros itinerarios organizados o contáctenos para un itinerario personalizado diseñado solo para usted."
   }
 }

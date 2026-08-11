@@ -72,7 +72,12 @@
     "title": "Esplora le Migliori Destinazioni del Marocco",
     "subtitle": "Posti Fantastici",
     "desc": "Dalle città imperiali alle città costiere, scopri la diversa bellezza del Marocco",
-    "tours": "tour disponibili"
+    "tours": "tour disponibili",
+    "marrakech": "Marrakech",
+    "fes": "Fes",
+    "sahara": "Deserto del Sahara",
+    "chefchaouen": "Chefchaouen",
+    "essaouira": "Essaouira"
   },
   "about": {
     "title": "Informazioni su Morocco View Travel",
@@ -179,5 +184,10 @@
     "awardsTitle": "Valutazione e Premi TripAdvisor",
     "awardsDesc": "Siamo riconosciuti come fornitori di viaggi premium su TripAdvisor, con una valutazione complessiva di 5.0 basata su centinaia di recensioni verificate.",
     "viewOnTripAdvisor": "Vedi su TripAdvisor"
+  },
+  "tours": {
+    "subtitle": "Avventure nel Sahara Marocchino",
+    "title": "I Migliori Tour ed Escursioni nel Deserto del Marocco",
+    "desc": "Scegli tra i nostri itinerari organizzati o contattaci per un itinerario personalizzato su misura per te."
   }
 }
