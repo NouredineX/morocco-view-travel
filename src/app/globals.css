@@ -313,14 +313,14 @@ p {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  color: var(--bg-dark);
+  color: #070F1C;
   box-shadow: 0 4px 15px rgba(200, 169, 110, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 25px rgba(200, 169, 110, 0.4);
-  color: var(--bg-dark);
+  color: #070F1C;
 }
 
 .btn-secondary {
@@ -401,6 +401,25 @@ p {
   border-bottom: 1px solid var(--border-glass);
   padding: 0.6rem 0;
   box-shadow: var(--shadow-md);
+}
+
+/* Ensure navbar has readable light elements when not scrolled over dark page hero background */
+.navbar:not(.scrolled) .navbar-links a {
+  color: #FAF8F2;
+}
+
+.navbar:not(.scrolled) .navbar-links a:hover,
+.navbar:not(.scrolled) .navbar-links a.active {
+  color: var(--color-primary);
+}
+
+.navbar:not(.scrolled) .lang-switcher-btn {
+  color: #FAF8F2;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar:not(.scrolled) .hamburger span {
+  background: #FAF8F2;
 }
 
 .navbar .container {
