@@ -197,14 +197,44 @@ export default function ContactForm({ locale }: ContactFormProps) {
 
         {/* GDPR Privacy Consent */}
         <div className="form-group full-width" style={{ margin: '0.75rem 0' }}>
-          <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+          <label 
+            style={{ 
+              display: 'flex', 
+              alignItems: 'flex-start', 
+              gap: '0.75rem', 
+              cursor: 'pointer', 
+              fontSize: '0.9rem', 
+              color: 'var(--text-secondary)',
+              background: 'var(--bg-glass)',
+              border: '1px solid var(--border-glass)',
+              borderRadius: 'var(--radius-md)',
+              padding: '1rem 1.25rem',
+              transition: 'all 0.3s ease',
+            }}
+          >
             <input 
               type="checkbox" 
               checked={gdprConsent} 
               onChange={(e) => setGdprConsent(e.target.checked)} 
               required
+              style={{
+                width: '22px',
+                height: '22px',
+                minWidth: '22px',
+                accentColor: 'var(--color-primary)',
+                cursor: 'pointer',
+                marginTop: '2px',
+              }}
             />
-            I consent to Morocco View Travel securely processing my details to reply to my travel inquiry (GDPR Compliant).
+            <span style={{ lineHeight: '1.5' }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: 'middle', marginRight: '6px', marginTop: '-2px' }}>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              I consent to Morocco View Travel securely processing my details to reply to my travel inquiry.
+              <span style={{ display: 'block', marginTop: '4px', fontSize: '0.78rem', color: 'var(--text-secondary)', opacity: 0.7 }}>
+                🔒 GDPR Compliant · 256-bit SSL Encrypted · Your data is never shared
+              </span>
+            </span>
           </label>
         </div>
 
