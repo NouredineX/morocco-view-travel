@@ -4,6 +4,7 @@ export interface Vehicle {
   type: string;
   capacity: string;
   image: string;
+  gallery: string[];
   features: string[];
   featuresFr: string[];
   featuresEs: string[];
@@ -25,6 +26,13 @@ export const vehicles: Vehicle[] = [
     type: '4x4 Luxury SUV',
     capacity: '1 - 4 passengers',
     image: '/images/our cars/Land Cruiser Prado.jpg',
+    gallery: [
+      '/images/our cars/Land Cruiser Prado.jpg',
+      '/images/our cars/Land Cruiser Prado (2).jpg',
+      '/images/our cars/Land Cruiser Prado 3.jpg',
+      '/images/our cars/Land Cruiser Prado 4 (1).jpeg',
+      '/images/our cars/Land Cruiser Prado 4 (2).jpeg',
+    ],
     features: ['4WD capability', 'Air Conditioning', 'Leather Seats', 'Expert Driver', 'Luggage space (3 bags)'],
     featuresFr: ['Capacité 4x4', 'Climatisation', 'Sièges en cuir', 'Chauffeur expert', 'Espace bagages (3 sacs)'],
     featuresEs: ['Capacidad 4x4', 'Aire acondicionado', 'Asientos de cuero', 'Conductor experto', 'Espacio para equipaje (3 maletas)'],
@@ -44,6 +52,12 @@ export const vehicles: Vehicle[] = [
     type: 'Premium Minivan',
     capacity: '1 - 7 passengers',
     image: '/images/our cars/Mercedes Benz Vito.jpg',
+    gallery: [
+      '/images/our cars/Mercedes Benz Vito.jpg',
+      '/images/our cars/Mercedes Benz Vito 1.jpg',
+      '/images/our cars/Mercedes Benz Vito 2.jpg',
+      '/images/our cars/Mercedes Benz Vito 3.jpg',
+    ],
     features: ['Spacious Interior', 'Dual A/C', 'Adjustable Seats', 'USB Chargers', 'Large Luggage space'],
     featuresFr: ['Intérieur spacieux', 'Double clim', 'Sièges réglables', 'Chargeurs USB', 'Grand espace bagages'],
     featuresEs: ['Interior espacioso', 'Climatizador doble', 'Asientos ajustables', 'Cargadores USB', 'Gran espacio para equipaje'],
@@ -63,6 +77,13 @@ export const vehicles: Vehicle[] = [
     type: 'Executive Tourer',
     capacity: '1 - 8 passengers',
     image: '/images/our cars/Ford Torneo.jpg',
+    gallery: [
+      '/images/our cars/Ford Torneo.jpg',
+      '/images/our cars/Ford Torneo 1.jpg',
+      '/images/our cars/Ford Torneo 2.jpg',
+      '/images/our cars/Ford Torneo 3.jpg',
+      '/images/our cars/Ford Torneo 4.jpg',
+    ],
     features: ['Modern Styling', 'Multi-zone Climate', 'WiFi onboard', 'Privacy Glass', 'Comfort suspension'],
     featuresFr: ['Style moderne', 'Clim multizone', 'WiFi à bord', 'Vitres teintées', 'Suspension confort'],
     featuresEs: ['Estilo moderno', 'Clima multizona', 'WiFi a bordo', 'Cristales de privacidad', 'Suspensión de confort'],
@@ -82,6 +103,10 @@ export const vehicles: Vehicle[] = [
     type: 'Luxury Minibus',
     capacity: '10 - 17 passengers',
     image: '/images/our cars/WhatsApp Image 2026-08-10 at 16.09.11 (1).jpeg',
+    gallery: [
+      '/images/our cars/WhatsApp Image 2026-08-10 at 16.09.11 (1).jpeg',
+      '/images/our cars/WhatsApp Image 2026-08-10 at 16.09.11.jpeg',
+    ],
     features: ['High Roof Cabin', 'Individual A/C vents', 'Microphone System', 'Reclining Tourer Seats', 'Massive Luggage capacity'],
     featuresFr: ['Cabine haute', 'Climatisation individuelle', 'Système micro', 'Sièges inclinables', 'Capacité bagages massive'],
     featuresEs: ['Cabina de techo alto', 'Salidas de aire individuales', 'Sistema de micrófono', 'Asientos reclinables', 'Gran espacio de equipaje'],

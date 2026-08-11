@@ -106,10 +106,6 @@ export default function Footer() {
                   +212 638-443209
                 </a>
               </li>
-              <li>
-                <span className="contact-icon">🕒</span>
-                {t('contact.hours', 'Mon - Sat: 8am - 8pm')}
-              </li>
             </ul>
           </div>
         </div>
