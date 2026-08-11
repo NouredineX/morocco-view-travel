@@ -14,6 +14,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'dark' | 'light'>('light');
+  const [isThemeInitialized, setIsThemeInitialized] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +34,15 @@ export default function Header() {
   useEffect(() => {
     const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
     setTheme(currentTheme);
+    setIsThemeInitialized(true);
   }, []);
+
+  // Keep HTML element data-theme attribute in sync on theme change or page transitions
+  useEffect(() => {
+    if (isThemeInitialized) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+  }, [theme, pathname, isThemeInitialized]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
