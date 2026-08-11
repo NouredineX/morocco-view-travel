@@ -4,7 +4,7 @@ import { tours } from '@/data/tours';
 import { blogPosts } from '@/data/blogPosts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://moroccoviewtravel.com';
+  const baseUrl = 'https://travellingthroughmorocco.com';
   
   // Static sub-routes
   const staticPages = [

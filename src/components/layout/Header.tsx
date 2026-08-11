@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { locales, Locale } from '@/utils/i18n';
 import { useTranslation } from '@/utils/i18n-client';
+import { getLocalizedPath } from '@/utils/routes';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
@@ -57,21 +58,23 @@ export default function Header() {
     setMobileMenuOpen(false);
   };
 
-  const isActive = (path: string) => {
+  const isActive = (pageType: string) => {
     const cleanPathname = pathname.replace(/^\/[a-z]{2}/, '') || '/';
-    if (path === '/') {
+    if (pageType === 'home') {
       return cleanPathname === '/';
     }
-    return cleanPathname.startsWith(path);
+    const expectedPath = getLocalizedPath(pageType, locale);
+    const expectedCleanPath = expectedPath.replace(/^\/[a-z]{2}/, '') || '/';
+    return cleanPathname.startsWith(expectedCleanPath);
   };
 
   const navItems = [
-    { name: t('nav.home', 'Home'), path: '/' },
-    { name: t('nav.tours', 'Tours'), path: '/tours' },
-    { name: t('nav.fleet', 'Our Fleet'), path: '/our-fleet' },
-    { name: t('nav.about', 'About Us'), path: '/about' },
-    { name: t('nav.blog', 'Blog'), path: '/blog' },
-    { name: t('nav.contact', 'Contact'), path: '/contact' },
+    { name: t('nav.home', 'Home'), pageType: 'home' },
+    { name: t('nav.tours', 'Tours'), pageType: 'tours' },
+    { name: t('nav.fleet', 'Our Fleet'), pageType: 'our-fleet' },
+    { name: t('nav.about', 'About Us'), pageType: 'about' },
+    { name: t('nav.blog', 'Blog'), pageType: 'blog' },
+    { name: t('nav.contact', 'Contact'), pageType: 'contact' },
   ];
 
   return (
@@ -98,14 +101,14 @@ export default function Header() {
             <span style={{ 
               fontFamily: 'var(--font-heading)', 
               fontWeight: 800, 
-              fontSize: '1.25rem', 
+              fontSize: '1.1rem', 
               letterSpacing: '0.5px',
               background: 'linear-gradient(135deg, #E6B800 0%, #FFF099 50%, #D4A017 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               textTransform: 'uppercase'
             }}>
-              Morocco View
+              Travelling Through
             </span>
             <span style={{ 
               fontSize: '0.75rem', 
@@ -114,7 +117,7 @@ export default function Header() {
               color: 'var(--color-primary)',
               textTransform: 'uppercase'
             }}>
-              Travel
+              Morocco
             </span>
           </div>
         </Link>
@@ -123,10 +126,10 @@ export default function Header() {
         <nav className="navbar-links" id="desktop-nav">
           {navItems.map((item) => (
             <Link
-              key={item.path}
-              href={`/${locale}${item.path}`}
-              className={isActive(item.path) ? 'active' : ''}
-              id={`nav-${item.path.replace('/', '') || 'home'}`}
+              key={item.pageType}
+              href={getLocalizedPath(item.pageType, locale)}
+              className={isActive(item.pageType) ? 'active' : ''}
+              id={`nav-${item.pageType}`}
             >
               {item.name}
             </Link>
@@ -160,7 +163,7 @@ export default function Header() {
           <LanguageSwitcher />
           
           <Link 
-            href={`/${locale}/contact`} 
+            href={getLocalizedPath('contact', locale)} 
             className="btn btn-primary btn-sm book-btn-desktop" 
             id="book-btn-desktop"
           >
@@ -184,17 +187,17 @@ export default function Header() {
       <div className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`} id="mobile-nav-overlay">
         {navItems.map((item) => (
           <Link
-            key={item.path}
-            href={`/${locale}${item.path}`}
+            key={item.pageType}
+            href={getLocalizedPath(item.pageType, locale)}
             onClick={closeMobileMenu}
-            className={isActive(item.path) ? 'active' : ''}
-            id={`mob-nav-${item.path.replace('/', '') || 'home'}`}
+            className={isActive(item.pageType) ? 'active' : ''}
+            id={`mob-nav-${item.pageType}`}
           >
             {item.name}
           </Link>
         ))}
         <Link 
-          href={`/${locale}/contact`} 
+          href={getLocalizedPath('contact', locale)} 
           onClick={closeMobileMenu} 
           className="btn btn-primary" 
           id="mob-book-btn"

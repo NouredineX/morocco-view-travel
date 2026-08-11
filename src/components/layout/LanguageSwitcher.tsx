@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { locales, Locale } from '@/utils/i18n';
+import { translatePath } from '@/utils/routes';
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -26,16 +27,7 @@ export default function LanguageSwitcher() {
 
   const changeLanguage = (code: string) => {
     setIsOpen(false);
-    
-    // Replace the first locale part of the path
-    const newPathParts = [...pathParts];
-    if (locales.includes(newPathParts[1] as Locale)) {
-      newPathParts[1] = code;
-    } else {
-      newPathParts.splice(1, 0, code);
-    }
-    
-    const newPath = newPathParts.join('/') || '/';
+    const newPath = translatePath(pathname, code as Locale);
     router.push(newPath);
   };
 

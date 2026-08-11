@@ -1,10 +1,8 @@
-'use client';
-
-import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
 import { Locale, getTranslations } from '@/utils/i18n';
+import { getLocalizedPath } from '@/utils/routes';
 import Hero from '@/components/home/Hero';
 import StatsCounter from '@/components/home/StatsCounter';
 import Testimonials from '@/components/home/Testimonials';
@@ -12,9 +10,44 @@ import TourCard from '@/components/tours/TourCard';
 import { tours } from '@/data/tours';
 import { getTranslated } from '@/utils/translate';
 
-export default function HomePage() {
-  const params = useParams();
-  const locale = (params?.locale as Locale) || 'en';
+interface PageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale = (rawLocale as Locale) || 'en';
+
+  const titles = {
+    en: "Travelling Through Morocco | Premium Desert Tours & Private Travel Agency",
+    fr: "Travelling Through Morocco | Circuits Premium au Désert & Agence de Voyage Privée",
+    es: "Travelling Through Morocco | Tours de Desierto Premium y Agencia de Viajes Privada",
+    it: "Travelling Through Morocco | Tour del Deserto Premium e Agenzia di Viaggi Privata",
+    ja: "Travelling Through Morocco | プレミアム砂漠ツアー＆プライベート旅行代理店",
+    zh: "Travelling Through Morocco | 优质沙漠旅游与私人旅行社"
+  };
+
+  const descriptions = {
+    en: "Experience the real Morocco with Travelling Through Morocco. Custom Saharan tours, luxury 4x4 desert expeditions, imperial city trips starting from Marrakech, Fes, Casablanca, and Tangier.",
+    fr: "Découvrez le vrai Maroc avec Travelling Through Morocco. Circuits Sahariens sur mesure, excursions en 4x4, visites de villes impériales au départ de Marrakech, Fès, Casablanca et Tanger.",
+    es: "Vive el verdadero Marruecos con Travelling Through Morocco. Tours saharianos a medida, expediciones en 4x4 por el desierto, excursiones por ciudades imperiales desde Marrakech, Fez, Casablanca y Tánger.",
+    it: "Scopri il vero Marocco con Travelling Through Morocco. Tour sahariani personalizzati, spedizioni nel deserto in 4x4 di lusso, escursioni nelle città imperiali da Marrakech, Fes, Casablanca e Tangeri.",
+    ja: "Travelling Through Moroccoで本物のモロッコを体験してください。マラケシュ、フェズ、カサブランカ、タンジール出発のカスタム砂漠ツアー、豪華4x4サハラ遠征、帝国都市ツアーを提供しています。",
+    zh: "与 Travelling Through Morocco 一起体验真实的摩洛哥。我们提供从马拉喀什、非斯、卡萨布兰卡和丹吉尔出发的定制撒哈拉之旅、豪华4x4沙漠探险以及帝国城市游。"
+  };
+
+  return {
+    title: titles[locale] || titles.en,
+    description: descriptions[locale] || descriptions.en,
+    alternates: {
+      canonical: `/${locale}`,
+    }
+  };
+}
+
+export default async function HomePage({ params }: PageProps) {
+  const { locale: rawLocale } = await params;
+  const locale = (rawLocale as Locale) || 'en';
   const t = getTranslations(locale);
 
   // Filter 3 popular tours to showcase on the homepage
@@ -129,7 +162,7 @@ export default function HomePage() {
                   <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
                     <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>{catTitle}</h3>
                     <p style={{ fontSize: '0.85rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>{catDesc}</p>
-                    <Link href={`/${locale}/tours`} className="btn btn-secondary btn-sm" style={{ width: '100%', textAlign: 'center' }}>
+                    <Link href={getLocalizedPath('tours', locale)} className="btn btn-secondary btn-sm" style={{ width: '100%', textAlign: 'center' }}>
                       {t('tour.allTours', 'All Tours')}
                     </Link>
                   </div>
@@ -156,7 +189,7 @@ export default function HomePage() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
-            <Link href={`/${locale}/tours`} className="btn btn-primary btn-lg" id="view-all-tours-btn">
+            <Link href={getLocalizedPath('tours', locale)} className="btn btn-primary btn-lg" id="view-all-tours-btn">
               {t('sections.viewAllTours', 'View All Tours')}
             </Link>
           </div>
@@ -180,7 +213,7 @@ export default function HomePage() {
           <div className="cta-content" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
             <h2 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>{t('sections.ctaTitle')}</h2>
             <p style={{ marginBottom: '2rem', color: 'var(--text-secondary)' }}>{t('sections.ctaDesc')}</p>
-            <Link href={`/${locale}/contact`} className="btn btn-primary btn-lg" id="cta-contact-btn">
+            <Link href={getLocalizedPath('contact', locale)} className="btn btn-primary btn-lg" id="cta-contact-btn">
               🗺️ {t('sections.ctaButton', 'Plan Your Trip')}
             </Link>
           </div>

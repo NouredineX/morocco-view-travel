@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from '@/utils/i18n-client';
+import { getLocalizedPath } from '@/utils/routes';
 import type { BlogPost } from '@/types';
 import { getTranslated } from '@/utils/translate';
 
@@ -27,7 +28,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="blog-card glass-card" id={`blog-card-${post.id}`}>
       <div className="blog-card-image" style={{ position: 'relative', height: '200px', width: '100%' }}>
-        <Link href={`/${locale}/blog/${post.slug}`}>
+        <Link href={getLocalizedPath('blog', locale, post.slug)}>
           <Image 
             src={`/images/${post.image}`} 
             alt={title}
@@ -44,7 +45,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       <div className="blog-card-body">
         <div className="blog-card-category" id={`blog-category-${post.id}`}>{category}</div>
         <h3 style={{ fontSize: '1.2rem', margin: '0.5rem 0' }}>
-          <Link href={`/${locale}/blog/${post.slug}`} id={`blog-title-link-${post.id}`} style={{ color: 'inherit' }}>
+          <Link href={getLocalizedPath('blog', locale, post.slug)} id={`blog-title-link-${post.id}`} style={{ color: 'inherit' }}>
             {title}
           </Link>
         </h3>

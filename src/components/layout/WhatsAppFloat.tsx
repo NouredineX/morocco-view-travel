@@ -3,8 +3,8 @@
 import React from 'react';
 
 export default function WhatsAppFloat() {
-  const phoneNumber = '212638443209';
-  const message = encodeURIComponent('Hello Morocco View Travel, I would like to inquire about your tours!');
+  const phoneNumber = '212708228026';
+  const message = encodeURIComponent('Hello Travelling Through Morocco, I would like to inquire about your tours!');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (

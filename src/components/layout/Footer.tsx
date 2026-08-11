@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from '@/utils/i18n-client';
+import { getLocalizedPath } from '@/utils/routes';
 
 export default function Footer() {
   const { t, locale } = useTranslation();
@@ -34,14 +35,14 @@ export default function Footer() {
                 <span style={{ 
                   fontFamily: 'var(--font-heading)', 
                   fontWeight: 800, 
-                  fontSize: '1.4rem', 
+                  fontSize: '1.2rem', 
                   letterSpacing: '0.5px',
                   background: 'linear-gradient(135deg, #E6B800 0%, #FFF099 50%, #D4A017 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   textTransform: 'uppercase'
                 }}>
-                  Morocco View
+                  Travelling Through
                 </span>
                 <span style={{ 
                   fontSize: '0.85rem', 
@@ -50,7 +51,7 @@ export default function Footer() {
                   color: 'var(--color-primary)',
                   textTransform: 'uppercase'
                 }}>
-                  Travel
+                  Morocco
                 </span>
               </div>
             </Link>
@@ -63,12 +64,12 @@ export default function Footer() {
           <div className="footer-col" id="footer-col-links">
             <h4 className="footer-title">{t('footer.quickLinks', 'Quick Links')}</h4>
             <ul className="footer-links-list">
-              <li><Link href={`/${locale}`} id="footer-link-home">{t('nav.home', 'Home')}</Link></li>
-              <li><Link href={`/${locale}/tours`} id="footer-link-tours">{t('nav.tours', 'Tours')}</Link></li>
-              <li><Link href={`/${locale}/our-fleet`} id="footer-link-fleet">{t('nav.fleet', 'Our Fleet')}</Link></li>
-              <li><Link href={`/${locale}/about`} id="footer-link-about">{t('nav.about', 'About Us')}</Link></li>
-              <li><Link href={`/${locale}/blog`} id="footer-link-blog">{t('nav.blog', 'Blog')}</Link></li>
-              <li><Link href={`/${locale}/contact`} id="footer-link-contact">{t('nav.contact', 'Contact')}</Link></li>
+              <li><Link href={getLocalizedPath('home', locale)} id="footer-link-home">{t('nav.home', 'Home')}</Link></li>
+              <li><Link href={getLocalizedPath('tours', locale)} id="footer-link-tours">{t('nav.tours', 'Tours')}</Link></li>
+              <li><Link href={getLocalizedPath('our-fleet', locale)} id="footer-link-fleet">{t('nav.fleet', 'Our Fleet')}</Link></li>
+              <li><Link href={getLocalizedPath('about', locale)} id="footer-link-about">{t('nav.about', 'About Us')}</Link></li>
+              <li><Link href={getLocalizedPath('blog', locale)} id="footer-link-blog">{t('nav.blog', 'Blog')}</Link></li>
+              <li><Link href={getLocalizedPath('contact', locale)} id="footer-link-contact">{t('nav.contact', 'Contact')}</Link></li>
             </ul>
           </div>
 
@@ -76,11 +77,11 @@ export default function Footer() {
           <div className="footer-col" id="footer-col-destinations">
             <h4 className="footer-title">{t('footer.topDestinations', 'Top Destinations')}</h4>
             <ul className="footer-links-list">
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-marrakech">{t('destinations.marrakech', 'Marrakech')}</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-fes">{t('destinations.fes', 'Fes')}</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-sahara">{t('destinations.sahara', 'Sahara Desert')}</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-chefchaouen">{t('destinations.chefchaouen', 'Chefchaouen')}</Link></li>
-              <li><Link href={`/${locale}/destinations`} id="footer-dest-essaouira">{t('destinations.essaouira', 'Essaouira')}</Link></li>
+              <li><Link href={getLocalizedPath('destinations', locale)} id="footer-dest-marrakech">{t('destinations.marrakech', 'Marrakech')}</Link></li>
+              <li><Link href={getLocalizedPath('destinations', locale)} id="footer-dest-fes">{t('destinations.fes', 'Fes')}</Link></li>
+              <li><Link href={getLocalizedPath('destinations', locale)} id="footer-dest-sahara">{t('destinations.sahara', 'Sahara Desert')}</Link></li>
+              <li><Link href={getLocalizedPath('destinations', locale)} id="footer-dest-chefchaouen">{t('destinations.chefchaouen', 'Chefchaouen')}</Link></li>
+              <li><Link href={getLocalizedPath('destinations', locale)} id="footer-dest-essaouira">{t('destinations.essaouira', 'Essaouira')}</Link></li>
             </ul>
           </div>
 
@@ -90,20 +91,20 @@ export default function Footer() {
             <ul className="footer-contact-list">
               <li>
                 <span className="contact-icon">📍</span>
-                <a href="https://share.google/rSjknir5yG0U982kt" target="_blank" rel="noopener noreferrer" id="footer-contact-map-link">
-                  Rissani, Merzouga 52022, Morocco
+                <a href="https://maps.google.com/?q=Meknes,+Morocco" target="_blank" rel="noopener noreferrer" id="footer-contact-map-link">
+                  Meknes, Morocco
                 </a>
               </li>
               <li>
                 <span className="contact-icon">✉️</span>
-                <a href="mailto:moroccoviewtravel@gmail.com?subject=Inquiry%20-%20Morocco%20View%20Travel" id="footer-contact-email-link">
-                  moroccoviewtravel@gmail.com
+                <a href="mailto:travellingthroughmorocco@gmail.com?subject=Inquiry%20-%20Travelling%20Through%20Morocco" id="footer-contact-email-link">
+                  travellingthroughmorocco@gmail.com
                 </a>
               </li>
               <li>
                 <span className="contact-icon">📞</span>
-                <a href="https://wa.me/212638443209?text=Hello%20Morocco%20View%20Travel%2C%20I%20would%20like%20to%20inquire%20about%20your%20tours!" target="_blank" rel="noopener noreferrer" id="footer-contact-phone-link">
-                  +212 638-443209
+                <a href="https://wa.me/212708228026?text=Hello%20Travelling%20Through%20Morocco%2C%20I%20would%20like%20to%20inquire%20about%20your%20tours!" target="_blank" rel="noopener noreferrer" id="footer-contact-phone-link">
+                  +212 708-228026
                 </a>
               </li>
             </ul>
@@ -114,20 +115,20 @@ export default function Footer() {
         <div className="footer-bottom" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <p className="copyright-text" style={{ margin: 0 }}>
-              &copy; {currentYear} moroccoviewtravel.com. {t('footer.rights', 'All rights reserved.')}
+              &copy; {currentYear} travellingthroughmorocco.com. {t('footer.rights', 'All rights reserved.')}
             </p>
-            <Link href={`/${locale}/privacy-policy`} id="footer-privacy-policy-link" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+            <Link href={getLocalizedPath('privacy-policy', locale)} id="footer-privacy-policy-link" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
               🔒 Privacy Policy & Data Protection
             </Link>
           </div>
           <div className="social-links" id="footer-socials">
-            <a href="https://www.facebook.com/share/1Ukv32PNQY/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" id="social-fb">
+            <a href="https://web.facebook.com/profile.php?id=61592802445563" target="_blank" rel="noopener noreferrer" aria-label="Facebook" id="social-fb">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="https://www.instagram.com/morocco_view_travel?igsh=bWsxeW5nN21jamw1" target="_blank" rel="noopener noreferrer" aria-label="Instagram" id="social-ig">
+            <a href="https://www.instagram.com/travellingthroughmorocco/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" id="social-ig">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
-            <a href="https://wa.me/212638443209" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" id="social-wa">
+            <a href="https://wa.me/212708228026" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" id="social-wa">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
               </svg>

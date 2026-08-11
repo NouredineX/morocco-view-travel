@@ -43,27 +43,27 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const locale = rawLocale as Locale;
   
   const titles = {
-    en: "Morocco View Travel | Premium Desert Tours & Private Travel Agency",
-    fr: "Morocco View Travel | Circuits Premium au Désert & Agence de Voyage Privée",
-    es: "Morocco View Travel | Tours de Desierto Premium y Agencia de Viajes Privada",
-    it: "Morocco View Travel | Tour del Deserto Premium e Agenzia di Viaggi Privata",
-    ja: "Morocco View Travel | プレミアム砂漠ツアー＆プライベート旅行代理店",
-    zh: "Morocco View Travel | 优质沙漠旅游与私人旅行社"
+    en: "Travelling Through Morocco | Premium Desert Tours & Private Travel Agency",
+    fr: "Travelling Through Morocco | Circuits Premium au Désert & Agence de Voyage Privée",
+    es: "Travelling Through Morocco | Tours de Desierto Premium y Agencia de Viajes Privada",
+    it: "Travelling Through Morocco | Tour del Deserto Premium e Agenzia di Viaggi Privata",
+    ja: "Travelling Through Morocco | プレミアム砂漠ツアー＆プライベート旅行代理店",
+    zh: "Travelling Through Morocco | 优质沙漠旅游与私人旅行社"
   };
 
   const descriptions = {
-    en: "Explore Morocco with Morocco View Travel. We offer premium desert tours, custom itineraries, and high-quality private transport from Marrakech, Fes, Casablanca, and Tangier.",
-    fr: "Explorez le Maroc avec Morocco View Travel. Circuits premium dans le désert, itinéraires sur mesure et transport privé haut de gamme depuis Marrakech, Fès, Casablanca et Tanger.",
-    es: "Explora Marruecos con Morocco View Travel. Ofrecemos tours de desierto premium, itinerarios a medida y transporte privado de alta gama desde Marrakech, Fez, Casablanca y Tánger.",
-    it: "Esplora il Marocco con Morocco View Travel. Offriamo tour del deserto premium, itinerari personalizzati e trasporti privati di alta qualità da Marrakech, Fes, Casablanca e Tangeri.",
-    ja: "Morocco View Travelでモロッコを探索しましょう。マラケシュ、フェズ、カサブランカ、タンジール出発のプレミアム砂漠ツアー、カスタム旅程、高品質のプライベート輸送を提供しています。",
-    zh: "与 Morocco View Travel 一起探索摩洛哥。我们提供从马拉喀什、非斯、卡萨布兰卡和丹吉尔出发的优质沙漠游、定制行程以及高品质的私人包车服务。"
+    en: "Explore Morocco with Travelling Through Morocco. We offer premium desert tours, custom itineraries, and high-quality private transport from Marrakech, Fes, Casablanca, and Tangier.",
+    fr: "Explorez le Maroc avec Travelling Through Morocco. Circuits premium dans le désert, itinéraires sur mesure et transport privé haut de gamme depuis Marrakech, Fès, Casablanca et Tanger.",
+    es: "Explora Marruecos con Travelling Through Morocco. Ofrecemos tours de desierto premium, itinerarios a medida y transporte privado de alta gama desde Marrakech, Fez, Casablanca y Tánger.",
+    it: "Esplora il Marocco con Travelling Through Morocco. Offriamo tour del deserto premium, itinerari personalizzati e trasporti privati di alta qualità da Marrakech, Fes, Casablanca e Tangeri.",
+    ja: "Travelling Through Moroccoでモロッコを探索しましょう。マラケシュ、フェズ、カサブランカ、タンジール出発のプレミアム砂漠ツアー、カスタム旅程、高品質のプライベート輸送を提供しています。",
+    zh: "与 Travelling Through Morocco 一起探索摩洛哥。我们提供从马拉喀什、非斯、卡萨布兰卡和丹吉尔出发的优质沙漠游、定制行程以及高品质的私人包车服务。"
   };
 
   return {
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
-    metadataBase: new URL('https://moroccoviewtravel.com'),
+    metadataBase: new URL('https://travellingthroughmorocco.com'),
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     openGraph: {
       type: 'website',
-      url: 'https://moroccoviewtravel.com',
+      url: 'https://travellingthroughmorocco.com',
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
       images: [
@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           url: '/images/logo.png',
           width: 500,
           height: 500,
-          alt: 'Morocco View Travel',
+          alt: 'Travelling Through Morocco',
         },
       ],
     },
@@ -100,6 +100,48 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { locale: rawLocale } = await params;
   const locale = rawLocale as Locale;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Travelling Through Morocco",
+    "alternateName": "Travelling Through Morocco",
+    "url": "https://travellingthroughmorocco.com",
+    "logo": "https://travellingthroughmorocco.com/images/logo.png",
+    "image": "https://travellingthroughmorocco.com/images/logo.png",
+    "description": "Premium desert tours, custom itineraries, and high-quality private transport in Morocco.",
+    "telephone": "+212708228026",
+    "email": "travellingthroughmorocco@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Meknes Office",
+      "addressLocality": "Meknes",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.8938",
+      "longitude": "-5.5547"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": [
+      "https://web.facebook.com/profile.php?id=61592802445563",
+      "https://www.instagram.com/travellingthroughmorocco/"
+    ]
+  };
 
   return (
     <html
@@ -130,6 +172,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
             } catch (e) {}
           })();
         ` }} />
+        {/* AI Discovery Link */}
+        <link rel="describedby" href="/llms.txt" />
+        {/* Organization Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <ScrollToTop />

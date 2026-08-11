@@ -80,10 +80,10 @@
     "essaouira": "Essaouira"
   },
   "about": {
-    "title": "Sobre Morocco View Travel",
+    "title": "Sobre Travelling Through Morocco",
     "subtitle": "Tu Socio de Confianza",
     "storyTitle": "Nuestra Historia",
-    "story1": "Morocco View Travel es una empresa de viajes premium con sede en Rissani, Merzouga. Con más de 5 años de experiencia, diseñamos viajes inolvidables.",
+    "story1": "Travelling Through Morocco es una empresa de viajes premium con sede en Meknes, Marruecos. Con más de 5 años de experiencia, diseñamos viajes inolvidables.",
     "story2": "Como empresa de turismo y transporte integrada, gestionamos cada detalle de tu viaje — desde cómodos vehículos 4x4 hasta alojamientos seleccionados y guías locales expertos.",
     "story3": "Nuestra misión es simple: mostrarte el verdadero Marruecos. No solo los sitios turísticos, sino las joyas ocultas, las historias locales y la cálida hospitalidad.",
     "valuesTitle": "Por Qué Elegirnos",
@@ -114,11 +114,11 @@
       }
     },
     "storySubtitle": "Agencia de Viajes Experta Local en Marruecos",
-    "tripAdvisorTitle": "Calificación de TripAdvisor de Morocco View Travel",
+    "tripAdvisorTitle": "Calificación de TripAdvisor de Travelling Through Morocco",
     "tripAdvisorDesc": "Basado en opiniones verificadas de viajeros de todo el mundo. Orgullosos de ofrecer un servicio excepcional y aventuras inolvidables en el desierto.",
     "teamTitle": "Nuestro Equipo",
     "teamSubtitle": "Expertos Locales",
-    "teamDesc": "Los apasionados viajeros y guías detrás de Morocco View Travel.",
+    "teamDesc": "Los apasionados viajeros y guías detrás de Travelling Through Morocco.",
     "roles": {
       "owner": "Fundador y Director Ejecutivo",
       "driver": "Conductor Profesional y Guía del Desierto",
@@ -162,11 +162,11 @@
     "hours": "Lun - Sáb: 8am - 8pm",
     "mapTitle": "Encuéntranos",
     "hoursLabel": "Horario de Atención",
-    "hqTitle": "Nuestra Sede Principal en Merzouga",
+    "hqTitle": "Nuestra Sede Principal en Meknes",
     "hqDesc": "Visítenos o contáctenos para coordinar sus aventuras a medida en Marruecos comenzando desde Marrakech, Casablanca, Fez o Tánger."
   },
   "footer": {
-    "aboutText": "Morocco View Travel es tu socio de confianza para experiencias de viaje auténticas en Marruecos. Con sede en Rissani, Merzouga, ofrecemos tours premium por todo el reino.",
+    "aboutText": "Travelling Through Morocco es tu socio de confianza para experiencias de viaje auténticas en Marruecos. Con sede en Meknes, Marruecos, ofrecemos tours premium por todo el reino.",
     "quickLinks": "Enlaces Rápidos",
     "topDestinations": "Destinos Top",
     "contactInfo": "Información de Contacto",

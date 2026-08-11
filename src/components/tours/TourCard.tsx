@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { Locale } from '@/utils/i18n';
 import { useTranslation } from '@/utils/i18n-client';
+import { getLocalizedPath } from '@/utils/routes';
 import type { Tour } from '@/types';
 import { getTranslated } from '@/utils/translate';
 
@@ -29,8 +30,8 @@ export default function TourCard({ tour }: TourCardProps) {
 
   const handleBookNow = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const message = encodeURIComponent(`Hello Morocco View Travel, I would like to inquire about booking the tour: "${title}"`);
-    window.open(`https://wa.me/212638443209?text=${message}`, '_blank');
+    const message = encodeURIComponent(`Hello Travelling Through Morocco, I would like to inquire about booking the tour: "${title}"`);
+    window.open(`https://wa.me/212708228026?text=${message}`, '_blank');
   };
 
   return (
@@ -62,7 +63,7 @@ export default function TourCard({ tour }: TourCardProps) {
           </span>
         </div>
         <h3 style={{ fontSize: '1.25rem', margin: '0.5rem 0' }}>
-          <Link href={`/${locale}/tours/${tour.slug}`} id={`tour-title-link-${tour.id}`} style={{ color: 'inherit' }}>
+          <Link href={getLocalizedPath('tours', locale, tour.slug)} id={`tour-title-link-${tour.id}`} style={{ color: 'inherit' }}>
             {title}
           </Link>
         </h3>

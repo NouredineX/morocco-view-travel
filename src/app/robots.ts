@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://moroccoviewtravel.com/sitemap.xml',
+    sitemap: 'https://travellingthroughmorocco.com/sitemap.xml',
   };
 }

@@ -80,10 +80,10 @@
     "essaouira": "エッサウィラ"
   },
   "about": {
-    "title": "Morocco View Travelについて",
+    "title": "Travelling Through Moroccoについて",
     "subtitle": "信頼できるパートナー",
     "storyTitle": "私たちのストーリー",
-    "story1": "Morocco View Travelはメルズーガに拠点を置く旅行会社です。5年以上の経験と専門知識を活かし、忘れられない旅を提供します。",
+    "story1": "Travelling Through Moroccoはモロッコのメクネスに拠点を置く旅行会社です。5年以上の経験と専門知識を活かし、忘れられない旅を提供します。",
     "story2": "統合された観光・輸送会社として、快適な4x4車両から厳選された宿泊施設、モロッコの豊かな遺産を伝える専門の現地ガイドまで、旅のあらゆる詳細を管理します。",
     "story3": "私たちの使命はシンプルです。本物のモロッコをお見せすることです。観光地だけでなく、隠れた名所、地元の物語、そしてこの国を特別にする温かいおもてなしを提供します。",
     "valuesTitle": "選ばれる理由",
@@ -114,11 +114,11 @@
       }
     },
     "storySubtitle": "モロッコ現地専門旅行代理店",
-    "tripAdvisorTitle": "Morocco View Travelトリップアドバイザー評価",
+    "tripAdvisorTitle": "Travelling Through Moroccoトリップアドバイザー評価",
     "tripAdvisorDesc": "世界中の検証済み旅行者のレビューに基づいています。優れたサービスと忘れられない砂漠の冒険を提供することを誇りに思っています。",
     "teamTitle": "私たちのチーム",
     "teamSubtitle": "地元のエキスパート",
-    "teamDesc": "Morocco View Travelを支える情熱的なガイドとチーム。",
+    "teamDesc": "Travelling Through Moroccoを支える情熱的なガイドとチーム。",
     "roles": {
       "owner": "創業者兼代表取締役",
       "driver": "プロドライバー＆砂漠ガイド",
@@ -155,18 +155,18 @@
     "sending": "送信中...",
     "success": "メッセージが正常に送信されました！24時間以内にご連絡いたします。",
     "infoTitle": "連絡先情報",
-    "address": "モロッコ、リッサニ・メルズーガ",
+    "address": "モロッコ、メクネス",
     "addressLabel": "オフィス",
     "phoneLabel": "電話番号",
     "emailLabel": "メールアドレス",
     "hours": "月 - 土: 8:00 - 20:00",
     "mapTitle": "アクセス",
     "hoursLabel": "営業時間",
-    "hqTitle": "メルズーガの本部オフィス",
+    "hqTitle": "メクネスの本部オフィス",
     "hqDesc": "マラケシュ、カサブランカ、フェズ、タンジール出発のカスタム旅行プランをご案内いたします。ぜひお問い合わせください。"
   },
   "footer": {
-    "aboutText": "Morocco View Travelは、本物のモロッコ旅行体験の信頼できるパートナーです。リッサニ・メルズーガを拠点とし、モロッコ全土でプレミアムツアーを提供しています。",
+    "aboutText": "Travelling Through Moroccoは、本物のモロッコ旅行体験の信頼できるパートナーです。メクネスを拠点とし、モロッコ全土でプレミアムツアーを提供しています。",
     "quickLinks": "クイックリンク",
     "topDestinations": "人気の目的地",
     "contactInfo": "連絡先情報",
