@@ -50,15 +50,83 @@ export default function AboutPage() {
           </div>
 
           <div className="grid-3" id="values-grid">
-            {valueKeys.map((key) => (
-              <div className="glass-card" style={{ padding: '2rem', height: '100%' }} key={key} id={`value-card-${key}`}>
-                <div style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
-                  {key === 'agency' ? '🏆' : key === 'safety' ? '🛡️' : key === 'pricing' ? '💎' : key === 'custom' ? '⚙️' : key === 'booking' ? '⚡' : '🗺️'}
+            {valueKeys.map((key) => {
+              const getIcon = (k: string) => {
+                const iconStyle = { color: 'var(--color-primary)', display: 'block' };
+                switch (k) {
+                  case 'agency':
+                    return (
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={iconStyle}>
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                      </svg>
+                    );
+                  case 'safety':
+                    return (
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={iconStyle}>
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      </svg>
+                    );
+                  case 'pricing':
+                    return (
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={iconStyle}>
+                        <path d="M6 3h12l4 6-10 13L2 9z"/>
+                        <path d="M11 3 8 9l4 13 4-13-3-6"/>
+                        <path d="M2 9h20"/>
+                      </svg>
+                    );
+                  case 'custom':
+                    return (
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={iconStyle}>
+                        <line x1="4" y1="21" x2="4" y2="14"/>
+                        <line x1="4" y1="10" x2="4" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12" y2="3"/>
+                        <line x1="20" y1="21" x2="20" y2="16"/>
+                        <line x1="20" y1="12" x2="20" y2="3"/>
+                        <line x1="1" y1="14" x2="7" y2="14"/>
+                        <line x1="9" y1="8" x2="15" y2="8"/>
+                        <line x1="17" y1="16" x2="23" y2="16"/>
+                      </svg>
+                    );
+                  case 'booking':
+                    return (
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={iconStyle}>
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                      </svg>
+                    );
+                  case 'guides':
+                    return (
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={iconStyle}>
+                        <circle cx="12" cy="12" r="10"/>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                      </svg>
+                    );
+                  default:
+                    return null;
+                }
+              };
+
+              return (
+                <div className="glass-card" style={{ padding: '2.25rem 2rem', height: '100%', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s ease, border-color 0.3s ease' }} key={key} id={`value-card-${key}`}>
+                  <div style={{ 
+                    width: '60px', 
+                    height: '60px', 
+                    borderRadius: '50%', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    background: 'rgba(197, 168, 110, 0.08)', 
+                    border: '1px solid rgba(197, 168, 110, 0.22)', 
+                    marginBottom: '1.25rem' 
+                  }}>
+                    {getIcon(key)}
+                  </div>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: 'var(--text-primary)' }}>{t(`about.values.${key}.title`)}</h3>
+                  <p style={{ fontSize: '0.9rem', margin: 0, color: 'var(--text-secondary)', lineHeight: '1.6' }}>{t(`about.values.${key}.desc`)}</p>
                 </div>
-                <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: 'var(--text-primary)' }}>{t(`about.values.${key}.title`)}</h3>
-                <p style={{ fontSize: '0.9rem', margin: 0, color: 'var(--text-secondary)', lineHeight: '1.6' }}>{t(`about.values.${key}.desc`)}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
