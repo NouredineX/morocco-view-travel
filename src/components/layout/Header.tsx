@@ -30,10 +30,12 @@ export default function Header() {
     };
   }, []);
 
-  // Initialize theme from HTML attribute on mount
+  // Initialize theme from localStorage on mount to survive Next.js locale layout resets
   useEffect(() => {
-    const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    const savedTheme = localStorage.getItem('theme') as 'dark' | 'light';
+    const currentTheme = savedTheme || 'light';
     setTheme(currentTheme);
+    document.documentElement.setAttribute('data-theme', currentTheme);
     setIsThemeInitialized(true);
   }, []);
 
