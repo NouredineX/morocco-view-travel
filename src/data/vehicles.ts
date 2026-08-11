@@ -24,7 +24,7 @@ export const vehicles: Vehicle[] = [
     id: 'prado',
     name: 'Land Cruiser Prado',
     type: '4x4 Luxury SUV',
-    capacity: '1 - 4 passengers',
+    capacity: '1 | 4 passengers',
     image: '/images/our cars/Land Cruiser Prado.jpg',
     gallery: [
       '/images/our cars/Land Cruiser Prado.jpg',
@@ -50,7 +50,7 @@ export const vehicles: Vehicle[] = [
     id: 'vito',
     name: 'Mercedes Benz Vito',
     type: 'Premium Minivan',
-    capacity: '1 - 7 passengers',
+    capacity: '1 | 7 passengers',
     image: '/images/our cars/Mercedes Benz Vito.jpg',
     gallery: [
       '/images/our cars/Mercedes Benz Vito.jpg',
@@ -75,7 +75,7 @@ export const vehicles: Vehicle[] = [
     id: 'torneo',
     name: 'Ford Torneo',
     type: 'Executive Tourer',
-    capacity: '1 - 8 passengers',
+    capacity: '1 | 8 passengers',
     image: '/images/our cars/Ford Torneo.jpg',
     gallery: [
       '/images/our cars/Ford Torneo.jpg',
@@ -101,7 +101,7 @@ export const vehicles: Vehicle[] = [
     id: 'sprinter',
     name: 'Mercedes Sprinter',
     type: 'Luxury Minibus',
-    capacity: '10 - 17 passengers',
+    capacity: '10 | 17 passengers',
     image: '/images/our cars/WhatsApp Image 2026-08-10 at 16.09.11 (1).jpeg',
     gallery: [
       '/images/our cars/WhatsApp Image 2026-08-10 at 16.09.11 (1).jpeg',
