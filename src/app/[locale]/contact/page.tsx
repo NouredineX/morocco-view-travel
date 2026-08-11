@@ -75,12 +75,6 @@ export default function ContactPage() {
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>moroccoviewtravel@gmail.com</p>
               </a>
 
-              {/* Hours Card */}
-              <div className="glass-card contact-info-card" id="contact-card-hours" style={{ padding: '2rem' }}>
-                <div className="icon" style={{ fontSize: '2rem', marginBottom: '1rem' }}>🕒</div>
-                <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{t('contact.hoursLabel', 'Working Hours')}</h4>
-                <p style={{ margin: 0, color: 'var(--text-secondary)' }}>{t('contact.hours', 'Mon - Sat: 8am - 8pm')}</p>
-              </div>
             </div>
           </div>
         </div>
