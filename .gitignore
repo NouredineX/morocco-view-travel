@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+/dist/
 
 # production
 /build
@@ -23,6 +24,11 @@
 # misc
 .DS_Store
 *.pem
+/moroccoviewtravel-docker-compose.yml
+/moroccoviewtravel-npm-6.conf
+/npm-docker-compose.yml
+/tour_keywords_by_place.xlsx
+/scratch/
 
 # debug
 npm-debug.log*

@@ -32,7 +32,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  output: 'export',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -40,14 +42,6 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-  },
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: securityHeaders,
-      },
-    ];
   },
 };
 

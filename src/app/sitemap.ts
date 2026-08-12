@@ -4,6 +4,8 @@ import { tours } from '@/data/tours';
 import { blogPosts } from '@/data/blogPosts';
 import { getLocalizedPath } from '@/utils/routes';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://travellingthroughmorocco.com';
   const entries: MetadataRoute.Sitemap = [];
