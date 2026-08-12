@@ -54,7 +54,7 @@ const cityGuides: Record<string, {
     nameEs: 'Marrakech la Ciudad Roja',
     nameZh: '红城马拉喀什',
     namePt: 'Marrakech a Cidade Vermelha',
-    desc: 'Explore the historic red city of Marrakech. Visit the magnificent Bahia Palace, the Saadian Tombs, and the Jardin Majorelle. In the evening, immerse yourself in the lively atmosphere of Jemaa el-Fnaa square, where storytellers, musicians, and street food stalls bring the night to life.',
+    desc: 'Discover the best things to do in Marrakech Morocco. Explore famous Marrakech points of interest like the Bahia Palace, the Saadian Tombs, and the Jardin Majorelle. For those seeking activities to do in Morocco Marrakech, we offer camel riding, souk tours, and visiting the majestic Jemaa el-Fnaa square in Marrakesh Morocco. Our Morocco Marrakech tours are fully customized to let you see the best things to see in Marrakech.',
     descFr: 'Explorez la ville rouge historique de Marrakech. Visitez le magnifique palais de la Bahia, les tombeaux saadiens et le jardin Majorelle. Le soir, plongez dans l\'ambiance animée de la place Jemaa el-Fnaa.',
     descEs: 'Explore la histórica ciudad roja de Marrakech. Visite el magnífico Palacio de la Bahía, las Tumbas Saadidas y el Jardín Majorelle. Por la noche, sumérjase en el animado ambiente de la plaza Jemaa el-Fnaa.',
     descZh: '探索历史悠久的红色城市马拉喀什。游览雄伟的巴希亚宫、萨阿德王朝陵墓和马约尔花园。傍晚时分，沉浸在杰马夫纳广场的喧嚣活力中，讲故事的人、音乐家和林立的街头美食摊位让这里夜夜生歌。',
@@ -66,7 +66,7 @@ const cityGuides: Record<string, {
     nameEs: 'Casablanca Metrópolis',
     nameZh: '大都市卡萨布兰卡',
     namePt: 'Casablanca Metrópole',
-    desc: 'Discover Casablanca, Morocco\'s modern economic capital. Tour the spectacular Hassan II Mosque, one of the largest mosques in the world, which features a 210-meter minaret overlooking the Atlantic Ocean. Stroll along the scenic Ain Diab Corniche and visit the historic Habous quarter.',
+    desc: 'Discover Casablanca, Morocco\'s modern economic capital, with top things to do in Casablanca Morocco. Tour the spectacular Hassan II Mosque, one of the largest mosques in the world and a key what to see in Casablanca landmark. Stroll along the scenic Ain Diab Corniche for popular things to see and do in Casablanca Morocco, and find unique places to visit Casablanca.',
     descFr: 'Découvrez Casablanca, la capitale économique moderne du Maroc. Visitez la spectaculaire mosquée Hassan II, l\'une des plus grandes mosquées au monde avec son minaret de 210 mètres surplombant l\'océan Atlantique.',
     descEs: 'Descubra Casablanca, la moderna capital económica de Marruecos. Visite la espectacular Mezquita de Hassan II, una de las mezquitas más grandes del mundo con su alminar de 210 metros sobre el océano Atlántico.',
     descZh: '探索摩洛哥的现代化经济首都卡萨布兰卡。参观壮丽的哈桑二世清真寺，这是世界上最大的清真寺之一，拥有一座俯瞰大西洋的210米高宣礼塔。沿着风景秀丽的艾因迪亚卜海滨大道散步，参观历史悠久的哈布斯街区。',
@@ -90,9 +90,9 @@ const cityGuides: Record<string, {
     nameEs: 'Chefchaouen la Ciudad Azul',
     nameZh: '蓝色之城舍夫沙万',
     namePt: 'Chefchaouen a Cidade Azul',
-    desc: 'Wander through the dreamy blue-washed streets of Chefchaouen, nestled in the Rif Mountains. Every corner offers a picturesque view of local handicrafts, leather goods, and weaving workshops. Relax at Outa el-Hammam square and visit the Spanish Mosque for a panoramic sunset view.',
+    desc: 'Wander through the dreamy blue-washed streets of Chefchaouen Morocco blue city, nestled in the Rif Mountains. Find local crafts and key things to do in Chefchaouen. As you explore Morocco blue city Chefchaouen, relax at Outa el-Hammam square and visit the Spanish Mosque for a panoramic sunset over the blue city Chefchaouen Morocco.',
     descFr: 'Flânez dans les ruelles bleues de Chefchaouen, nichée dans les montagnes du Rif. Visitez la place Outa el-Hammam et la mosquée espagnole pour admirer le coucher du soleil.',
-    descEs: 'Pasee por las calles de color azul de Chefchaouen, en las montañas del Rif. Visite la plaza Outa el-Hammam y la mezquita española para admirar el atardecer.',
+    descEs: 'Pasee por las calles de color azul de Chefchaouen, en las marcos del Rif. Visite la plaza Outa el-Hammam y la mezquita española para admirar el atardecer.',
     descZh: '漫步在里夫山脉环抱的梦幻蓝漆街道舍夫沙万。每一个拐角都呈现出当地手工艺品、皮革制品和纺织作坊的如画风光。在乌塔·哈曼广场放松身心，并前往西班牙清真寺欣赏日落全景。',
     descPt: 'Caminhe pelas ruelas de tom azul de Chefchaouen, aninhada nas Montanhas do Rif. Visite a praça Outa el-Hammam e suba até à Mesquita Espanhola para um pôr do sol panorâmico.'
   },
@@ -102,9 +102,9 @@ const cityGuides: Record<string, {
     nameEs: 'Fez Medina',
     nameZh: '非斯老城麦地那',
     namePt: 'Fes Medina',
-    desc: 'Step back in time as you enter Fes el-Bali, the oldest medieval medina in the world. Walk through its labyrinth of 9,000 narrow streets, visiting the Al-Qarawiyyin University, the Bou Inania Madrasa, and the famous Chouara Tanneries, where traditional leather dyeing is still practiced.',
+    desc: 'Discover the top things to do in Fes Morocco. Step back in time as you enter Fes el-Bali, visiting the oldest medieval medina in the world and Fes Morocco attractions like the Chouara Tanneries and Al-Qarawiyyin University. If you are wondering what to see in Fes or what to do in Fes Morocco, our guided tours show you the ancient medina\'s hidden treasures.',
     descFr: 'Remontez le temps en entrant dans Fès el-Bali, la plus ancienne médina médiévale du monde. Visitez l\'université Al-Qarawiyyin, la madrasa Bou Inania et les tanneries de Chouara.',
-    descEs: 'Retroceda en el tiempo al ingresar a Fez el-Bali, la medina medieval más antigua del mundo. Visite la universidad Al-Qarawiyyin, la madrasa Bou Inania y las curtidurías de Chouara.',
+    descEs: 'Retroceda en el tiempo al ingresar a Fez el-Bali, la medina medieval más antigua del mundo. Visite la universidad Al-Qarawiyyin, la madrasa Bou Inania y las curtidurías de Fez.',
     descZh: '步入非斯巴里麦地那，置身于世界上最古老的中世纪老城，仿佛时光倒流。穿行在由9,000条狭窄街道组成的迷宫中，参观卡拉维因大学、布伊纳尼亚神学院以及著名的舒瓦拉皮革染坊（那里依然沿用着传统的皮革染色工艺）。',
     descPt: 'Recue no tempo ao entrar em Fes el-Bali, a medina medieval mais antiga do mundo. Explore o labirinto de ruelas, visite a Universidade Al-Qarawiyyin e os curtumes Chouara.'
   },
@@ -129,7 +129,7 @@ const cityGuides: Record<string, {
     desc: 'Explore Ouarzazate, the Hollywood of Morocco. Visit the famous Kasbah Ait Benhaddou, a fortified clay village featured in Gladiator and Game of Thrones. Explore the Atlas Film Studios and learn how this unique desert town became a backdrop for cinematic history.',
     descFr: 'Explorez Ouarzazate, le Hollywood du Maroc. Visitez la célèbre Kasbah Ait Benhaddou, un village d\'argile fortifié classé à l\'UNESCO. Explorez les studios de cinéma Atlas.',
     descEs: 'Explore Ouarzazate, el Hollywood de Marruecos. Visite la famosa Kasbah Ait Benhaddou, un pueblo de arcilla fortificado catalogado por la UNESCO. Explore los estudios cinematográficos.',
-    descZh: '探索摩洛哥的“荷里活”瓦尔扎扎特。游览著名的阿伊特·本·哈杜筑垒村，这是一座由红土建成的防御村落，曾作为《角斗士》和《权力的游戏》等多部好莱坞电影的背景。参观阿特拉斯电影制片厂，了解这座独特的沙漠小镇如何写入电影史。',
+    descZh: '探索摩洛哥的“荷里活”瓦尔扎扎特。游览著名的阿伊特·本·哈杜筑垒村，这是一座由红土建成的防御村落，曾作为《角斗士》和《权力的游戏》等多部好莱坞电影 of 电影的背景。参观阿特拉斯电影制片厂，了解这座独特的沙漠小镇如何写入电影史。',
     descPt: 'Explore Ouarzazate, a Hollywood de Marrecos. Visite a famosa Kasbah Ait Benhaddou (Património da UNESCO) e explore os estúdios de cinema Atlas.'
   },
   'Merzouga': {
@@ -138,7 +138,7 @@ const cityGuides: Record<string, {
     nameEs: 'Merzouga Campamento en el Desierto',
     nameZh: '梅尔祖卡撒哈拉沙漠营地',
     namePt: 'Merzouga Acampamento no Deserto',
-    desc: 'Experience the magic of the Sahara Desert. Ride camels across the golden dunes of Erg Chebbi as the sun sets. Spend an unforgettable night in a private luxury desert camp, enjoy a traditional dinner around the campfire, listen to live Berber drumming music, and stargaze under the clear sky.',
+    desc: 'Experience the magic of Merzouga desert tours. Ride camels across the golden dunes of the Merzouga desert in Merzouga Morocco. Spend an unforgettable night in a private luxury desert camp, enjoy a traditional dinner around the campfire, listen to live Berber drumming music, and stargaze under the clear sky.',
     descFr: 'Vivez la magie du désert du Sahara. Randonnez à dos de chameau dans les dunes dorées de l\'Erg Chebbi au coucher du soleil. Passez la nuit dans un camp de luxe avec musique berbère traditionnelle.',
     descEs: 'Viva la magia del desierto del Sahara. Pasee en camello por las dunas de Erg Chebbi al atardecer. Pase la noche en un campamento de lujo con cena y música bereber tradicional.',
     descZh: '体验撒哈拉沙漠的魔力。日落时分骑着骆驼穿过厄格切比的金色沙丘。在私人豪华沙漠营地度过难忘的一夜，围绕营火享受传统晚餐，聆听现场柏柏尔手鼓音乐，并在清澈的星空下观星。',
@@ -215,6 +215,18 @@ const cityGuides: Record<string, {
     descEs: 'Descubra Ifrane, la Suiza de Marruecos, conocida por su arquitectura de estilo alpino y el famoso monumento del león de piedra tallado.',
     descZh: '游览常被称为“摩洛哥小瑞士”的伊芙兰。漫步在其干净的街道上，欣赏阿尔卑斯风格的建筑，并参观由当地工匠雕刻的著名石狮雕像。',
     descPt: 'Visite Ifrane, a "Suíça" de Marrecos. Caminhe pelas ruas limpas, admire a arquitetura alpina e veja o famoso monumento do leão de pedra.'
+  },
+  'Agadir': {
+    name: 'Agadir Resort',
+    nameFr: 'Agadir Station',
+    nameEs: 'Agadir Balneario',
+    nameZh: '阿加迪尔度假胜地',
+    namePt: 'Agadir Estância',
+    desc: 'Explore the best things to do in Agadir, known for beautiful Agadir tourist attractions. Discover Agadir Morocco beaches, enjoy Agadir all inclusive resorts, and visit Agadir city spots like the ancient Kasbah.',
+    descFr: 'Explorez Agadir et ses attractions touristiques. Profitez des plages d\'Agadir Maroc et découvrez la kasbah historique.',
+    descEs: 'Explore Agadir y sus atracciones turísticas. Disfrute de las playas de Agadir Marruecos y visite la antigua kasbah.',
+    descZh: '游览阿加迪尔的知名景点，欣赏迷人的阿加迪尔海滩，体验阿加迪尔度假酒店的惬意生活。',
+    descPt: 'Explore Agadir e as suas atrações turísticas. Desfrute das praias de Agadir e visite a antiga Kasbah.'
   }
 };
 
@@ -402,12 +414,12 @@ export const getDetailedItinerary = (_tourId: string, tour: {
     focusKeywordEs = 'gran tour de 5 días por Marruecos';
     focusKeywordZh = '5日摩洛哥经典大环线游';
     focusKeywordPt = 'circuito de 5 dias em Marrocos';
-  } else if (tour.slug.includes('4-days')) {
-    focusKeyword = '4 days tour Marrakech to Fes';
-    focusKeywordFr = "circuit de 4 jours Marrakech à Fès";
-    focusKeywordEs = 'tour de 4 días de Marrakech a Fez';
-    focusKeywordZh = '4日沙漠游马拉喀什至非斯';
-    focusKeywordPt = 'circuito de 4 dias de Marrakech a Fes';
+  } else if (tour.slug.includes('4-days-tour-marrakech-fes-desert') || tour.slug.includes('6-days-tour-fes-marrakech-sahara') || tour.slug.includes('4-days')) {
+    focusKeyword = 'Marrakech to Fes desert tour';
+    focusKeywordFr = "circuit désert de Marrakech à Fès";
+    focusKeywordEs = 'tour al desierto de Marrakech a Fez';
+    focusKeywordZh = '马拉喀什至非斯沙漠之旅';
+    focusKeywordPt = 'circuito no deserto de Marrakech a Fes';
   } else if (tour.slug.includes('3-days')) {
     focusKeyword = '3 days desert tour Marrakech to Merzouga';
     focusKeywordFr = "circuit désert de 3 jours Marrakech à Merzouga";
