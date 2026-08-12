@@ -90,7 +90,7 @@ export default function Header() {
           <div className="logo-img-wrapper" style={{ position: 'relative', width: '65px', height: '65px', flexShrink: 0 }}>
             <Image 
               src="/images/logo.png" 
-              alt="Morocco View Travel Logo" 
+              alt="Travelling Through Morocco Logo" 
               fill
               sizes="65px"
               style={{ objectFit: 'contain' }}
