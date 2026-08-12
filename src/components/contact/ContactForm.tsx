@@ -35,12 +35,12 @@ export default function ContactForm({ locale }: ContactFormProps) {
     if (selectedTour) {
       setFormData(prev => ({
         ...prev,
-        message: `Hello Morocco View Travel, I would like to request more information or book the "${selectedTour.replace(/-/g, ' ')}" tour.`
+        message: `Hello Travelling Through Morocco, I would like to request more information or book the "${selectedTour.replace(/-/g, ' ')}" tour.`
       }));
     } else if (customRoute) {
       setFormData(prev => ({
         ...prev,
-        message: `Hello Morocco View Travel, I have built a custom route on your website and would like a quote: ${customRoute}`
+        message: `Hello Travelling Through Morocco, I have built a custom route on your website and would like a quote: ${customRoute}`
       }));
     }
   }, [searchParams]);
@@ -230,7 +230,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: 'middle', marginRight: '6px', marginTop: '-2px' }}>
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
-              I consent to Morocco View Travel securely processing my details to reply to my travel inquiry.
+              I consent to Travelling Through Morocco securely processing my details to reply to my travel inquiry.
               <span style={{ display: 'block', marginTop: '4px', fontSize: '0.78rem', color: 'var(--text-secondary)', opacity: 0.7 }}>
                 🔒 GDPR Compliant · 256-bit SSL Encrypted · Your data is never shared
               </span>

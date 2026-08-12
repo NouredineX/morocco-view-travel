@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="hero-bg">
         <Image
           src="/images/merzoga.webp"
-          alt="Sahara Desert Dunes Morocco View Travel"
+          alt="Sahara Desert Dunes Travelling Through Morocco"
           fill
           className="hero-image"
           style={{ objectFit: 'cover' }}
