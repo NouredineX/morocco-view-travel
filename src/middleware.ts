@@ -16,8 +16,8 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(newUrl.toString(), 301);
   }
 
-  // Exclude SEO & AI discovery files from locale prefix matching
-  const isExcludedFile = ['/llms.txt', '/robots.txt', '/sitemap.xml'].includes(pathname);
+  // Exclude SEO, AI discovery, and Admin CMS files from locale prefix matching
+  const isExcludedFile = ['/llms.txt', '/robots.txt', '/sitemap.xml', '/wp'].includes(pathname);
   if (isExcludedFile) {
     return NextResponse.next();
   }
@@ -40,7 +40,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Skip all internal paths, api routes, static resources, media, and root discovery/SEO files
-    '/((?!api|_next/static|_next/image|images|favicon.ico|llms.txt|robots.txt|sitemap.xml).*)',
+    // Skip all internal paths, api routes, static resources, media, root discovery/SEO files, and wp dashboard
+    '/((?!api|_next/static|_next/image|images|favicon.ico|llms.txt|robots.txt|sitemap.xml|wp).*)',
   ],
 };
