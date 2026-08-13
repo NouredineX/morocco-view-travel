@@ -66,7 +66,6 @@ export default function Footer() {
             <ul className="footer-links-list">
               <li><Link href={getLocalizedPath('home', locale)} id="footer-link-home">{t('nav.home', 'Home')}</Link></li>
               <li><Link href={getLocalizedPath('tours', locale)} id="footer-link-tours">{t('nav.tours', 'Tours')}</Link></li>
-              <li><Link href={getLocalizedPath('our-fleet', locale)} id="footer-link-fleet">{t('nav.fleet', 'Our Fleet')}</Link></li>
               <li><Link href={getLocalizedPath('about', locale)} id="footer-link-about">{t('nav.about', 'About Us')}</Link></li>
               <li><Link href={getLocalizedPath('blog', locale)} id="footer-link-blog">{t('nav.blog', 'Blog')}</Link></li>
               <li><Link href={getLocalizedPath('contact', locale)} id="footer-link-contact">{t('nav.contact', 'Contact')}</Link></li>

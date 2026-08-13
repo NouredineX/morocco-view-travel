@@ -193,55 +193,15 @@ export default function AboutPage({ locale }: { locale: Locale }) {
             <p>{t('about.teamDesc', 'The passionate travelers and guides behind Travelling Through Morocco.')}</p>
           </div>
 
-          <div className="grid-3" id="team-grid">
-            {/* Owner */}
-            <div className="glass-card team-card" id="team-member-owner" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
-              <div style={{ position: 'relative', height: '350px', width: '100%' }}>
-                <Image 
-                  src="/images/team/owner mohamed boumeshoul.webp" 
-                  alt="Mohamed Boumeshoul" 
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed Boumeshoul</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>{t('about.roles.owner', 'Founder & Managing Director')}</p>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
-                  {t('about.bios.owner', 'Mohamed grew up in Merzouga and has spent over 15 years guiding international travelers through the Sahara desert.')}
-                </p>
-              </div>
-            </div>
-
-            {/* Driver */}
-            <div className="glass-card team-card" id="team-member-driver" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
-              <div style={{ position: 'relative', height: '350px', width: '100%' }}>
-                <Image 
-                  src="/images/team/Mohamed ohso driver.webp" 
-                  alt="Mohamed Ohso" 
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>Mohamed Ohso</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--color-primary)', fontWeight: '600', marginBottom: '1rem' }}>{t('about.roles.driver', 'Professional Driver & Desert Guide')}</p>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.6' }}>
-                  {t('about.bios.driver', 'An expert navigator of the Atlas Mountains and Sahara desert tracks, ensuring your safety and comfort at every turn.')}
-                </p>
-              </div>
-            </div>
-
+          <div style={{ display: 'flex', justifyContent: 'center' }} id="team-container">
             {/* Designer */}
-            <div className="glass-card team-card" id="team-member-designer" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
+            <div className="glass-card team-card" id="team-member-designer" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center', maxWidth: '400px', width: '100%' }}>
               <div style={{ position: 'relative', height: '350px', width: '100%' }}>
                 <Image 
                   src="/images/team/Noureddine designer.webp" 
                   alt="Noureddine" 
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 400px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>

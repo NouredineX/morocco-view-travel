@@ -71,7 +71,6 @@ export default function Header() {
   const navItems = [
     { name: t('nav.home', 'Home'), pageType: 'home' },
     { name: t('nav.tours', 'Tours'), pageType: 'tours' },
-    { name: t('nav.fleet', 'Our Fleet'), pageType: 'our-fleet' },
     { name: t('nav.about', 'About Us'), pageType: 'about' },
     { name: t('nav.blog', 'Blog'), pageType: 'blog' },
     { name: t('nav.contact', 'Contact'), pageType: 'contact' },

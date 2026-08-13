@@ -1,6 +1,7 @@
 import React from 'react';
 import { Locale, getTranslations } from '@/utils/i18n';
 import TourList from '@/components/tours/TourList';
+import InteractiveMap from '@/components/tours/InteractiveMap';
 import { tours } from '@/data/tours';
 import { getTranslated } from '@/utils/translate';
 import { getLocalizedPath } from '@/utils/routes';
@@ -70,6 +71,21 @@ export default function ToursPage({ locale }: { locale: Locale }) {
             <span className="separator">/</span>
             <span style={{ color: 'var(--color-primary)' }}>{t('nav.tours', 'Tours')}</span>
           </div>
+        </div>
+      </section>
+
+      {/* Interactive Map Section */}
+      <section className="section" id="custom-itinerary-section" style={{ background: 'var(--bg-dark-3)', borderBottom: '1px solid var(--border-glass)', padding: '5rem 0' }}>
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-subtitle" style={{ fontFamily: 'var(--font-accent)', color: 'var(--color-primary)', display: 'block', marginBottom: '0.5rem' }}>
+              {t('sections.mapSubtitle', 'Interactive Map')}
+            </span>
+            <h2>{t('sections.mapTitle', 'Build Your Trip')}</h2>
+            <p>{t('sections.mapDesc', 'Click on cities to create your custom itinerary across Morocco')}</p>
+          </div>
+          
+          <InteractiveMap locale={locale} />
         </div>
       </section>
 
