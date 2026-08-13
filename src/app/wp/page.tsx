@@ -4,6 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { tours as initialTours } from '@/data/tours';
 import { blogPosts as initialBlogPosts } from '@/data/blogPosts';
 import type { Tour, BlogPost } from '@/types';
+import enLocale from '@/locales/en.json';
+import esLocale from '@/locales/es.json';
+import frLocale from '@/locales/fr.json';
+import itLocale from '@/locales/it.json';
+import jaLocale from '@/locales/ja.json';
+import zhLocale from '@/locales/zh.json';
 
 // Password protection credentials
 const ADMIN_USER = 'admin';
@@ -58,11 +64,19 @@ export default function WpDashboard() {
   const [loginError, setLoginError] = useState('');
 
   // Active Tab: 'dashboard' | 'posts' | 'tours' | 'git-push'
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'posts' | 'tours' | 'git-push'>('dashboard');
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'posts' | 'tours' | 'languages' | 'git-push'>('dashboard');
 
   // Database States (loaded from localStorage or defaults)
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
   const [tours, setTours] = useState<Tour[]>([]);
+  
+  // Locales States
+  const [localesData, setLocalesData] = useState<Record<string, any>>({
+    en: {}, es: {}, fr: {}, it: {}, ja: {}, zh: {}
+  });
+  const [activeLang, setActiveLang] = useState<string>('en');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [activeLocaleGroup, setActiveLocaleGroup] = useState<string>('all');
 
   // GitHub Integration Settings
   const [githubToken, setGithubToken] = useState('');
@@ -98,6 +112,26 @@ export default function WpDashboard() {
       setTours(initialTours);
     }
 
+    // Load locales from localStorage or defaults
+    const loadedLocales: Record<string, any> = {};
+    ['en', 'es', 'fr', 'it', 'ja', 'zh'].forEach(lang => {
+      const saved = localStorage.getItem(`wp_locale_${lang}`);
+      if (saved) {
+        loadedLocales[lang] = JSON.parse(saved);
+      } else {
+        const defaultLocales: Record<string, any> = {
+          en: enLocale,
+          es: esLocale,
+          fr: frLocale,
+          it: itLocale,
+          ja: jaLocale,
+          zh: zhLocale
+        };
+        loadedLocales[lang] = defaultLocales[lang];
+      }
+    });
+    setLocalesData(loadedLocales);
+
     // Load GitHub settings
     const savedToken = localStorage.getItem('wp_github_token') || '';
     const savedRepo = localStorage.getItem('wp_github_repo') || 'NouredineX/morocco-view-travel';
@@ -111,6 +145,49 @@ export default function WpDashboard() {
     localStorage.setItem('wp_tours', JSON.stringify(updatedTours));
     setBlogPosts(updatedPosts);
     setTours(updatedTours);
+  };
+
+  // Save locale data changes
+  const saveLocaleToLocal = (lang: string, updatedData: any) => {
+    const newLocalesData = { ...localesData, [lang]: updatedData };
+    setLocalesData(newLocalesData);
+    localStorage.setItem(`wp_locale_${lang}`, JSON.stringify(updatedData));
+  };
+
+  // Flatten and Unflatten Helpers for JSON editing
+  const flattenObject = (ob: any): Record<string, string> => {
+    const toReturn: Record<string, string> = {};
+    for (const i in ob) {
+      if (!ob.hasOwnProperty(i)) continue;
+      if ((typeof ob[i]) === 'object' && ob[i] !== null) {
+        const flatObject = flattenObject(ob[i]);
+        for (const x in flatObject) {
+          if (!flatObject.hasOwnProperty(x)) continue;
+          toReturn[i + '.' + x] = flatObject[x];
+        }
+      } else {
+        toReturn[i] = String(ob[i]);
+      }
+    }
+    return toReturn;
+  };
+
+  const unflattenObject = (table: Record<string, string>): any => {
+    const result: any = {};
+    for (const path in table) {
+      const keys = path.split('.');
+      let current = result;
+      for (let i = 0; i < keys.length; i++) {
+        const key = keys[i];
+        if (i === keys.length - 1) {
+          current[key] = table[path];
+        } else {
+          current[key] = current[key] || {};
+          current = current[key];
+        }
+      }
+    }
+    return result;
   };
 
   // Handle Login submission
@@ -462,6 +539,20 @@ export default function WpDashboard() {
             }}
           >
             Tours ({tours.length})
+          </button>
+          <button 
+            onClick={() => { setActiveTab('languages'); setEditingPost(null); setEditingTour(null); }}
+            style={{
+              padding: '12px 16px',
+              borderRadius: '8px',
+              textAlign: 'left',
+              background: activeTab === 'languages' ? colors.bgSidebarActive : 'transparent',
+              color: activeTab === 'languages' ? colors.textSidebarActive : colors.textSidebar,
+              fontWeight: activeTab === 'languages' ? 'bold' : 'normal',
+              cursor: 'pointer'
+            }}
+          >
+            🌐 Pages & Languages
           </button>
           <button 
             onClick={() => { setActiveTab('git-push'); setEditingPost(null); setEditingTour(null); }}
@@ -855,6 +946,203 @@ export default function WpDashboard() {
                 </button>
               </div>
             </form>
+          </div>
+        )}
+
+        {/* Tab 5: Site Pages & Languages Translation Editor */}
+        {activeTab === 'languages' && (
+          <div>
+            <h1 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '8px', color: isLightMode ? '#2271B1' : '#C5A86E' }}>🌐 Site Pages & Languages</h1>
+            <p style={{ color: colors.textSecondary, fontSize: '15px', marginBottom: '24px' }}>
+              Control all static texts, navigation links, titles, subtitles, and paragraphs across all pages (Home, About, Destinations, Our Fleet, Contact, Privacy Policy) for all active languages.
+            </p>
+
+            {/* Language Selection Bar */}
+            <div style={{ display: 'flex', gap: '8px', marginBottom: '24px', flexWrap: 'wrap' }}>
+              {[
+                { code: 'en', label: 'English (Default)' },
+                { code: 'fr', label: 'French (fr)' },
+                { code: 'es', label: 'Spanish (es)' },
+                { code: 'it', label: 'Italian (it)' },
+                { code: 'ja', label: 'Japanese (ja)' },
+                { code: 'zh', label: 'Chinese (zh)' }
+              ].map(lang => (
+                <button
+                  key={lang.code}
+                  onClick={() => { setActiveLang(lang.code); }}
+                  style={{
+                    padding: '10px 16px',
+                    borderRadius: '8px',
+                    background: activeLang === lang.code ? (isLightMode ? '#2271B1' : '#C5A86E') : colors.bgCard,
+                    color: activeLang === lang.code ? (isLightMode ? '#FFFFFF' : '#080C14') : colors.textPrimary,
+                    border: activeLang === lang.code ? 'none' : colors.border,
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    fontSize: '13px'
+                  }}
+                >
+                  {lang.label}
+                </button>
+              ))}
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '220px 1fr', gap: '24px', alignItems: 'start' }}>
+              {/* Group selection sidebar */}
+              <div style={{ background: colors.bgCard, border: colors.border, borderRadius: '12px', padding: '16px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                <label style={{ fontSize: '11px', fontWeight: 'bold', color: colors.textMuted, textTransform: 'uppercase', marginBottom: '8px', paddingLeft: '8px' }}>Page/Section</label>
+                {[
+                  { id: 'all', label: 'All Texts' },
+                  { id: 'nav', label: 'Navigation Menu' },
+                  { id: 'hero', label: 'Hero Slider / Banner' },
+                  { id: 'sections', label: 'Homepage Sections' },
+                  { id: 'about', label: 'About Us Page' },
+                  { id: 'destinations', label: 'Destinations Page' },
+                  { id: 'fleet', label: 'Our Fleet Page' },
+                  { id: 'contact', label: 'Contact Page' },
+                  { id: 'footer', label: 'Footer info' },
+                  { id: 'privacy', label: 'Privacy Policy' }
+                ].map(group => (
+                  <button
+                    key={group.id}
+                    onClick={() => setActiveLocaleGroup(group.id)}
+                    style={{
+                      padding: '8px 12px',
+                      borderRadius: '6px',
+                      textAlign: 'left',
+                      background: activeLocaleGroup === group.id ? (isLightMode ? 'rgba(34, 113, 177, 0.1)' : 'rgba(197, 168, 110, 0.15)') : 'transparent',
+                      color: activeLocaleGroup === group.id ? (isLightMode ? '#2271B1' : '#C5A86E') : colors.textSecondary,
+                      border: 'none',
+                      fontWeight: activeLocaleGroup === group.id ? 'bold' : 'normal',
+                      cursor: 'pointer',
+                      fontSize: '13px'
+                    }}
+                  >
+                    {group.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Translation Inputs List */}
+              <div style={{ background: colors.bgCard, border: colors.border, borderRadius: '12px', padding: '32px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', gap: '16px' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: 'bold' }}>Editing Translation Dictionary: {activeLang.toUpperCase()}</h3>
+                  
+                  {/* Search box */}
+                  <input
+                    type="text"
+                    placeholder="Search keys or values..."
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    style={{
+                      padding: '8px 12px',
+                      borderRadius: '6px',
+                      background: colors.inputBg,
+                      border: colors.inputBorder,
+                      color: colors.inputText,
+                      fontSize: '13px',
+                      width: '240px'
+                    }}
+                  />
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxHeight: '60vh', overflowY: 'auto', paddingRight: '12px', marginBottom: '24px' }}>
+                  {(() => {
+                    const flatData = flattenObject(localesData[activeLang] || {});
+                    const filteredKeys = Object.keys(flatData).filter(key => {
+                      // Filter by group
+                      if (activeLocaleGroup !== 'all') {
+                        if (!key.startsWith(activeLocaleGroup)) return false;
+                      }
+                      // Filter by search query
+                      if (searchQuery) {
+                        const val = String(flatData[key]).toLowerCase();
+                        const q = searchQuery.toLowerCase();
+                        return key.toLowerCase().includes(q) || val.includes(q);
+                      }
+                      return true;
+                    });
+
+                    if (filteredKeys.length === 0) {
+                      return <p style={{ color: colors.textMuted, fontSize: '14px', textAlign: 'center', padding: '40px' }}>No translation keys found matching filters.</p>;
+                    }
+
+                    return filteredKeys.map(key => {
+                      const value = flatData[key];
+                      const isLongText = value.length > 60 || key.includes('story') || key.includes('desc') || key.includes('privacy') || key.includes('bio');
+                      
+                      return (
+                        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: '6px', borderBottom: `1px solid ${isLightMode ? '#F0F0F1' : 'rgba(255,255,255,0.03)'}`, paddingBottom: '16px' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <span style={{ fontSize: '11px', fontFamily: 'monospace', color: colors.accent, fontWeight: 'bold' }}>{key}</span>
+                            <span style={{ fontSize: '10px', color: colors.textMuted, textTransform: 'uppercase' }}>{key.split('.')[0]}</span>
+                          </div>
+                          {isLongText ? (
+                            <textarea
+                              value={value}
+                              onChange={e => {
+                                const newFlat = { ...flatData, [key]: e.target.value };
+                                saveLocaleToLocal(activeLang, unflattenObject(newFlat));
+                              }}
+                              style={{
+                                width: '100%',
+                                padding: '10px',
+                                borderRadius: '6px',
+                                background: colors.inputBg,
+                                border: colors.inputBorder,
+                                color: colors.inputText,
+                                fontSize: '13px',
+                                height: '80px',
+                                resize: 'vertical',
+                                lineHeight: '1.5'
+                              }}
+                            />
+                          ) : (
+                            <input
+                              type="text"
+                              value={value}
+                              onChange={e => {
+                                const newFlat = { ...flatData, [key]: e.target.value };
+                                saveLocaleToLocal(activeLang, unflattenObject(newFlat));
+                              }}
+                              style={{
+                                width: '100%',
+                                padding: '10px',
+                                borderRadius: '6px',
+                                background: colors.inputBg,
+                                border: colors.inputBorder,
+                                color: colors.inputText,
+                                fontSize: '13px'
+                              }}
+                            />
+                          )}
+                        </div>
+                      );
+                    });
+                  })()}
+                </div>
+
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: colors.border, paddingTop: '20px' }}>
+                  <span style={{ fontSize: '12px', color: colors.textMuted }}>⚠️ Changes are saved in your local browser drafts. Remember to deploy them live f the "Save & Publish" tab.</span>
+                  <button
+                    onClick={() => {
+                      alert('Translations Saved to Local drafts! Go to "Save & Publish" to push updates live.');
+                      setActiveTab('git-push');
+                    }}
+                    style={{
+                      padding: '10px 20px',
+                      background: colors.btnPrimaryBg,
+                      color: colors.btnPrimaryText,
+                      fontWeight: 'bold',
+                      borderRadius: '8px',
+                      border: 'none',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    Deploy Updates &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
