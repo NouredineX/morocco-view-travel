@@ -85,7 +85,7 @@ export default async function HomePage({ params }: PageProps) {
       descIt: 'Esplora la ricca storia, i palazzi antichi e i souk di Fes, Marrakech e Meknes.',
       descJa: 'フェズ、マラケシュ、メクネスの豊かな歴史、古代の宮殿、スークを探索しましょう。',
       descZh: '探索非斯、马拉喀什及梅克内斯深厚的历史底蕴、古老皇宫和热闹集市。',
-      image: '/images/new update/FES.jpg'
+      image: '/images/new update/FES.webp'
     },
     {
       id: 'day-trip',
@@ -101,7 +101,7 @@ export default async function HomePage({ params }: PageProps) {
       descIt: 'Scopri bellissime città costiere, cascate e valli in gite di un giorno.',
       descJa: '日帰り旅行で美しい沿岸の町、滝、渓谷を発見しましょう。',
       descZh: '在一日游行程中发现美丽的海滨小镇、壮丽瀑布与山谷幽境。',
-      image: '/images/new update/essaouira.jpg'
+      image: '/images/new update/essaouira.webp'
     },
     {
       id: 'private',
@@ -117,7 +117,7 @@ export default async function HomePage({ params }: PageProps) {
       descIt: 'Itinerari completamente personalizzati con autisti privati e guide di lusso.',
       descJa: '専属ドライバーと高級ガイド付きの完全にカスタマイズされた旅程。',
       descZh: '提供专属司机和豪华导游的完全个性化定制路线。',
-      image: '/images/new update/ouarzazate.jpg'
+      image: '/images/new update/ouarzazate.webp'
     }
   ];
 

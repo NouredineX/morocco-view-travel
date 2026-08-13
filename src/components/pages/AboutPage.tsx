@@ -198,7 +198,7 @@ export default function AboutPage({ locale }: { locale: Locale }) {
             <div className="glass-card team-card" id="team-member-owner" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
               <div style={{ position: 'relative', height: '350px', width: '100%' }}>
                 <Image 
-                  src="/images/team/owner mohamed boumeshoul.jpeg" 
+                  src="/images/team/owner mohamed boumeshoul.webp" 
                   alt="Mohamed Boumeshoul" 
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -218,7 +218,7 @@ export default function AboutPage({ locale }: { locale: Locale }) {
             <div className="glass-card team-card" id="team-member-driver" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
               <div style={{ position: 'relative', height: '350px', width: '100%' }}>
                 <Image 
-                  src="/images/team/Mohamed ohso driver.jpeg" 
+                  src="/images/team/Mohamed ohso driver.webp" 
                   alt="Mohamed Ohso" 
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -238,7 +238,7 @@ export default function AboutPage({ locale }: { locale: Locale }) {
             <div className="glass-card team-card" id="team-member-designer" style={{ padding: '0', overflow: 'hidden', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
               <div style={{ position: 'relative', height: '350px', width: '100%' }}>
                 <Image 
-                  src="/images/team/Noureddine designer.jpeg" 
+                  src="/images/team/Noureddine designer.webp" 
                   alt="Noureddine" 
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
