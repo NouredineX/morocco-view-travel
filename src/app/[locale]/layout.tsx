@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cinzel, Outfit, Kaushan_Script } from 'next/font/google';
+import { Playfair_Display, Inter, Kaushan_Script } from 'next/font/google';
 import '../globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -8,17 +8,18 @@ import ScrollToTop from '@/components/ui/ScrollToTop';
 import { Locale, locales } from '@/utils/i18n';
 import Script from 'next/script';
 
-const cinzel = Cinzel({
-  variable: '--font-cinzel',
+const playfair = Playfair_Display({
+  variable: '--font-playfair',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
   display: 'swap',
 });
 
-const outfit = Outfit({
-  variable: '--font-outfit',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
 });
 
@@ -146,7 +147,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html
       lang={locale}
-      className={`${cinzel.variable} ${outfit.variable} ${kaushan.variable} h-full antialiased`}
+      className={`${playfair.variable} ${inter.variable} ${kaushan.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>

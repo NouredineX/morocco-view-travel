@@ -6,48 +6,48 @@
 /* --- CSS Variables (Design Tokens) --- */
 :root {
   /* Colors */
-  --color-primary: #C5A86E;
-  --color-primary-light: #DDC597;
-  --color-primary-dark: #A38346;
-  --color-secondary: #0F1E36;
-  --color-secondary-light: #1E3456;
-  --color-secondary-dark: #070F1C;
+  --color-primary: #c8a96e;
+  --color-primary-light: #dabe8a;
+  --color-primary-dark: #a8894e;
+  --color-secondary: #1b5e4b;
+  --color-secondary-light: #247a63;
+  --color-secondary-dark: #0e3f32;
   --color-accent: #E8734A;
   --color-accent-light: #F09070;
   --color-accent-dark: #C55A33;
 
   /* Backgrounds */
-  --bg-dark: #080C14;
-  --bg-dark-2: #0D121F;
-  --bg-dark-3: #12192A;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-card-hover: rgba(255, 255, 255, 0.06);
-  --bg-glass: rgba(255, 255, 255, 0.05);
-  --bg-glass-strong: rgba(255, 255, 255, 0.09);
-  --bg-navbar-scrolled: rgba(8, 12, 20, 0.92);
-  --bg-mobile-nav: rgba(8, 12, 20, 0.97);
+  --bg-dark: #0a0f1a;
+  --bg-dark-2: #101726;
+  --bg-dark-3: #161e30;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+  --bg-glass: rgba(255, 255, 255, 0.06);
+  --bg-glass-strong: rgba(255, 255, 255, 0.1);
+  --bg-navbar-scrolled: rgba(10, 15, 26, 0.92);
+  --bg-mobile-nav: rgba(10, 15, 26, 0.97);
 
   /* Text */
-  --text-primary: #F5F0EB;
-  --text-secondary: #C0B7A3;
-  --text-muted: #7E7869;
-  --text-dark: #0F1E36;
+  --text-primary: #f5f0eb;
+  --text-secondary: #a0977d;
+  --text-muted: #6b6455;
+  --text-dark: #1a1a2e;
 
   /* Borders */
-  --border-glass: rgba(255, 255, 255, 0.07);
-  --border-glass-strong: rgba(255, 255, 255, 0.12);
-  --border-primary: rgba(197, 168, 110, 0.25);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glass-strong: rgba(255, 255, 255, 0.15);
+  --border-primary: rgba(200, 169, 110, 0.3);
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.45);
-  --shadow-glow: 0 0 30px rgba(197, 168, 110, 0.12);
+  --shadow-glow: 0 0 30px rgba(200, 169, 110, 0.15);
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
 
   /* Typography */
-  --font-heading: var(--font-cinzel), serif;
-  --font-body: var(--font-outfit), sans-serif;
+  --font-heading: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-accent: var(--font-kaushan), cursive;
 
   /* Spacing */
@@ -90,39 +90,30 @@
 
 /* --- Theme Mode Overrides --- */
 [data-theme="light"] {
-  /* Colors */
-  --color-primary: #9C7E47;
-  --color-primary-light: #BCA36E;
-  --color-primary-dark: #7A6031;
-  --color-secondary: #0F1E36;
-
-  /* Backgrounds */
-  --bg-dark: #FAF8F2;
-  --bg-dark-2: #F2EDE2;
-  --bg-dark-3: #EAE3D2;
-  --bg-card: rgba(0, 0, 0, 0.02);
-  --bg-card-hover: rgba(0, 0, 0, 0.05);
-  --bg-glass: rgba(255, 255, 255, 0.75);
-  --bg-glass-strong: rgba(255, 255, 255, 0.90);
-  --bg-navbar-scrolled: rgba(242, 237, 226, 0.92);
-  --bg-mobile-nav: rgba(242, 237, 226, 0.97);
-
-  /* Text */
-  --text-primary: #0F1622;
-  --text-secondary: #5C626E;
-  --text-muted: #8E95A2;
-
-  /* Borders */
-  --border-glass: rgba(15, 30, 54, 0.06);
-  --border-glass-strong: rgba(15, 30, 54, 0.12);
-  --border-primary: rgba(156, 126, 71, 0.25);
-
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(15, 30, 54, 0.04);
-  --shadow-md: 0 4px 20px rgba(15, 30, 54, 0.06);
-  --shadow-lg: 0 8px 40px rgba(15, 30, 54, 0.10);
-  --shadow-glow: 0 0 30px rgba(156, 126, 71, 0.05);
-  --shadow-card: 0 8px 32px rgba(15, 30, 54, 0.03);
+  --color-primary: #a2824d;
+  --color-primary-light: #bca06b;
+  --color-primary-dark: #816534;
+  --color-secondary: #134b3a;
+  --bg-dark: #f7f5ee;
+  --bg-dark-2: #efece0;
+  --bg-dark-3: #e7e3d2;
+  --bg-card: rgba(0, 0, 0, 0.03); /* #00000008 */
+  --bg-card-hover: rgba(0, 0, 0, 0.06); /* #0000000f */
+  --bg-glass: rgba(255, 255, 255, 0.7); /* #ffffffb3 */
+  --bg-glass-strong: rgba(255, 255, 255, 0.85); /* #ffffffd9 */
+  --bg-navbar-scrolled: rgba(239, 236, 224, 0.92); /* #efece0eb */
+  --bg-mobile-nav: rgba(239, 236, 224, 0.97); /* #efece0f7 */
+  --text-primary: #1c1c1a;
+  --text-secondary: #5d5444;
+  --text-muted: #8e8472;
+  --border-glass: rgba(0, 0, 0, 0.08); /* #00000014 */
+  --border-glass-strong: rgba(0, 0, 0, 0.15); /* #00000026 */
+  --border-primary: rgba(162, 130, 77, 0.3); /* #a2824d4d */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06); /* #0000000f */
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08); /* #00000014 */
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12); /* #0000001f */
+  --shadow-glow: 0 0 30px rgba(162, 130, 77, 0.06); /* #a2824d0f */
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.05); /* #0000000d */
 }
 
 /* --- Leaflet popup styling alignment for both themes --- */
